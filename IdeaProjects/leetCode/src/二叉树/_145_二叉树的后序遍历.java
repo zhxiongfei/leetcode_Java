@@ -15,7 +15,6 @@ public class _145_二叉树的后序遍历 {
         Stack<TreeNode> stack = new Stack<>();
         if (root == null) return list;
 
-        boolean isRight = false;
         stack.push(root);
         TreeNode pre = null;
         while (!stack.isEmpty()){
