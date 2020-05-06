@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="" />
+    <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/_11_盛最多水的容器.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_1143_最长公共子序列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_120_三角形最小路径和.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_151_翻转字符串里的单词.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_198_打家劫舍.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_213_打家劫舍_II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_222_完全二叉树的节点个数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_225_用队列实现栈.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_226_翻转二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_239_滑动窗口最大值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_242_有效的字母异位词.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_300_最长上升子序列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_322_零钱兑换.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_344_反转字符串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_3_无重复字符的最长子串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_448_找到所有数组中消失的数字.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_53_最大子序和.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_572_另一个树的子树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_62_不同路径.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_64_最小路径和.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_654_最大二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_739_每日温度.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_796_旋转字符串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_860_柠檬水找零.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_二叉树的深度.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_面试题47_礼物的最大价值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/斐波那契数列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/链表移除重复节点.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/队列/滑动窗口最大值.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="15" />
@@ -19,7 +55,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1UBwsAXcv1iLqxciGJeQMeFM4AE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +74,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -192,9 +236,10 @@
     <state x="93" y="-843" width="890" height="627" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1586947486319" />
     <state x="373" y="189" width="667" height="486" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1586919696333" />
     <state x="373" y="201" width="667" height="520" key="find.popup/0.23.1440.877/-404.-1057.1920.1000@0.23.1440.877" timestamp="1586763433762" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1588756175221">
-      <screen x="-404" y="-1057" width="1920" height="1057" />
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup" timestamp="1588773297625">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1588773297625" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588756175221" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588743851742" />
   </component>
@@ -301,20 +346,20 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>链表.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>链表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
     </SUITE>
   </component>
 </project>
