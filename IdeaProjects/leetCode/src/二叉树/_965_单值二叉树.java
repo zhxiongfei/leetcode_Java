@@ -31,26 +31,28 @@ package 二叉树;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class _965_单值二叉树 {
 
     // 递归
-    public boolean univalTree(TreeNode node,int val){
+    public boolean univalTree(TreeNode node, int val) {
         if (node == null) return true;
         if (node.val != val) return false;
-        return univalTree(node.left,val) && univalTree(node.right,val);
+        return univalTree(node.left, val) && univalTree(node.right, val);
     }
 
     // 迭代
-    public boolean univalTree1(TreeNode node,int val){
+    public boolean univalTree1(TreeNode node, int val) {
         if (node == null) return true;
 
         Queue<TreeNode> q = new LinkedList();
         q.add(node);
 
-        while (!q.isEmpty()){
+        while (!q.isEmpty()) {
             TreeNode cur = q.poll();
             if (cur.val != val) return false;
 
@@ -65,6 +67,6 @@ public class _965_单值二叉树 {
         if (root == null) return true;
         int val = root.val;
 
-        return univalTree(root,val);
+        return univalTree(root, val);
     }
 }
