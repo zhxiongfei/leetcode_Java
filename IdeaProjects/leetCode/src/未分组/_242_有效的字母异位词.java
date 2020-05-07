@@ -1,0 +1,83 @@
+package 未分组;
+
+/*
+给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
+
+        示例 1:
+
+        输入: s = "anagram", t = "nagaram"
+        输出: true
+        示例 2:
+
+        输入: s = "rat", t = "car"
+        输出: false
+        说明:
+        你可以假设字符串只包含小写字母。
+
+        进阶:
+        如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？
+
+        来源：力扣（LeetCode）
+        链接：https://leetcode-cn.com/problems/valid-anagram
+        著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ */
+
+import java.util.HashMap;
+
+public class _242_有效的字母异位词 {
+
+    public boolean isAnagram1(String s, String t) {
+        if (s == null || t == null) return false;
+        if (s.length() != t.length()) return false;
+
+        HashMap <Character,Integer>map = new HashMap();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (map.containsKey(c)){
+                Integer val = map.get(c);
+                map.put(c,++val);
+                continue;
+            }
+
+            map.put(c,1);
+        }
+
+        for (int i = 0; i < t.length(); i++) {
+            char c = t.charAt(i);
+            if (!map.containsKey(c)) return false;
+            Integer val = map.get(c);
+
+            if (val == 0) return false;
+
+            map.put(c,--val);
+            if (val == 0) map.remove(c);
+        }
+
+        return map.keySet().size() == 0;
+    }
+
+    public boolean isAnagram(String s, String t) {
+        if (s == null || t == null) return false;
+        if (s.length() != t.length()) return false;
+
+        char[] chars1 = s.toCharArray();
+        char[] chars2 = t.toCharArray();
+
+        int[] counts = new int[26];
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            counts[chars1[i] - 'a'] ++;
+        }
+
+        for (int i = 0; i < length; i++) {
+            if(--counts[chars2[i] - 'a'] < 0) return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        _242_有效的字母异位词 test = new _242_有效的字母异位词();
+        test.isAnagram("anagram","nagara");
+    }
+}
