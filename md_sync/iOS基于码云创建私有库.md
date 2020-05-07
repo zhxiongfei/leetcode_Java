@@ -181,3 +181,26 @@ pod repo push CGRepo CGTool.podspec
 
 至此，私有库创建完成～
 
+
+
+### 十一，版本更新
+
+- 需要更新版本时，首先需要将老版本从仓库中下载下来， 如图
+
+- 打开老版本项目， 在Tools文件夹中进行更改，添加/删除/修改文件操作。
+
+- 比如，需要再添加一种分类的代码，把需要添加的代码复制进Tools文件夹。
+
+- 新版本打下tag  (eg git tab 0.1.2)
+
+- 将tag push到远程 (eg git push --tags)
+
+- 同步需要修改 .podspec文件中 s.version中的版本号，如图
+
+  ![image-20200507172210031](https://tva1.sinaimg.cn/large/007S8ZIlly1gek0e73efij30lv06975q.jpg)
+
+- 再次执行建立关联命令 (pod repo push CGRepo CGTool.podspec)
+
+- 将变动push到远程
+
+- 然后在我们需要更新版本项目的podfile文件中，将版本号改为当前版本号。 重新执行pod install即可。
