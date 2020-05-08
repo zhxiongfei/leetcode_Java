@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/二叉树/_559_N叉树的最大深度.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_590_N叉树的后序遍历.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_590_N叉树的后序遍历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../md_sync/二叉树.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../md_sync/二叉树.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,10 +197,10 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1152" height="174" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750060" />
-    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1588819738161">
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1588907253449">
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588819738161" />
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588907253448" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588745008977" />
     <state x="93" y="-843" width="890" height="627" key="find.popup" timestamp="1586947486319">
       <screen x="-404" y="-1057" width="1920" height="1057" />
