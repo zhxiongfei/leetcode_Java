@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/_105_从前序与中序遍历序列构造二叉树.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/二叉树/_106_从中序与后序遍历序列构造二叉树.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/META-INF/leetCode.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_114_二叉树展开为链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_114_二叉树展开为链表.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_144_二叉树的前序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_144_二叉树的前序遍历.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_145_二叉树的后序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_145_二叉树的后序遍历.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_589_N叉树的前序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_589_N叉树的前序遍历.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_590_N叉树的后序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_590_N叉树的后序遍历.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_965_单值二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_965_单值二叉树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_139_单词拆分.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_139_单词拆分.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_152_乘积最大子数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_152_乘积最大子数组.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/_114_二叉树展开为链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_114_二叉树展开为链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../md_sync/二叉树.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../md_sync/二叉树.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_105_从前序与中序遍历序列构造二叉树.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_105_从前序与中序遍历序列构造二叉树.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
