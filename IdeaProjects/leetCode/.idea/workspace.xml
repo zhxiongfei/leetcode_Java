@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/_559_N叉树的最大深度.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树/_105_从前序与中序遍历序列构造二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树/_106_从中序与后序遍历序列构造二叉树.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/_590_N叉树的后序遍历.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_590_N叉树的后序遍历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/META-INF/leetCode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_114_二叉树展开为链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_114_二叉树展开为链表.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_144_二叉树的前序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_144_二叉树的前序遍历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_145_二叉树的后序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_145_二叉树的后序遍历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_589_N叉树的前序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_589_N叉树的前序遍历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_590_N叉树的后序遍历.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_590_N叉树的后序遍历.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉树/_965_单值二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉树/_965_单值二叉树.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_139_单词拆分.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_139_单词拆分.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_152_乘积最大子数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_152_乘积最大子数组.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_114_二叉树展开为链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_114_二叉树展开为链表.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../md_sync/二叉树.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../md_sync/二叉树.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +45,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UBwsAXcv1iLqxciGJeQMeFM4AE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -63,7 +76,33 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._152_乘积最大子数组">
+  <component name="RunManager" selected="Application._105_从前序与中序遍历序列构造二叉树">
+    <configuration name="_105_从前序与中序遍历序列构造二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="二叉树._105_从前序与中序遍历序列构造二叉树" />
+      <module name="leetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="二叉树.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_106_从中序与后序遍历序列构造二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="二叉树._106_从中序与后序遍历序列构造二叉树" />
+      <module name="leetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="二叉树.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_152_乘积最大子数组" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="动态规划._152_乘积最大子数组" />
       <module name="leetCode" />
@@ -90,19 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_203_移除链表元素" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="链表._203_移除链表元素" />
-      <module name="leetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="链表.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_234_回文链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="链表._234_回文链表" />
       <module name="leetCode" />
@@ -116,26 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_86_分隔链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="链表._86_分隔链表" />
-      <module name="leetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="链表.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._105_从前序与中序遍历序列构造二叉树" />
+        <item itemvalue="Application._106_从中序与后序遍历序列构造二叉树" />
         <item itemvalue="Application._152_乘积最大子数组" />
         <item itemvalue="Application._19_删除链表的倒数第N个节点" />
         <item itemvalue="Application._234_回文链表" />
-        <item itemvalue="Application._86_分隔链表" />
-        <item itemvalue="Application._203_移除链表元素" />
       </list>
     </recent_temporary>
   </component>
@@ -165,37 +178,45 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1152" height="174" key="GridCell.Tab.0.bottom" timestamp="1588744750058">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.0.bottom" timestamp="1588926034107">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.0.bottom/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034107" />
     <state width="1152" height="174" key="GridCell.Tab.0.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750058" />
-    <state width="1152" height="174" key="GridCell.Tab.0.center" timestamp="1588744750057">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.0.center" timestamp="1588926034106">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.0.center/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034106" />
     <state width="1152" height="174" key="GridCell.Tab.0.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750057" />
-    <state width="1152" height="174" key="GridCell.Tab.0.left" timestamp="1588744750057">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.0.left" timestamp="1588926034105">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.0.left/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034105" />
     <state width="1152" height="174" key="GridCell.Tab.0.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750057" />
-    <state width="1152" height="174" key="GridCell.Tab.0.right" timestamp="1588744750058">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.0.right" timestamp="1588926034106">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.0.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034106" />
     <state width="1152" height="174" key="GridCell.Tab.0.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750058" />
-    <state width="1152" height="174" key="GridCell.Tab.1.bottom" timestamp="1588744750060">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.1.bottom" timestamp="1588926034110">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.1.bottom/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034110" />
     <state width="1152" height="174" key="GridCell.Tab.1.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750060" />
-    <state width="1152" height="174" key="GridCell.Tab.1.center" timestamp="1588744750059">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.1.center" timestamp="1588926034108">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.1.center/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034108" />
     <state width="1152" height="174" key="GridCell.Tab.1.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750059" />
-    <state width="1152" height="174" key="GridCell.Tab.1.left" timestamp="1588744750059">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.1.left" timestamp="1588926034108">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.1.left/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034108" />
     <state width="1152" height="174" key="GridCell.Tab.1.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750059" />
-    <state width="1152" height="174" key="GridCell.Tab.1.right" timestamp="1588744750060">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1561" height="303" key="GridCell.Tab.1.right" timestamp="1588926034109">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1561" height="303" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588926034109" />
     <state width="1152" height="174" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588744750060" />
     <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1588907253449">
       <screen x="-404" y="-1057" width="1920" height="1057" />
@@ -208,12 +229,17 @@
     <state x="93" y="-843" width="890" height="627" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1586947486319" />
     <state x="373" y="189" width="667" height="486" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1586919696333" />
     <state x="373" y="201" width="667" height="520" key="find.popup/0.23.1440.877/-404.-1057.1920.1000@0.23.1440.877" timestamp="1586763433762" />
-    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup" timestamp="1588773297625">
-      <screen x="1280" y="-88" width="1280" height="697" />
+    <state x="184" y="-309" width="670" height="675" key="run.anything.popup" timestamp="1588917725151">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588917725151" />
+    <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup" timestamp="1588920893571">
+      <screen x="-404" y="-1057" width="1920" height="1000" />
     </state>
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1588773297625" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588756175221" />
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588918016750" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1588743851742" />
+    <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -318,6 +344,11 @@
           <url>file://$PROJECT_DIR$/src/二叉树/_662_二叉树最大宽度.java</url>
           <line>100</line>
           <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/二叉树/_106_从中序与后序遍历序列构造二叉树.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="264" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
