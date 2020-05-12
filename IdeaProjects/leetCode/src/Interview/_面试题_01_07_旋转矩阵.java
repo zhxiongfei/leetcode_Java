@@ -47,6 +47,14 @@ package Interview;
 
 public class _面试题_01_07_旋转矩阵 {
 
+
+    /*
+            0,0 -> 0,3 -> 3,3 -> 3,0 -> 0,0
+            0,1 -> 1,3 -> 3,2 -> 2,0 -> 0,1
+            0,2 -> 2,3 -> 3,1 -> 1,0 -> 0,2
+            0,3 -> 3,3 -> 3,0 -> 0,0 -> 0,3
+     */
+    
     public void rorate(int[][] matrix, int left , int right){
 
         int number = matrix[left][right];
