@@ -54,30 +54,19 @@ public class _面试题_01_07_旋转矩阵 {
             0,2 -> 2,3 -> 3,1 -> 1,0 -> 0,2
             0,3 -> 3,3 -> 3,0 -> 0,0 -> 0,3
      */
-    
-    public void rorate(int[][] matrix, int left , int right){
-
-        int number = matrix[left][right];
-        for (int k = 1; k < matrix.length; k++) {
-
-            left = right;
-            right = matrix.length - 1 - left;
-
-            int tmp = matrix[left][right];
-            matrix[left][right] = number;
-
-            number = tmp;
-
-            if (matrix != null){
-
-            }
-        }
-    }
 
     public void rotate(int[][] matrix) {
 
-        for (int i = 0; i < matrix.length; i++) {
-            rorate(matrix, 0, i);
+        int n = matrix.length;
+        for (int i = 0; i < matrix.length >> 1; i++) {
+            for (int j = i; j < matrix.length - 1 - i; j++) {
+
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[n-1-j][i];
+                matrix[n-1-j][i] = matrix[n-1-i][n-1-j];
+                matrix[n-1-i][n-1-j] = matrix[j][n-1-i];
+                matrix[j][n-1-i] = tmp;
+            }
         }
     }
 

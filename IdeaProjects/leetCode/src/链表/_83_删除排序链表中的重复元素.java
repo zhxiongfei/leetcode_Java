@@ -17,50 +17,29 @@
 
 package 链表;
 
+import java.util.HashSet;
+
 public class _83_删除排序链表中的重复元素 {
 
-    class Solution {
-        public ListNode deleteDuplicates(ListNode head) {
-            if(head == null || head.next == null) return head;
+    // 思路一：
+    // 遍历链表
+    // 用set存储遍历过的值
+    // 当遍历当前元素 set中包含时，删除当前元素
+    // 不包含时 遍历下一个元素，set中添加当前元素
+    HashSet<Integer> set = new HashSet<>();
+    public ListNode removeDuplicateNodes(ListNode head) {
 
-            int val = head.val;
-
-            ListNode prev = head;
-            ListNode next = head.next;
-
-            while (next != null){
-
-                if (next.val == val){
-                    if (next.next != null){
-
-                        next.val = next.next.val;
-                        next.next = next.next.next;
-                        continue;
-                    }else{
-                        // 最后一个
-                        prev.next = null;
-                        return head;
-                    }
-                }
-
-                prev = next;
-                val = next.val;
-                next = next.next;
+        ListNode prev = null;
+        ListNode node = head;
+        while (node != null){
+            if (set.contains(node.val)){
+                // 删除node
+                prev.next = node.next;
+            }else {
+                set.add(node.val);
+                prev = node;
             }
-
-            return head;
-        }
-    }
-
-    // 输入: 1,1,1,1,1,1,1,2
-    public ListNode deleteDuplicates1(ListNode head){
-        ListNode current = head;
-        while (current != null && current.next != null){
-            if (current.val == current.next.val){
-                current.next = current.next.next;
-            }else{
-                current = current.next;
-            }
+            node = node.next;
         }
 
         return head;
