@@ -974,3 +974,181 @@ public ListNode partition(ListNode head, int x) {
 
 ![屏幕快照 2020-05-14 下午1.40.28](https://tva1.sinaimg.cn/large/007S8ZIlly1gerxn21t4oj30ps078gme.jpg)
 
+
+
+#### [面试题 02.05. 链表求和](https://leetcode-cn.com/problems/sum-lists-lcci/)
+
+```java
+给定两个用链表表示的整数，每个节点包含一个数位。
+
+这些数位是反向存放的，也就是个位排在链表首部。
+
+编写函数对这两个整数求和，并用链表形式返回结果。
+
+ 
+
+示例：
+
+输入：(7 -> 1 -> 6) + (5 -> 9 -> 2)，即617 + 295
+输出：2 -> 1 -> 9，即912
+进阶：假设这些数位是正向存放的，请再做一遍。
+
+示例：
+
+输入：(6 -> 1 -> 7) + (2 -> 9 -> 5)，即617 + 295
+输出：9 -> 1 -> 2，即912
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/sum-lists-lcci
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+##### 题解：
+
+串链表
+
+- 初始化 newHead 作为新链表的虚拟头结点
+- 变量carry 记录是否上一个值有无进位
+- 当L1 或者 L2不为空时，遍历L1, L2
+- 当前sum = L1.val + L2.val + carry. 当然当L1 或者 L2 为空时，其值为0
+- 根据sum创建节点，拼接在newHead上
+- 遍历完毕，如果carry > 0, 代表末尾需要拼上 carry
+- 最终返回 newHead.next
+
+代码如下：
+
+```java
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+        ListNode newHead = new ListNode(-1);
+        ListNode node = newHead;
+        int carry = 0;
+        while (l1 != null || l2 != null){
+            int sum = (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val) + carry;
+            carry = 0;
+            if (sum >= 10){
+                sum -= 10;
+                carry = 1;
+            }
+
+            node.next = new ListNode(sum);
+            node = node.next;
+
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
+        }
+
+        if (carry > 0){
+            node.next = new ListNode(carry);
+        }
+
+        return newHead.next;
+    }
+```
+
+时间复杂度: O(N)
+空间复杂度: O(N)
+
+![屏幕快照 2020-05-14 下午5.04.33](https://tva1.sinaimg.cn/large/007S8ZIlly1ges3hnnib4j30ok05st9h.jpg)
+
+
+
+
+
+#### [面试题 02.06. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list-lcci/)
+
+##### 题解：
+
+###### 思路一:
+
+代码如下：
+
+```java
+// 使用栈，加入前一半元素，再与后一半元素逐个对比
+    // 时间复杂度 O(N) 遍历一遍链表元素
+    // 空间复杂度 O(N) 使用了额外的栈存储控件
+    public boolean isPalindrome1(ListNode head) {
+
+        Stack<Integer> stack = new Stack<>();
+        ListNode slow = head;
+        ListNode fast = head;
+
+        // 前一半入栈
+        while (fast != null && fast.next != null){
+
+            stack.push(slow.val);
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // 说明节点总数是 单数
+        if (fast != null) slow = slow.next;
+
+        // 栈中元素和后一半元素对比
+        // 不一致， return false
+        // 全部一致， return true
+        while (slow != null){
+            if (stack.pop() != slow.val) return false;
+            slow = slow.next;
+        }
+
+        return true;
+    }
+```
+
+###### 思路二：
+
+代码如下：
+
+```java
+
+    // 前边相同，找到链表中间节点
+    // 翻转中间节点
+    // 依次比较头结点 和 中间节点
+    // 有不一致的则 return false
+    // 全部都一致，则 return true
+    // 时间复杂度 : O(N) 遍历一整遍 链表
+    // 空间复杂度 : O(1) 没有使用额外内存控件
+    public boolean isPalindrome(ListNode head) {
+
+        // 找到中间元素
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // 说明节点总数是 单数
+        if (fast != null) slow = slow.next;
+
+        // 翻转slow
+        ListNode newSlow = null;
+        while (slow != null){
+            ListNode tmp = slow.next;
+            slow.next = newSlow;
+            newSlow = slow;
+            slow = tmp;
+        }
+
+        while (newSlow != null){
+
+            if (head.val != newSlow.val) return false;
+
+            head = head.next;
+            newSlow = newSlow.next;
+        }
+
+        return true;
+    }
+```
+
+第二种算法明显比前一种算法更优秀， 时间复杂度都是O(N) ， 但是其空间复杂度优化至O(1). 在leetcode上提交代码后，也有所提现。
+
+如图，分别是方法一,方法二执行用时以及内存消耗
+
+![屏幕快照 2020-05-14 下午5.50.12](https://tva1.sinaimg.cn/large/007S8ZIlly1ges4kw7hbjj30p405k751.jpg)
+
+![屏幕快照 2020-05-14 下午5.43.39](https://tva1.sinaimg.cn/large/007S8ZIlly1ges4ih0qr9j30rg06aq3q.jpg)
+
