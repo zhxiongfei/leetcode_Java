@@ -846,3 +846,131 @@ public void setZeroes(int[][] matrix) {
     }
 ```
 
+
+
+#### [面试题 02.02. 返回倒数第 k 个节点](https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/)
+
+##### 题解：
+
+- 此题与 **题目19** 基本一样
+- 利用快慢指针思想
+- 开始快慢指针都指向head
+- 快指针往前走k步时，慢指针开始走
+- 当快指针指向null时，慢指针就指向第k个节点
+- 然后把 慢指针的val返回即可
+
+代码如下：
+
+```java
+ public int kthToLast(ListNode head , int k){
+
+        if (head.next == null) return head.val;
+
+        ListNode fast = head;
+        ListNode slow = head;
+
+        int step = 0;
+        while (fast != null){
+
+            if (step >= k) slow = slow.next;
+            fast = fast.next;
+            step ++;
+        }
+
+        return slow.val;
+    }
+```
+
+
+
+#### [面试题 02.03. 删除中间节点](https://leetcode-cn.com/problems/delete-middle-node-lcci/)
+
+> 实现一种算法，删除单向链表中间的某个节点（除了第一个和最后一个节点，不一定是中间节点），假定你只能访问该节点。
+>
+>  
+>
+> 示例：
+>
+> 输入：单向链表a->b->c->d->e->f中的节点c
+> 结果：不返回任何数据，但该链表变为a->b->d->e->f
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/delete-middle-node-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+删除当前传入的中间节点(非第一个，和最后一个节点)，我们不知道其前驱元素，所以把当前传入元素的值，置为当前元素下一个元素的值，当前元素的next指向其next.next即可。
+
+代码如下:
+
+```java
+public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+```
+
+![屏幕快照 2020-05-14 下午12.47.36](https://tva1.sinaimg.cn/large/007S8ZIlly1gerwl5m9snj30p2068752.jpg)
+
+
+
+
+
+#### [面试题 02.04. 分割链表](https://leetcode-cn.com/problems/partition-list-lcci/)
+
+> 编写程序以 x 为基准分割链表，使得所有小于 x 的节点排在大于或等于 x 的节点之前。如果链表中包含 x，x 只需出现在小于 x 的元素之后(如下所示)。分割元素 x 只需处于“右半部分”即可，其不需要被置于左右两部分之间。
+>
+> 示例:
+>
+> 输入: head = 3->5->8->5->10->2->1, x = 5
+> 输出: 3->1->2->10->5->5->8
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/partition-list-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+思路很简单:
+
+- 创建smallHead 串起来比 x小的节点
+- 创建bigHead 穿起来比 x 大的节点
+- 最后把 smallHead 和 bigHead 串起来返回即可
+
+
+
+代码如下:
+
+```java
+public ListNode partition(ListNode head, int x) {
+        ListNode smallHead = new ListNode(-1);
+        ListNode smallNode = smallHead;
+
+        ListNode bigHead = new ListNode(-1);
+        ListNode bigNode = bigHead;
+        while (head != null){
+
+            if (head.val < x){
+                smallNode.next = head;
+                smallNode = smallNode.next;
+            }else{
+                bigNode.next = head;
+                bigNode = bigNode.next;
+            }
+
+            head = head.next;
+        }
+
+        bigNode.next = null;
+        smallNode.next = bigHead.next;
+        return smallHead.next;
+    }
+```
+
+时间复杂度: O(N) 
+
+空间复杂度 : O(N)
+
+![屏幕快照 2020-05-14 下午1.40.28](https://tva1.sinaimg.cn/large/007S8ZIlly1gerxn21t4oj30ps078gme.jpg)
+
