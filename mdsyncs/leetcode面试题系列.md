@@ -1152,3 +1152,412 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 ![屏幕快照 2020-05-14 下午5.43.39](https://tva1.sinaimg.cn/large/007S8ZIlly1ges4ih0qr9j30rg06aq3q.jpg)
 
+
+
+#### [面试题 02.08. 环路检测](https://leetcode-cn.com/problems/linked-list-cycle-lcci/)
+
+> 给定一个有环链表，实现一个算法返回环路的开头节点。
+> 有环链表的定义：在链表中某个节点的next元素指向在它前面出现过的节点，则表明该链表存在环路。
+>
+>
+> 示例 1：
+>
+> 输入：head = [3,2,0,-4], pos = 1
+> 输出：tail connects to node index 1
+> 解释：链表中有一个环，其尾部连接到第二个节点。
+>
+> 示例 2：
+>
+> 输入：head = [1,2], pos = 0
+> 输出：tail connects to node index 0
+> 解释：链表中有一个环，其尾部连接到第一个节点。
+>
+> 示例 3：
+>
+> 输入：head = [1], pos = -1
+> 输出：no cycle
+> 解释：链表中没有环。
+>
+> 进阶：
+> 你是否可以不用额外空间解决此题？
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/linked-list-cycle-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+
+
+##### 题解：
+
+###### 思路一：
+
+使用 set 存储遍历过的节点
+
+```java
+    // set存储遍历过的节点
+    // head节点，依次往下遍历
+    // 遍历当前节点时，如果set中包含，当前节点就是 环路节点
+    // 遍历完链表，没有set中包含的，说明没环。 返回null
+    // 因为用到了额外set存储空间，所以时间复杂度比较高
+    // 时间复杂度 : O(N)
+    // 空间复杂度 : O(N)
+    // 题干中进阶 要求 ： 不使用额外存储空间
+    // 接下来我们尝试使用 O(1) 的时间复杂度 解决此题目
+    public ListNode delegeCycle1(ListNode head){
+
+        HashSet<ListNode> set = new HashSet<>();
+        while (head != null){
+            if (set.isEmpty()){
+                set.add(head);
+                head = head.next;
+                continue;
+            }
+
+            if (set.contains(head)) return head;
+            set.add(head);
+
+            head = head.next;
+        }
+        return null;
+    }
+
+```
+
+###### 思路二：
+
+快慢指针
+
+```java
+		// 快慢指针
+    // 快指针一次走两步，慢指针一次走两步
+    // 遍历链表， 条件当快指针不为空 且 快指针.next不为空时
+    // 遍历过程中如果slow == fast了，就说明链表有环
+    // 相等时，将slow指针置为head。 slow和fast均每次走一步，相遇时，即为环路节点
+    // 遍历完毕，一直没有相遇，无环，返回null
+    // 时间复杂度 : O(N)
+    // 空间复杂度 : O(1)
+    public ListNode detectCycle(ListNode head) {
+
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast){
+                break;
+            }
+        }
+
+        if (fast == null) return null;
+
+        slow = head;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
+    }
+```
+
+
+
+
+
+#### [面试题 03.02. 栈的最小值](https://leetcode-cn.com/problems/min-stack-lcci/)
+
+> 请设计一个栈，除了常规栈支持的pop与push函数以外，还支持min函数，该函数返回栈元素中的最小值。执行push、pop和min操作的时间复杂度必须为O(1)。
+>
+>
+> 示例：
+>
+> MinStack minStack = new MinStack();
+> minStack.push(-2);
+> minStack.push(0);
+> minStack.push(-3);
+> minStack.getMin();   --> 返回 -3.
+> minStack.pop();
+> minStack.top();      --> 返回 0.
+> minStack.getMin();   --> 返回 -2.
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/min-stack-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+- 使用两个栈
+- 一个保存正常值，一个保存最小值
+- push时需要注意， 如果minStack不为空，则minStack入栈 minStack.peek() 和 val 的较小者
+- getMin时，直接返回minStack中的较小者即可。
+
+```java
+		// 利用两个栈，一个存放正常数据，一个存放最小数据
+    // push的时候要注意，如果minStack不为空，minStack要入栈 其栈顶和当前元素中较小的
+    // getMin时，直接返回minStack的栈顶元素即可
+    Stack<Integer> normalStack;
+    Stack<Integer> minStack;
+
+    /** initialize your data structure here. */
+    public _面试题_03_02_栈的最小值() {
+
+        normalStack = new Stack<>();
+        minStack = new Stack<>();
+    }
+
+    public void push(int x) {
+        normalStack.push(x);
+        if (minStack.isEmpty()){
+            minStack.push(x);
+        }else {
+            minStack.push(Math.min(minStack.peek(),x));
+        }
+    }
+
+    public void pop() {
+        normalStack.pop();
+        minStack.pop();
+    }
+
+    public int top() {
+        return normalStack.peek();
+    }
+
+    public int getMin() {
+        return minStack.peek();
+    }
+```
+
+
+
+#### [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
+
+> 实现一个MyQueue类，该类用两个栈来实现一个队列。
+>
+>
+> 示例：
+>
+> MyQueue queue = new MyQueue();
+>
+> queue.push(1);
+> queue.push(2);
+> queue.peek();  // 返回 1
+> queue.pop();   // 返回 1
+> queue.empty(); // 返回 false
+>
+> 说明：
+>
+> 你只能使用标准的栈操作 -- 也就是只有 push to top, peek/pop from top, size 和 is empty 操作是合法的。
+> 你所使用的语言也许不支持栈。你可以使用 list 或者 deque（双端队列）来模拟一个栈，只要是标准的栈操作即可。
+> 假设所有操作都是有效的 （例如，一个空的队列不会调用 pop 或者 peek 操作）。
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+- 使用两个队列实现栈
+- push时，存入 q1
+- pop
+  - 如果q2不为空，q2队头出队，再返回即可。
+  - 如果q2为空，q1逐个出队列，入队q2。 然后q2队头出队，再返回即可
+- peek
+  - 基本同 pop. 将pop()  换为 peek() 即可
+- isEmpty
+  - q1 和 q2都为空，则为空
+  - 否则不为空
+
+代码如下：
+
+```java
+// 利用两个队列 实现栈
+
+    // push时，存入q1
+
+    // pop时，如果q2不空， 则q2 移除队头元素并返回
+    // 如果 q2为空， 则将q1的元素依次出队，再入队q2。 最后q2移除队头元素并返回
+
+    // peek ，同pop同理，只是将pop操作 换为 peek即可
+
+    // isEmpty ， 如果q1 和 q2都为空，则为空。 否则不为空
+
+    Queue<Integer> q1;
+    Queue<Integer> q2;
+    /** Initialize your data structure here. */
+    public _面试题_03_04_化栈为队() {
+
+        q1 = new LinkedList<>();
+        q2 = new LinkedList<>();
+    }
+
+    /** Push element x to the back of queue. */
+    public void push(int x) {
+        q1.add(x);
+    }
+
+    /** Removes the element from in front of queue and returns that element. */
+    public int pop() {
+        if (!q2.isEmpty()){
+            return q2.remove();
+        }
+
+        while (!q1.isEmpty()){
+            q2.add(q1.remove());
+        }
+
+        return q2.remove();
+    }
+
+    /** Get the front element. */
+    public int peek() {
+        if (!q2.isEmpty()){
+            return q2.peek();
+        }
+
+        while (!q1.isEmpty()){
+            q2.add(q1.remove());
+        }
+
+        return  q2.peek();
+    }
+
+    /** Returns whether the queue is empty. */
+    public boolean empty() {
+        return q1.isEmpty() && q2.isEmpty();
+    }
+
+```
+
+
+
+#### [面试题 04.02. 最小高度树
+
+#### ](https://leetcode-cn.com/problems/minimum-height-tree-lcci/)
+
+> 给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。
+>
+> 示例:
+> 给定有序数组: [-10,-3,0,5,9],
+>
+> 一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：
+>
+>           0 
+>          / \ 
+>        -3   9 
+>        /   / 
+>      -10  5 
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/minimum-height-tree-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+思路：
+
+- 升序数组，且生成二叉排序树
+- 所以树的根节点，必为数组的中间元素(总个数偶数的数组，中间左右均可)
+- 先取出树的根节点
+- 再分别递归计算其 左，右子树
+
+代码如下：
+
+```java
+// 思路：
+    // 因为是升序数组，且生成二叉排序树
+    // 所以树的根节点，是数组的中间元素(总个数为双数的数组，中间左右均可)
+    // 先取出树的根节点
+    // 再分别递归计算其 左，右子树
+    public TreeNode sourtedArrayToBST(int[] nums, int left, int right){
+        if (right - left <= 1) return null;
+
+        int mid = (left + right) >> 1;
+        TreeNode node = new TreeNode(nums[mid]);
+
+        node.left = sourtedArrayToBST(nums,left,mid);
+        node.right = sourtedArrayToBST(nums,mid,right);
+
+        return node;
+    }
+    
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return sourtedArrayToBST(nums,0,nums.length);
+    }
+```
+
+
+
+#### [面试题 04.03. 特定深度节点链表](https://leetcode-cn.com/problems/list-of-depth-lcci/)
+
+> 给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表（比如，若一棵树的深度为 D，则会创建出 D 个链表）。返回一个包含所有深度的链表的数组。
+>
+>  
+>
+> 示例：
+>
+> 输入：[1,2,3,4,5,null,7,8]
+>
+>         1
+>        /  \ 
+>       2    3
+>      / \    \ 
+>     4   5    7
+>    /
+>   8
+>
+> 输出：[[1],[2,3],[4,5,7],[8]]
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/list-of-depth-lcci
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+##### 题解：
+
+- 二叉树层序遍历
+- 把每一层的数据串成一个链表
+- 将每一个链表加入数组
+- 最终返回数组即可
+
+代码如下：
+
+```java
+ // 二叉树的层序遍历
+    // 把每一层的元素串成一个链表
+    // 将链表分别加入数组
+    // 最终返回数组即可
+    public ListNode[] listOfDepth(TreeNode tree) {
+        if (tree == null) return null;
+
+        ArrayList<ListNode> arrayList = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(tree);
+
+        while (!queue.isEmpty()){
+            int size = queue.size();
+
+            ListNode listnode = new ListNode(-1);
+            ListNode cur = listnode;
+            while (size > 0){
+
+                TreeNode node = queue.remove();
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
+
+                cur.next = new ListNode(node.val);
+                cur = cur.next;
+                size --;
+            }
+
+            arrayList.add(listnode.next);
+        }
+
+        return arrayList.toArray(ListNode[]::new);
+    }
+```
+
+
+
+
+

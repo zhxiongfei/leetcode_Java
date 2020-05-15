@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interview/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_02_08_环路检测.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_03_02_栈的最小值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_03_04_化栈为队.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_02_最小高度树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_03_特定深度节点链表.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_04_检查平衡性.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/Interview/_面试题_02_06_回文链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/Interview/_面试题_02_06_回文链表.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mdsyncs/ios基于码云创建私有库.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/ios基于码云创建私有库.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,33 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._面试题_02_06_回文链表">
-    <configuration name="_面试题_01_07_旋转矩阵" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview._面试题_01_07_旋转矩阵" />
-      <module name="leetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_面试题_01_09_字符串轮转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview._面试题_01_09_字符串轮转" />
-      <module name="leetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._面试题_04_03_特定深度节点链表">
     <configuration name="_面试题_02_01_移除重复节点" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interview._面试题_02_01_移除重复节点" />
       <module name="leetCode" />
@@ -129,13 +113,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_面试题_03_04_化栈为队" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview._面试题_03_04_化栈为队" />
+      <module name="leetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_面试题_04_03_特定深度节点链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview._面试题_04_03_特定深度节点链表" />
+      <module name="leetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._面试题_04_03_特定深度节点链表" />
+        <item itemvalue="Application._面试题_03_04_化栈为队" />
         <item itemvalue="Application._面试题_02_06_回文链表" />
         <item itemvalue="Application._面试题_02_04_分割链表" />
         <item itemvalue="Application._面试题_02_01_移除重复节点" />
-        <item itemvalue="Application._面试题_01_09_字符串轮转" />
-        <item itemvalue="Application._面试题_01_07_旋转矩阵" />
       </list>
     </recent_temporary>
   </component>
@@ -170,51 +180,51 @@
     </state>
     <state x="405" y="-841" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589176467774" />
     <state x="607" y="191" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589365584860" />
-    <state width="1311" height="316" key="GridCell.Tab.0.bottom" timestamp="1589454430420">
+    <state width="1311" height="135" key="GridCell.Tab.0.bottom" timestamp="1589540227570">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.0.bottom/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718747" />
-    <state width="1311" height="316" key="GridCell.Tab.0.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430420" />
-    <state width="1311" height="316" key="GridCell.Tab.0.center" timestamp="1589454430420">
+    <state width="1311" height="135" key="GridCell.Tab.0.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227570" />
+    <state width="1311" height="135" key="GridCell.Tab.0.center" timestamp="1589540227570">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.0.center/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718746" />
-    <state width="1311" height="316" key="GridCell.Tab.0.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430420" />
-    <state width="1311" height="316" key="GridCell.Tab.0.left" timestamp="1589454430419">
+    <state width="1311" height="135" key="GridCell.Tab.0.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227570" />
+    <state width="1311" height="135" key="GridCell.Tab.0.left" timestamp="1589540227569">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.0.left/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718746" />
-    <state width="1311" height="316" key="GridCell.Tab.0.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430419" />
-    <state width="1311" height="316" key="GridCell.Tab.0.right" timestamp="1589454430420">
+    <state width="1311" height="135" key="GridCell.Tab.0.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227569" />
+    <state width="1311" height="135" key="GridCell.Tab.0.right" timestamp="1589540227570">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.0.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718747" />
-    <state width="1311" height="316" key="GridCell.Tab.0.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430420" />
-    <state width="1311" height="316" key="GridCell.Tab.1.bottom" timestamp="1589454430422">
+    <state width="1311" height="135" key="GridCell.Tab.0.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227570" />
+    <state width="1311" height="135" key="GridCell.Tab.1.bottom" timestamp="1589540227572">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.1.bottom/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718748" />
-    <state width="1311" height="316" key="GridCell.Tab.1.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430422" />
-    <state width="1311" height="316" key="GridCell.Tab.1.center" timestamp="1589454430421">
+    <state width="1311" height="135" key="GridCell.Tab.1.bottom/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227572" />
+    <state width="1311" height="135" key="GridCell.Tab.1.center" timestamp="1589540227571">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.1.center/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718748" />
-    <state width="1311" height="316" key="GridCell.Tab.1.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430421" />
-    <state width="1311" height="316" key="GridCell.Tab.1.left" timestamp="1589454430421">
+    <state width="1311" height="135" key="GridCell.Tab.1.center/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227571" />
+    <state width="1311" height="135" key="GridCell.Tab.1.left" timestamp="1589540227571">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.1.left/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718748" />
-    <state width="1311" height="316" key="GridCell.Tab.1.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430421" />
-    <state width="1311" height="316" key="GridCell.Tab.1.right" timestamp="1589454430421">
+    <state width="1311" height="135" key="GridCell.Tab.1.left/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227571" />
+    <state width="1311" height="135" key="GridCell.Tab.1.right" timestamp="1589540227572">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state width="1311" height="231" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718748" />
-    <state width="1311" height="316" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589454430421" />
-    <state x="399" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1589446516320">
+    <state width="1311" height="135" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227572" />
+    <state x="399" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1589524723420">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589431208953" />
-    <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589446516320" />
+    <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589524723420" />
     <state x="93" y="-843" width="890" height="627" key="find.popup" timestamp="1586947486319">
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
@@ -225,12 +235,12 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588917725151" />
-    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup" timestamp="1589449607839">
+    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup" timestamp="1589533592505">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1588773297625" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434407662" />
-    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589449607839" />
+    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589533592505" />
     <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
   </component>
   <component name="XDebuggerManager">
@@ -391,6 +401,16 @@
           <url>file://$PROJECT_DIR$/src/Interview/_面试题_01_05_一次编辑.java</url>
           <line>77</line>
           <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/_面试题_03_04_化栈为队.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/_面试题_04_03_特定深度节点链表.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="321" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

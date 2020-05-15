@@ -55,4 +55,14 @@ s
   end
   ```
 
-  
+
+
+
+### 十四：忽略警告
+
+在验证 podspec 和 建立关联时，如果是警告而非错误导致的验证不通过，则可以加上 --allow-warnings解决. 例如：
+
+```ruby
+$ pod lib lint --private --sources='https://gitee.com/zhang_xiong__fei/ZXFTools.git,https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git' --allow-warnings
+```
+
