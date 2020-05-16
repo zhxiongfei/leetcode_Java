@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interview/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_02_08_环路检测.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_03_02_栈的最小值.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_03_04_化栈为队.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_02_最小高度树.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_03_特定深度节点链表.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_04_检查平衡性.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_05_合法二叉搜索树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_06_后继者.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_08_首个共同祖先.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_10_检查子树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_12_求和路径.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/Interview/_面试题_02_06_回文链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/Interview/_面试题_02_06_回文链表.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/ios基于码云创建私有库.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/ios基于码云创建私有库.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/_面试题_04_04_检查平衡性.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/_面试题_04_04_检查平衡性.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,14 +216,16 @@
     </state>
     <state width="1311" height="231" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434718748" />
     <state width="1311" height="135" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589540227572" />
-    <state x="399" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1589524723420">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="1635" y="119" key="com.intellij.ide.util.TipDialog" timestamp="1589600331559">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
+    <state x="1635" y="119" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589600331559" />
     <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589431208953" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589524723420" />
-    <state x="93" y="-843" width="890" height="627" key="find.popup" timestamp="1586947486319">
-      <screen x="-404" y="-1057" width="1920" height="1057" />
+    <state x="1611" y="53" width="683" height="476" key="find.popup" timestamp="1589600825068">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
+    <state x="1611" y="53" width="683" height="476" key="find.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589600825068" />
     <state x="93" y="-843" width="890" height="627" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1586947486319" />
     <state x="373" y="189" width="667" height="486" key="find.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1586919696333" />
     <state x="373" y="201" width="667" height="520" key="find.popup/0.23.1440.877/-404.-1057.1920.1000@0.23.1440.877" timestamp="1586763433762" />
@@ -235,10 +233,10 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588917725151" />
-    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup" timestamp="1589533592505">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup" timestamp="1589622962377">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
-    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1588773297625" />
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589622962377" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589434407662" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589533592505" />
     <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
@@ -416,8 +414,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>链表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
@@ -425,14 +423,14 @@
     <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>链表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
     </SUITE>
   </component>
 </project>
