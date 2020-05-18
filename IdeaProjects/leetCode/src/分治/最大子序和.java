@@ -37,6 +37,8 @@ public class 最大子序和 {
         // mid右边的最大和。
         int right = maxSubArray(nums,mid,end);
 
+// [-2,1,-3,4,-1,2,1,-5,4]
+
         // 包含mid的最大和
         // 包含mid左边最大和
         int leftMax = nums[mid - 1];
