@@ -31,13 +31,13 @@ s
 - 在第七步验证spec时，需要指定私有库的源 ，和cocoapods的源. (笔者直接使用清华的镜像源，速度更快)
 
   ```ruby
-  $ pod lib lint --private --sources='https://gitee.com/zhang_xiong__fei/ZXFTools.git,https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+  $ pod lib lint --private --sources='https://gitee.com/zhang_xiong__fei/ZXFRepo,https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
   ```
 
 - 第九步建立关联时，也需要指定源
 
   ```ruby
-  $ pod repo push ZXFRepo ZXFTool.podspec --sources='https://gitee.com/zhang_xiong__fei/ZXFTools.git,https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+  $ pod repo push ZXFRepo ZXFTool.podspec --sources='https://gitee.com/zhang_xiong__fei/ZXFRepo,https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
   ```
 
 - 在使用私有库时，在项目的podfile中，依然需要指定源
