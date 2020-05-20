@@ -35,6 +35,13 @@ import java.util.Map.Entry;
 
 public class _692_前K个高频单词 {
 
+    // 使用最小堆
+    // 堆中维持在最多 k 个元素
+    // 先用map存储, <单词 : 次数>
+    // 最小堆，排序按照单词出现的次数，如果出现的次数一样，根据字母顺序排序
+    // 将字典中的数据依次加入，最小堆
+    // 加入完毕后， 最小堆中 k 个元素，为top K高频单词
+    // 依次加入链表
     public List<String> topKFrequent(String[] words, int k) {
 
         Map<String,Integer> counts = new HashMap<>();

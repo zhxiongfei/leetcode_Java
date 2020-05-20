@@ -35,44 +35,47 @@ import java.util.*;
 
 public class _373_查找和最小的K对数字 {
 
-    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+    // 暴力解法
+    // 看到 top k 最小，即想到 最大堆
+    // 用最大堆保存前 K 堆最小的元素
+    // 时间复杂度 : O(N ^ 2 * log K)
 
-        // 最大堆
-        PriorityQueue<List> queue = new PriorityQueue<>(
-                (List e1, List e2) -> {
-                    int res1 = (int)e1.get(0) + (int)e1.get(1);
-                    int res2 = (int)e2.get(0) + (int)e2.get(1);
-                    return res2 - res1;
-                });
+    // 优化
+    // 剪枝
+    // 当前两个数之和超过了堆顶元素，由于数据已经排序，后边的元素只会更大，因此无需继续遍历
+    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        PriorityQueue<List> priorityQueue = new PriorityQueue<>(new Comparator<List>() {
+            @Override
+            public int compare(List o1, List o2) {
+                return ((int)o2.get(0) + (int)o2.get(1) - ((int)o1.get(0) + (int)o1.get(1)));
+            }
+        });
 
         for (int i = 0; i < nums1.length; i++) {
-            int n1 = nums1[i];
+            int num1 = nums1[i];
             for (int j = 0; j < nums2.length; j++) {
-                int n2 = nums2[j];
 
-                List l = new ArrayList();
-                l.add(n1);
-                l.add(n2);
-                if (queue.size() < k){
-                    queue.add(l);
-                }else{
+                // 剪枝，如果当前的两个数之和超过了堆顶元素，由于数组已经排序，后面的元素只会更大，因此无需继续遍历
+                if(priorityQueue.size() == k && nums1[i]+nums2[j] > ((int)priorityQueue.peek().get(0) + (int)priorityQueue.peek().get(1))){
+                    break;
+                }
 
-                    ArrayList list = (ArrayList) queue.peek();
-                    int sum = (int)list.get(0) + (int)list.get(1);
-                    if ((n1 + n2) < sum){
-                        queue.poll();
-                        queue.add(l);
-                    }
+                List list = new ArrayList();
+                list.add(num1);
+                list.add(nums2[j]);
+
+                priorityQueue.add(list);
+                if (priorityQueue.size() > k){
+                    priorityQueue.poll();
                 }
             }
         }
 
-        List res = new LinkedList();
-        while (!queue.isEmpty()){
-            res.add(queue.poll());
+        List<List<Integer>> lists = new LinkedList<>();
+        while (!priorityQueue.isEmpty()){
+            lists.add(0,priorityQueue.poll());
         }
-        Collections.reverse(res);
-        return res;
+        return lists;
     }
 
     public static void main(String[] args){

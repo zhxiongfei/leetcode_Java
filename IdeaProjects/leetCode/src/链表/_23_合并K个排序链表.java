@@ -23,6 +23,9 @@ import java.util.PriorityQueue;
 
 public class _23_合并K个排序链表 {
 
+    // 暴力解法
+    // 依次合并两个有序链表
+    // 直到合并完全部链表
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
         if (lists.length == 1) return lists[0];
