@@ -23,6 +23,7 @@ package 堆;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -33,31 +34,45 @@ import java.util.PriorityQueue;
 
 public class _703_数据流中的第K大元素{
 
-    private int limit = 0;
-    PriorityQueue<Integer> heap = new PriorityQueue<>();
+    /*
+     *
+     * 使用最小堆
+     * nums 中的数字依次加入最小堆
+     * 添加元素时，需要判断 最小堆的size > k时， 移除堆顶元素
+     * 最终 最小堆的 堆顶 就是最终结果
+     * */
+    PriorityQueue<Integer> queue;
+    int k;
     public _703_数据流中的第K大元素(int k, int[] nums) {
+        this.k = k;
 
-        limit = k;
+        // 初始化最下堆
+        queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 - o2;
+            }
+        });
+
+        // nums中数据 依次加入 最小堆
+        // 最小堆size > k时，移除堆顶元素
         for (int i = 0; i < nums.length; i++) {
-            if (heap.size() < k){
-                heap.offer(nums[i]);
-            }else if (heap.peek() < nums[i]){
-                heap.poll();
-                heap.offer(nums[i]);
+            queue.add(nums[i]);
+
+            if (queue.size() > k){
+                queue.poll();
             }
         }
     }
 
     public int add(int val) {
-
-        if (heap.size() < limit){
-            heap.offer(val);
-        }else if (val > heap.peek()){
-            heap.poll();
-            heap.offer(val);
+        queue.add(val);
+        if (queue.size() > k){
+            queue.poll();
         }
 
-        return heap.peek();
+        // 最终 堆顶元素 为最终结果
+        return queue.peek();
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,11 @@
 package 排序;
 
+import java.awt.desktop.SystemSleepEvent;
+import java.text.Collator;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
+
 /*
 *
 * 选择排序
@@ -7,28 +13,29 @@ package 排序;
 * 执行完一轮后， 数组末尾的元素就是最大元素
 * 依次找出剩余元素中最大者，交换
 * */
-public class SelectionSort {
+public class SelectionSort extends Sort{
 
-    public void swap(int[] nums, int i, int j){
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
-
-    public void selectionSort(int[] nums){
-        for (int i = nums.length - 1; i > 0; i--) {
+    @Override
+    protected void sort() {
+        for (int i = array.length - 1; i > 0; i--) {
             int maxIdx = 0;
             for (int j = 1; j <= i; j++) {
-                if (nums[j] > nums[maxIdx])
+                if (cmp(j, maxIdx) > 0){
                     maxIdx = j;
+                }
             }
-            swap(nums,maxIdx, i);
+            swap(maxIdx, i);
         }
     }
 
     public static void main(String[] args) {
         SelectionSort cls = new SelectionSort();
-        int[] nums = {4,2,3,1,5,8,7,6};
-        cls.selectionSort(nums);
+        Integer[] nums = {4,2,3,1,5,8,7,6};
+
+        cls.sort(nums);
+
+        if (nums == null){
+
+        }
     }
 }

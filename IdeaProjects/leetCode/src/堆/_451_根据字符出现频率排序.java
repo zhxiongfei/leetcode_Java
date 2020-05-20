@@ -50,35 +50,43 @@ public class _451_根据字符出现频率排序 {
 
     public String frequencySort(String s) {
 
-        Map <String,Integer> counts = new HashMap<>();
-
-        // 组织字典
+        // 组织字典，字典中存放为 <字母 : 出现次数>
+        HashMap<Character, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
-            String key = String.valueOf(s.charAt(i));;
-            counts.put(key, counts.getOrDefault(key,0) +1);
+            Character character = s.charAt(i);
+
+            if (hashMap.containsKey(character)){
+                Integer cnt = hashMap.get(character);
+                hashMap.put(character, ++cnt);
+            }else {
+                hashMap.put(character, 1);
+            }
         }
 
-        // 最大堆
-        PriorityQueue<Entry<String, Integer>> queue = new PriorityQueue<>(
-                (Entry<String, Integer> e1, Entry<String, Integer> e2) -> {
-                    return e2.getValue() - e1.getValue();
-                });
+        // 最大堆， 出现次数最多的元素排在堆顶
+        PriorityQueue<Entry<Character, Integer>> queue = new PriorityQueue<>(new Comparator<Entry<Character, Integer>>() {
+            @Override
+            public int compare(Entry<Character, Integer> o1, Entry<Character, Integer> o2) {
+                return o2.getValue() - o1.getValue();
+            }
+        });
 
-        // 最大堆添加元素
-        for (Entry<String,Integer> entry : counts.entrySet()){
+        // 把字典中的键值对，放入 最大堆
+        for (Entry<Character, Integer>entry : hashMap.entrySet()){
             queue.offer(entry);
         }
 
-        StringBuilder builder = new StringBuilder();
+        // 拼接最终结果
+        StringBuilder stringBuilder = new StringBuilder();
         while (!queue.isEmpty()){
-            Entry <String,Integer>enrty = queue.poll();
-            int val = enrty.getValue();
-            while(val > 0){
-                builder.append(enrty.getKey());
-                val --;
+
+            Entry<Character, Integer> entry = queue.poll();
+            for (int i = 0; i < entry.getValue(); i++) {
+                stringBuilder.append(entry.getKey());
             }
         }
-        return builder.toString();
+
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

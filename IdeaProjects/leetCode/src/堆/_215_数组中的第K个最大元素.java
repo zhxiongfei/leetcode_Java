@@ -27,25 +27,40 @@ import java.util.PriorityQueue;
 public class _215_数组中的第K个最大元素 {
 
     public int findKthLargest(int[] nums, int k) {
-
         if (nums == null || nums.length == 0) return 0;
         int res = 0;
 
-        PriorityQueue <Integer>queue = new PriorityQueue(nums.length,new Comparator<Integer>() {
+        // 优先级队列
+        // 小顶堆
+        // 小顶堆中维持 k 个元素
+        // N 个元素依次加入小丁堆。 当小丁堆中元素数量 > k时, 移除堆顶
+        // 遍历完 N 个元素，堆中剩余 K 个元素，堆顶即是最终结果
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
-                return o2 - o1;
+                return o1 - o2;
             }
         });
 
         for (int i = 0; i < nums.length; i++) {
             queue.add(nums[i]);
-            if (queue.size()> k){
+            if (queue.size() > k){
                 queue.poll();
             }
         }
 
         res = queue.peek();
         return res;
+    }
+
+    public static void main(String[] args) {
+        _215_数组中的第K个最大元素 cls = new _215_数组中的第K个最大元素();
+
+        int[] nums = {3,2,1,5,6,4};
+        cls.findKthLargest(nums, 2);
+
+        if (nums != null){
+
+        }
     }
 }
