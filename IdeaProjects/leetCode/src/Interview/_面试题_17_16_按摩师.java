@@ -72,4 +72,31 @@ public class _面试题_17_16_按摩师 {
         }
         return second;
     }
+
+    public static boolean validPalindrome(String s) {
+
+        char[] chars = s.toCharArray();
+        int i = 0;
+        int j = s.length() - 1;
+        while (i < j && chars[i] == chars[j]){
+            i ++;
+            j --;
+        }
+
+        // 删除左边元素
+        if (isValid(chars, i + 1, j)) return true;
+
+        // 删除右边元素
+        if (isValid(chars, i, j - 1)) return true;
+
+        return false;
+    }
+
+//    [a, b , b, a]
+    public static boolean isValid(char[] chars, int i, int j){
+        while (i < j){
+            if (chars[i ++] != chars[j --]) return false;
+        }
+        return true;
+    }
 }

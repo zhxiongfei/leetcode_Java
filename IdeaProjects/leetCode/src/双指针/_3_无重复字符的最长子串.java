@@ -30,6 +30,7 @@ import java.util.Set;
 public class _3_无重复字符的最长子串 {
 
     // 滑动窗口
+    // 思路是逐步计算 以 第一个字符开头的最长无重复子串，第二个字符开头的...直到末尾
     public static int lengthOfLongestSubstring(String s) {
         int length = s.length();
         Set set = new HashSet();
