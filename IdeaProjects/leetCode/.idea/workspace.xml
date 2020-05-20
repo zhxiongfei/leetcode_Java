@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_17_09_第k个数.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/堆/_347.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/堆/_373_查找和最小的K对数字.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/堆/_373_查找和最小的K对数字.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/堆/_692_前K个高频单词.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/堆/_692_前K个高频单词.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/链表/_23_合并K个排序链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/链表/_23_合并K个排序链表.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/_面试题_17_09_第k个数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/_面试题_17_09_第k个数.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

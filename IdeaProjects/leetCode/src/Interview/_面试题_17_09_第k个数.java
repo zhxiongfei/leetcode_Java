@@ -87,7 +87,6 @@ public class _面试题_17_09_第k个数 {
 
         for (int i = 0; i < k; i++) {
 
-            dp[i] = 
         }
 
         return dp[k - 1];
