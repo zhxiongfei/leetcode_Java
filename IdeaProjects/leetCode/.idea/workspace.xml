@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tools/Asserts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/Integers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/Times.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/BubbleSort1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/BubbleSort2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/InsertionSort1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/InsertionSort2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/排序/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/动态规划/最长回文串.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/排序/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/排序/bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
