@@ -46,4 +46,15 @@ public class QuickSort extends Sort {
         array[begain] = tmp;
         return begain;
     }
+
+    public static void main(String[] args) {
+        QuickSort sort = new QuickSort();
+
+        Integer[] array = new Integer[3];
+        array[0] = 4;
+        array[1] = 3;
+        array[2] = 2;
+
+        sort.sort(array);
+    }
 }

@@ -21,12 +21,23 @@ public abstract class Sort {
     }
 
     /*
+    * 比较两个下标的元素
     * 返回值等于0 , 代表array[i1] == array[i2]
     * 返回值 < 0,  代表array[i1] < array[i2]
     * 返回值 > 0,  代表array[i1] > array[i2]
     * */
     protected int cmp(int i1, int i2){
         return array[i1] - array[i2];
+    }
+
+    /*
+    * 比较两个元素
+    * 返回值 == 0, 代表相等
+    *        < 0, 代表 v1 < v2
+    *        > 0, 代表 v1 > v2
+    * */
+    protected int cmpElement(int v1, int v2){
+        return v1 - v2;
     }
 
     protected abstract void sort();
