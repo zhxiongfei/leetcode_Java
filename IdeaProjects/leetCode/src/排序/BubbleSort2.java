@@ -5,7 +5,7 @@ public class BubbleSort2 extends Sort{
     protected void sort() {
         // 优化
         // 记录交换位置
-        // 局部交换时，后边的有序了，后边的不
+        // 局部交换时，后边的有序了，后边的不再比较
         for (int i = array.length - 1; i >= 0; i--) {
             // 当完全有序时，一轮扫描结束
             int sortedIdx = 0;

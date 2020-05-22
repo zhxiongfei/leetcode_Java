@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/动态规划/最长回文串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树/从前序与中序遍历序列构造二叉树.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/排序/BubbleSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/BubbleSort2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/排序/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/排序/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/InsertionSort2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,12 +230,12 @@
     <state width="1164" height="69" key="GridCell.Tab.1.right/0.23.1280.777/1280.-88.1280.697@0.23.1280.777" timestamp="1589982689886" />
     <state width="1337" height="330" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590055751406" />
     <state width="1337" height="340" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1590040644256" />
-    <state x="355" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1589977741318">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1590122904424">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="355" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@0.23.1280.777" timestamp="1589977741318" />
     <state x="1635" y="119" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589708040916" />
-    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1589431208953" />
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590122904424" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589854298693" />
     <state x="1611" y="53" width="683" height="476" key="find.popup" timestamp="1589600825068">
       <screen x="1280" y="-88" width="1280" height="697" />
@@ -251,11 +253,11 @@
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588917725151" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1590054520532">
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1590134475959">
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589622962377" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590054520532" />
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590134475959" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589952886612" />
     <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
   </component>
@@ -435,7 +437,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/排序/HeapSort.java</url>
-          <line>85</line>
+          <line>86</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

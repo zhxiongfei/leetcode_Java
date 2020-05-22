@@ -1,30 +1,36 @@
-package 排序;
+#### 堆排序(Heap Sort)
 
-import java.util.Enumeration;
-import java.util.PriorityQueue;
 
-public class HeapSort extends Sort{
 
-    /*
-     *
-     * 选择排序每一轮都在选最大
-     * 选最值用堆优化
-     * 故用堆排序优化选择排序
-     *
-     * 我们先看看选择排序的代码
-     * 如果把选择排序选最值的代码，使用堆
-     * 就可以把选最值代码时间复杂度优化值 O(log N)
-     * 整体的时间复杂度为 O(N * log N)
-     * */
+- 堆排序可以认为是选择排序的一种优化。
 
-    private int heapSize;
-    // 堆排序
-    @Override
+- 选择排序每一轮都在选择最大值
+
+- 而选择最大值，最优的数据结构是堆
+
+- 故用堆排序 优化 选择排序
+
+  
+
+##### 执行流程
+
+- 对序列进行原地建堆 (heapify)
+- 重复执行以下操作，直到堆的元素数量为1
+  - 交换堆顶元素与尾元素
+  - 堆的元素数量减1
+  - 对 0 位置的元素进行 1 次 siftDown操作
+
+
+
+代码如下:
+
+```java
+
     protected void sort() {
 
         heapSize = array.length;
 
-        // 原地建堆
+			  // 原地建堆
         heaptify();
 
         while (heapSize > 1){
@@ -78,15 +84,5 @@ public class HeapSort extends Sort{
 
         array[index] = element;
     }
+```
 
-    public static void main(String[] args) {
-        HeapSort cls = new HeapSort();
-        Integer[] nums = {4,2,3,1,5,8,7,6};
-        cls.sort(nums);
-
-        if (nums == null){
-
-        }
-    }
-
-}

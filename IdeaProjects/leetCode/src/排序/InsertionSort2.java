@@ -22,7 +22,6 @@ public class InsertionSort2 extends Sort {
             for (int i = begain; i > index; i--) {
                 array[i] = array[i - 1];
             }
-
             array[index] = element;
         }
     }
