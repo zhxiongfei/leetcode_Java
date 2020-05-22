@@ -22,7 +22,7 @@ package Interview;
 public class _面试题_16_05_阶乘尾数 {
 
     public int trailingZeroes(int n) {
-
+        if (n == 0) return n;
         int[] dp = new int[n + 1];
         dp[1] = 1;
         for (int i = 2; i <= n; i++) {
