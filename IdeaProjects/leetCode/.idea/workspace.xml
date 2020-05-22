@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/从前序与中序遍历序列构造二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_16_05_阶乘尾数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_16_11_跳水板.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/未分组/_258_各位相加.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/排序/BubbleSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/BubbleSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/排序/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/排序/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/排序/InsertionSort2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,11 +252,11 @@
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1588917725151" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1590134475959">
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1590145169457">
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589622962377" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590134475959" />
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590145169457" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589952886612" />
     <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
   </component>
