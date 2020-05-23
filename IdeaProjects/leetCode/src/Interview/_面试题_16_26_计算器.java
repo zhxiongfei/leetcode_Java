@@ -32,53 +32,42 @@ import java.util.Stack;
 
 public class _面试题_16_26_计算器 {
     public static int calculate(String s) {
-
-        Stack<Integer> numstack = new Stack<>();
-        Stack<Character> symbolstack = new Stack<>();
-
-        // 1  表示上一个是运算符'*'
-        // -1 表示上一个是运算符'/'
-        // 0  表示上一个非 * /
-        int flag = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (!Character.isDigit(c)){
-                // 符号 入 符号栈  且 如果是 * / 需要设置 flag
-                symbolstack.push(c);
-                if (c == '*') flag = 1;
-                if (c == '/') flag = -1;
-
-            }else if (flag == 0){
-                // 数字 且 不需要 * /
-                // 需要找到下一个位置为符号为止
-                numstack.push(c - '0');
-            }else {
-                // 数字 需要 * 或者 /
-                if (flag == 1){
-                    numstack.push(numstack.pop() * (c - '0'));
-                }else{
-                    numstack.push(numstack.pop() / (c - '0'));
+        if(s==null||s.length()==0)return 0;
+        s=s.replace(" ","");
+        Stack<Integer> num=new Stack<>();
+        int n=0;
+        char op='+';
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(Character.isDigit(c)){
+                n=n*10+(c-'0');
+            }
+            if(!Character.isDigit(c)||i==s.length()-1){
+                int pre;
+                switch(op){
+                    case '+': num.push(n);
+                        break;
+                    case '-': num.push(-n);
+                        break;
+                    case '*': pre=num.pop();
+                        num.push(pre*n);
+                        break;
+                    case '/': pre=num.pop();
+                        num.push(pre/n);
+                        break;
                 }
-                flag = 0;
-                symbolstack.pop();
+                op=c;
+                n=0;
             }
         }
-
-        while (!symbolstack.isEmpty()){
-            int n1 = numstack.pop();
-            int n2 = numstack.pop();
-
-            if (symbolstack.pop() == '+'){
-                numstack.push(n2 + n1);
-            }else {
-                numstack.push(n2 - n1);
-            }
+        int res=0;
+        while(!num.isEmpty()){
+            res+=num.pop();
         }
-
-        return numstack.peek();
+        return res;
     }
 
     public static void main(String[] args) {
-        calculate("3+5/2+5*4+6/5+8/1+9*3");
+        calculate("111*56-1+1");
     }
 }
