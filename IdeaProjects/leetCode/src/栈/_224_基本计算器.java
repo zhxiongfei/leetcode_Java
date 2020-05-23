@@ -32,9 +32,74 @@ import java.util.Stack;
 
 public class _224_基本计算器 {
 
-    public int calculate(String s) {
-        int res = 0;
+    public static int calculate(String s) {
+        if (s == null || s.length() == 0) return 0;
+        s = s.replace(" ","");
 
-        return  res;
+        // 数字栈
+        Stack<Integer> stack1 = new Stack<>();
+
+        // 运算符栈
+        Stack<Character> stack2 = new Stack<>();
+
+        int num = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isDigit(c)){
+                // 是数字
+                num = num * 10 + (c - '0');
+            }else {
+                if (num != 0){
+                    stack1.push(num);
+                    num = 0;
+                }
+                if (c == '('){
+                    // 左括号
+                    stack2.push(c);
+                }else if (c == ')'){
+                    // 右括号
+                    while (stack2.peek() != '('){
+                        int n1 = stack1.pop();
+                        int n2 = stack1.pop();
+                        if (stack2.pop() == '+'){
+                            stack1.push(n2 + n1);
+                        }else {
+                            stack1.push(n2 - n1);
+                        }
+                    }
+                    // 把左括号弹出来
+                    stack2.pop();
+                }else {
+                    // + -
+                    while (!stack2.isEmpty()) {
+                        if (stack2.peek() == '(') break;
+
+                        int n1 = stack1.pop();
+                        int n2 = stack1.pop();
+
+                        char op = stack2.pop();
+                        if (op == '+') stack1.push(n2 + n1);
+                        if (op == '-') stack1.push(n2 - n1);
+                    }
+                    // 当前运算符入栈
+                    stack2.push(c);
+                }
+            }
+        }
+        stack1.push(num);
+
+        while (!stack2.isEmpty()){
+            int n1 = stack1.pop();
+            int n2 = stack1.pop();
+            if (stack2.pop() == '+')
+                stack1.push(n2 + n1);
+            else
+                stack1.push(n2 - n1);
+        }
+        return stack1.peek();
+    }
+
+    public static void main(String[] args) {
+        calculate("(1+(4+5+2)-3)+(6+8)");
     }
 }

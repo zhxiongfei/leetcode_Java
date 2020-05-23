@@ -31,39 +31,54 @@ package Interview;
 import java.util.Stack;
 
 public class _面试题_16_26_计算器 {
+
+    /*
+    *
+    * 思路：
+    * 用 prev 数字前的 符号
+    * 遇到 + 就将数字入栈
+    * 遇到 - 就将 数字取 负数入栈
+    *
+    * 遇到 * / 就将栈顶pop 与 数字计算后，入栈
+    *
+    * 则一遍循环以后， 遍历栈中的元素，依次相加，即为最终结果
+    *
+    * 需要注意的点是： 数字有可能占好几位数，比如123+234;
+    * 需要记录变量num, 当前一个是数字时，遍历到当前元素，则 num = num * 10 + c - '0'
+    *
+    * 下次遍历到符号时，把num置为0
+    * */
     public static int calculate(String s) {
-        if(s==null||s.length()==0)return 0;
-        s=s.replace(" ","");
-        Stack<Integer> num=new Stack<>();
-        int n=0;
-        char op='+';
-        for(int i=0;i<s.length();i++){
-            char c=s.charAt(i);
-            if(Character.isDigit(c)){
-                n=n*10+(c-'0');
+        if (s == null || s.length() == 0) return 0;
+        s = s.replace(" ","");
+
+        Stack<Integer> stack = new Stack<>();
+        char prev = '+';
+        int num = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isDigit(c)){
+                num = num * 10 + (int)(c - '0');
             }
-            if(!Character.isDigit(c)||i==s.length()-1){
-                int pre;
-                switch(op){
-                    case '+': num.push(n);
+            if (!Character.isDigit(c) || i == s.length() - 1){
+                // 是数字
+                switch (prev){
+                    case '+' : stack.push(num);
                         break;
-                    case '-': num.push(-n);
+                    case '-' : stack.push(-num);
                         break;
-                    case '*': pre=num.pop();
-                        num.push(pre*n);
+                    case '*' : stack.push(stack.pop() * num);
                         break;
-                    case '/': pre=num.pop();
-                        num.push(pre/n);
+                    case '/' : stack.push(stack.pop() / num);
                         break;
                 }
-                op=c;
-                n=0;
+                prev = c;
+                num = 0;
             }
         }
-        int res=0;
-        while(!num.isEmpty()){
-            res+=num.pop();
-        }
+
+        int res = 0;
+        while (!stack.isEmpty()) res += stack.pop();
         return res;
     }
 

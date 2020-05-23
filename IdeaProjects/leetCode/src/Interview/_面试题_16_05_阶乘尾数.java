@@ -1,5 +1,7 @@
 package Interview;
 
+import java.util.Stack;
+
 /*
 设计一个算法，算出 n 阶乘有多少个尾随零。
 
@@ -56,7 +58,7 @@ public class _面试题_16_05_阶乘尾数 {
         这样，第一次加上的就是 每隔 5 个数的 5 的个数，第二次加上的就是 每隔 25 个数的 5 的个数 ...
         */
         int count = 0;
-        while(n >= 5){
+        while (n >= 5) {
             n /= 5;
             count += n;
         }
