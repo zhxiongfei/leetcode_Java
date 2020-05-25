@@ -1,6 +1,7 @@
 package 队列;
 
 import java.util.Deque;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -22,6 +23,8 @@ public class 滑动窗口最大值 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0 || k < 1) return null;
         if (k == 1) return nums;
+
+        LinkedList list = new LinkedList();
 
         // 存放滑动窗口最大值数组
         int[] maxes = new int[nums.length - k + 1];

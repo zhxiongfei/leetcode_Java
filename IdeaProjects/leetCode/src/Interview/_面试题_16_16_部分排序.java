@@ -1,4 +1,4 @@
-package 数组;
+package Interview;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
