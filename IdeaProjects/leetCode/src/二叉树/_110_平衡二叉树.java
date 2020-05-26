@@ -73,4 +73,20 @@ public class _110_平衡二叉树 {
 
         return Math.abs(height(node.left) - height(node.right)) <= 1 && isBalanced(node.left) && isBalanced(node.right);
     }
+    
+    public int height1(TreeNode root){
+        if (root == null) return 0;
+
+        int l = height(root.left);
+        if (l == -1) return -1;
+
+        int r = height(root.right);
+        if (r == -1) return -1;
+
+        return Math.abs(r - l) <= 1 ? Math.max(l, r) + 1: -1;
+    }
+
+    public boolean isBalanced1(TreeNode root) {
+        return height1(root) != -1;
+    }
 }

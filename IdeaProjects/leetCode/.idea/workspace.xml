@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interview/_面试题_16_25_LRU缓存.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/剑指offer/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题55_II_平衡二叉树.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/_993_二叉树的堂兄弟节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_993_二叉树的堂兄弟节点.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/贪心/_1046_最后一块石头的重量.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/贪心/_1046_最后一块石头的重量.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_110_平衡二叉树.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_110_平衡二叉树.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/141.环形链表.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/142.环形链表II.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/2. 两数相加.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/234.回文链表.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/86.分隔链表.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/_169多数元素与摩尔投票算法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/ios基于码云创建私有库.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/leetcode面试题系列.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/placeholder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/一个iOS小需求中对算法的优化.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/冒泡排序.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/堆排序(Heap Sort).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/快排.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/插入排序(Insertion Sort).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/选择排序.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,9 +188,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="405" y="-841" key="#com.intellij.ide.util.MemberChooser" timestamp="1590395401649">
-      <screen x="-404" y="-1057" width="1920" height="1057" />
+    <state x="1819" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1590500678408">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
+    <state x="1819" y="54" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590500678408" />
     <state x="405" y="-841" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590395401649" />
     <state x="607" y="191" key="#com.intellij.ide.util.MemberChooser/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589950525382" />
     <state x="459" y="324" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589950331873">
@@ -269,10 +287,10 @@
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590216162243" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="434" y="194" width="670" height="525" key="search.everywhere.popup" timestamp="1590465069570">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup" timestamp="1590502029327">
+      <screen x="1280" y="-88" width="1280" height="697" />
     </state>
-    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590157136856" />
+    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590502029327" />
     <state x="386" y="185" width="670" height="499" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1590199032946" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590395723168" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1590465069570" />
@@ -521,26 +539,26 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>链表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>哈希表.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>哈希表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>链表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
     </SUITE>
   </component>
 </project>
