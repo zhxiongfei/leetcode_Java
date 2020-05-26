@@ -50,14 +50,14 @@ public class 一个iOS小需求中对算法的优化 {
     public static void main(String[] args) {
         _面试题_17_10_主要元素 cls = new _面试题_17_10_主要元素();
 
-//        TimeTool.check("递归", new TimeTool.Task() {
-//            @Override
-//            public void execute() {
-//                isright(195);
-//            }
-//        });
+        TimeTool.check("递归", new TimeTool.Task() {
+            @Override
+            public void execute() {
+                isright(195);
+            }
+        });
 
-        int num = (int) 2000000000;
+        int num = 2000000000;
         TimeTool.check("迭代", new TimeTool.Task() {
             @Override
             public void execute() {
