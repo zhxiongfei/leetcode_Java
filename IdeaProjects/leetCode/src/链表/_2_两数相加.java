@@ -25,30 +25,33 @@ import java.util.LinkedList;
 import java.util.Set;
 
 public class _2_两数相加 {
+
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
         ListNode newNode = new ListNode(-1);
-        ListNode curNode = newNode;
+        ListNode cur = newNode;
 
-        int cnt = 0;    // 进位
-        while (l1 != null || l2 != null) {
+        int carry = 0;
+        while (l1 != null || l2 != null){
+
             int v1 = l1 == null ? 0 : l1.val;
             int v2 = l2 == null ? 0 : l2.val;
+            l1 = l1 == null ? l1 : l1.next;
+            l2 = l2 == null ? l2 : l2.next;
 
-            int sum = v1 + v2 + cnt;
+            int sum = v1 + v2 + carry;
+            carry = 0;
+            if (sum >= 10){
+                sum -= 10;
+                carry = 1;
+            }
 
-            ListNode tmp = new ListNode((sum) % 10);
-            cnt = sum / 10;
-
-            l1 = l1 == null ? null : l1.next;
-            l2 = l2 == null ? null : l2.next;
-
-            curNode.next = tmp;
-            curNode = tmp;
+            cur.next = new ListNode(sum);
+            cur = cur.next;
         }
-        if (cnt == 1) {
-            curNode.next = new ListNode(1);
+        if (carry > 0){
+            cur.next = new ListNode(1);
         }
+
         return newNode.next;
     }
 
@@ -65,41 +68,5 @@ public class _2_两数相加 {
         if (res != null) {
             System.out.println(res);
         }
-    }
-
-    public ListNode middleNode(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        return slow;
-    }
-
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode newNode = new ListNode(-1);
-        ListNode curNode = newNode;
-        while (l1 != null || l2 != null){
-            if (l1 == null){
-                curNode.next = l2;
-                break;
-            }
-            if (l2 == null){
-                curNode.next = l1;
-                break;
-            }
-            if (l1.val <= l2.val){
-                curNode.next = l1;
-                l1 = l1.next;
-            }else {
-                curNode.next = l2;
-                l2 = l2.next;
-            }
-            curNode = curNode.next;
-        }
-        return newNode.next;
     }
 }

@@ -60,9 +60,38 @@ public class _86_分隔链表 {
 
         n1.next = n2;n2.next = n3; n3.next = n4; n4.next = n5; n5.next = n6;n6.next = n7;
 
-        ListNode res = partition(n1,3);
+        ListNode res = partition1(n1,3);
         if (res != null){
 
         }
     }
+
+
+    public static ListNode partition1(ListNode head, int x) {
+
+        ListNode before = new ListNode(-1);
+        ListNode beforeHead = before;
+        ListNode after = new ListNode(-1);
+        ListNode afterHead = after;
+
+        while (head != null){
+            int val = head.val;
+            if (val < x){
+                before.next = head;
+                before = before.next;
+            }else {
+                after.next = head;
+                after = after.next;
+            }
+
+            head = head.next;
+        }
+
+        after.next = null;
+        before.next = afterHead.next;
+        return beforeHead.next;
+    }
+
+
+
 }
