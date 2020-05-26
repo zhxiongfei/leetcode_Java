@@ -62,7 +62,7 @@ public class _287_寻找重复数 {
     }
 
     public static void main(String[] args){
-        int[] nums = {8,7,1,10,17,   15,18,11,16,9,   19,12,5,14,3,   4,2,13,18,18};
+        int[] nums = {8,7,1,10,17,15,18,11,16,9,19,12,5,14,3,4,2,13,18,18};
         int res = findDuplicate(nums);
         if (res != 0){
 

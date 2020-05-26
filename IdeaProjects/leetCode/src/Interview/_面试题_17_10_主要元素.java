@@ -29,6 +29,9 @@ package Interview;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import tools.Asserts;
+import 未分组.TimeTool;
+
 import java.util.HashMap;
 
 public class _面试题_17_10_主要元素{
@@ -114,7 +117,5 @@ public class _面试题_17_10_主要元素{
     public static void main(String[] args) {
         _面试题_17_10_主要元素 cls = new _面试题_17_10_主要元素();
 
-        int[] nums = {6,5,5};
-        cls.majorityElement(nums);
     }
 }
