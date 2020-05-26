@@ -23,6 +23,7 @@ package 贪心;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
 
 public class _1046_最后一块石头的重量 {
 

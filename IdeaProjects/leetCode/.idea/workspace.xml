@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/链表/_141_环形链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/链表/_141_环形链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/链表/_2_两数相加.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/链表/_2_两数相加.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/链表/_86_分隔链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/链表/_86_分隔链表.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/链表/_92_反转链表II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/链表/_92_反转链表II.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/队列/_76_最小覆盖子串.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_993_二叉树的堂兄弟节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_993_二叉树的堂兄弟节点.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/贪心/_1046_最后一块石头的重量.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/贪心/_1046_最后一块石头的重量.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,13 +244,13 @@
     <state width="1209" height="60" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1590208453547" />
     <state width="1277" height="425" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590486609821" />
     <state width="1321" height="274" key="GridCell.Tab.1.right/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1590471393821" />
-    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1590458742745">
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog" timestamp="1590490366180">
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="355" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@0.23.1280.777" timestamp="1590156316680" />
     <state x="1635" y="119" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589708040916" />
     <state x="355" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1590196673948" />
-    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590458742745" />
+    <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590490366180" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589854298693" />
     <state x="129" y="-761" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1590373497688" />
     <state x="1611" y="53" width="683" height="476" key="find.popup" timestamp="1589600825068">
