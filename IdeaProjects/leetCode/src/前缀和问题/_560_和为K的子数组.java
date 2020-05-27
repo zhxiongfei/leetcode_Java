@@ -20,6 +20,8 @@ package 前缀和问题;
 
 import java.awt.*;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class _560_和为K的子数组 {
 

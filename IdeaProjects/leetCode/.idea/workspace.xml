@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/前缀和问题/_1248_统计_优美子数组.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/前缀和问题/_1248_统计_优美子数组.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/队列/_933_最近的请求次数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/集合/_409_最长回文串.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/前缀和问题/_560_和为K的子数组.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/前缀和问题/_560_和为K的子数组.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,12 +283,12 @@
     </state>
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590216162243" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup" timestamp="1590502029327">
-      <screen x="1280" y="-88" width="1280" height="697" />
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup" timestamp="1590576389538">
+      <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590502029327" />
     <state x="386" y="185" width="670" height="499" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1590199032946" />
-    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590395723168" />
+    <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590576389538" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1590465069570" />
     <state x="175" y="-849" width="894" height="641" key="search.everywhere.popup/0.23.1440.877/-404.-1057.1920.1000@-404.-1057.1920.1000" timestamp="1588920893571" />
   </component>
@@ -545,7 +548,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/前缀和问题/_560_和为K的子数组.java</url>
-          <line>82</line>
+          <line>84</line>
           <option name="timeStamp" value="472" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
