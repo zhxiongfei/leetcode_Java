@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/前缀和问题/_560_和为K的子数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/前缀和问题/_560_和为K的子数组.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/前缀和问题/_974_和可被K整除的子数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/前缀和问题/_974_和可被K整除的子数组.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/前缀和问题/_1248_统计_优美子数组.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/前缀和问题/_1248_统计_优美子数组.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

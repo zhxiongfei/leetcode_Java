@@ -96,7 +96,7 @@ public class _1248_统计_优美子数组 {
     // 思路一样, 只是将 map 改为 数组
     // hashmap在存取值时，需要进行hash运算，也需要更大的存储空间
     // 所以可以用数组实现算法时，比hashmap更优秀
-    public static int numberOfSubarrays2(int[] nums, int k) {
+    public static int numberOfSubarrays3(int[] nums, int k) {
 
         int[] prefixs = new int[nums.length + 1];
         prefixs[0] = 1;
