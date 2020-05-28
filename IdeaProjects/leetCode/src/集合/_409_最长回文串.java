@@ -1,8 +1,6 @@
 package 集合;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class _409_最长回文串 {
 
@@ -46,7 +44,6 @@ public class _409_最长回文串 {
         for (int i = 0; i < counts.length; i++) {
             if (counts[i] == 1) cnt ++;
         }
-
         return cnt == 0 ? s.length() : s.length() - cnt + 1;
     }
 
