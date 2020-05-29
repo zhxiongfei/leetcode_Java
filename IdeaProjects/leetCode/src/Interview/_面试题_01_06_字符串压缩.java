@@ -23,38 +23,36 @@ package Interview;
 
 public class _面试题_01_06_字符串压缩 {
 
-    // 非常基础的题目
+    // 双指针
     // StringBuilder拼接字符串
     // 从头到尾遍历 字符串
     // 上一次遍历的不一致时，记录上一个的次数。
-    // 并重置次数， 且prev 置为新字符
+    // 并重置次数， 且c 置为新字符
     // 最终返回 新字符 和 旧字符 两者中，较短者
-    public String compressString(String S) {
+    public String compressString1(String S) {
 
         if (S == null || S.length() <= 2) return S;
 
-        char prev = S.charAt(0);
-        int sum = 1;
-
         StringBuilder sb = new StringBuilder();
-        sb.append(prev);
 
-        for (int i = 1; i < S.length(); i++) {
-            if (prev == S.charAt(i)){
-                sum ++;
+        int i = 0, j = 1;
+        char c = S.charAt(i);
+        sb.append(c);
+
+        while (j < S.length()){
+            if (S.charAt(j) == c){
+                j ++;
                 continue;
             }
 
-            sb.append(sum);
+            sb.append(j - i);
+            c = S.charAt(j);
+            sb.append(c);
 
-            prev = S.charAt(i);
-            sum = 1;
-
-            sb.append(prev);
+            i = j;
         }
+        sb.append(j);
 
-        String result = sb.toString();
-        if(result.length() >= S.length()) return S;
-        return result;
+        return sb.toString();
     }
 }

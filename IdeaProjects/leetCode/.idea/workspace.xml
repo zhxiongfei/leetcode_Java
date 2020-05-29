@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/集合/_409_最长回文串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/集合/_409_最长回文串.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/1248.统计优美子数组.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/560.和为K的子数组.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/974.和可被K整除的子数组.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/_面试题_01_06_字符串压缩.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/_面试题_01_06_字符串压缩.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -571,26 +568,26 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>链表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>哈希表.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>哈希表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>链表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
     </SUITE>
   </component>
 </project>
