@@ -41,7 +41,7 @@ public class _263_丑数 {
     * 直到数列的数字 >= 丑数时
     * 当 == 丑数时，true。 当 > 丑数时， false。
     * */
-    public static boolean isUgly(int num) {
+    public static boolean isUgly2(int num) {
         if (num <= 0) return false;
 
         int p2 = 0, p3 = 0, p5 = 0;
@@ -82,6 +82,33 @@ public class _263_丑数 {
         if (num == 1) return true;
 
         return false;
+    }
+
+    /*
+    *
+    * 思路三：
+    * 递归
+    * 跟思路二类似
+    * 迭代 换成 递归
+    * */
+    public static boolean isUgly(int num) {
+        if (num < 1) return false;
+        if (num == 1) return true;
+        return search(num);
+    }
+
+    public static boolean search(int num){
+        if (num == 1) return true;
+
+        // 如果对 2 3 5都不能整除, 则说明这条路走不通, 返回上一层
+        if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0) return false;
+
+        if (num % 2 == 0){
+            return search(num >> 1);
+        }else if (num % 3 == 0){
+            return search(num / 3);
+        }
+        return search(num / 5);
     }
 
     public static void main(String[] args) {
