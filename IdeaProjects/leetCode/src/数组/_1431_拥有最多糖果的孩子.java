@@ -43,8 +43,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
+*  儿童节福利题目
+*  非常简单
+*  两遍循环，第一遍找出最大元素 max
+*  第二遍循环，每项 + extraCandies >= max 则为true， 否砸false
+*  加入list中，返回
 *
-*
+*  时间复杂度 : O(N)
+*  空间复杂度 : O(1)
 * */
 public class _1431_拥有最多糖果的孩子 {
 
