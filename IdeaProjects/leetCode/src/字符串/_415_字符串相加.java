@@ -76,8 +76,8 @@ public class _415_字符串相加 {
         int carry = 0;
         while (i >= 0) {
 
-            int n1 = i < 0 ? 0 : num1.charAt(i) - '0';
-            int n2 = j < 0 ? 0 : num2.charAt(j--) - '0';
+            int n1 = i < 0 ? 0 : chars1[i] - '0';
+            int n2 = j < 0 ? 0 : chars2[j--] - '0';
 
             int res = n1 + n2 + carry;
             carry = 0;
