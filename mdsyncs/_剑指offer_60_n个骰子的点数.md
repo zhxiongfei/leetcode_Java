@@ -1,3 +1,10 @@
+---
+title: "_剑指offer_60_n个骰子的点数"
+date: 2020-06-02T15:08:04+08:00
+draft: true
+tags: ["算法","动态规划"]
+---
+
 # [面试题60. n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/)
 
 
