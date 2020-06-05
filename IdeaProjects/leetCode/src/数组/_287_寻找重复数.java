@@ -57,7 +57,6 @@ public class _287_寻找重复数 {
             if (set.contains(num)) return num;
             set.add(num);
         }
-
         return -1;
     }
 
