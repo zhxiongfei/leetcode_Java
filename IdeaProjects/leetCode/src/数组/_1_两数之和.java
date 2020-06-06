@@ -28,14 +28,12 @@ public class _1_两数之和 {
             int m = nums[i];
             for (int j = i+1; j < nums.length; j++) {
                 int n = nums[j];
-
                 if (m + n == target){
                     int [] res = {m,n};
                     return res;
                 }
             }
         }
-
         return null;
     }
 
