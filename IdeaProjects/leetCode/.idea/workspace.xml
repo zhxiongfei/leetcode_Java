@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题03_数组中重复的数字.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题10_II_青蛙跳台阶问题.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题22_链表中倒数第k个节点.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题42_连续子数组的最大和.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_面试题53_II_0_n_1中缺失的数字.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题33_二叉搜索树的后序遍历序列.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/每日一题/_6_4_238_除自身以外数组的乘积.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/每日一题/_6_4_238_除自身以外数组的乘积.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/动态规划/_53_最大子序和.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_53_最大子序和.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/数组/_287_寻找重复数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组/_287_寻找重复数.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/二叉堆.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mdsyncs/简单了解对称和非对称加密.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/278.寻找重复数.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mdsyncs/剑指offer53.缺失的数字.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
