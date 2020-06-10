@@ -25,13 +25,21 @@ public class _面试题46_把数字翻译成字符串 {
      *
      * 三个步骤
      * 定义状态
-     *  dp[i] 表示截止 i位，
+     *  dp[i] 表示截止 i 位，把数字翻译成字符串的 个数
+     * 定义初始值
+     *  dp[0] = 1, dp[1] = 1. 0 或者 1时，只有一个可能
+     * 状态转移方程
+     *  计算第 i 位，即dp[i] 时
+     *      如果 第 i-1位为0，说明 i-1位和第i位合并，仍然是i。
+     *      如果 i-1位 + i位 > 25,则没有字母来表示 合并的数组了
+     *      所以这两种情况， dp[i] = dp[i - 1]
      *
+     *      除开这两种情况
+     *      则 dp[i] = dp[i-1] + dp[i-2]; 也就是所有 i-1和i合并的值 和 i-1和i不合并当前情况
      *
      * */
-
-    public int translateNum(int num) {
-        if (num == 0) return 0;
+    public int translateNum1(int num) {
+        if (num < 10) return 1;
 
         String string = String.valueOf(num);
         int count = string.length();
@@ -49,4 +57,34 @@ public class _面试题46_把数字翻译成字符串 {
         }
         return dp[count];
     }
+
+    /**
+     *
+     * 空间复杂度的优化
+     * 上边题解中，我们使用了额外的dp数组存储空间
+     * 但是，我们在递推计算dp[i]的过程，只用到了 dp[i-1] 和 dp[i-2]
+     * 所以，我们可以将空间复杂度由原来的 O(N) 优化至 O(1)
+     *
+     * */
+    public int translatNum2(int num){
+        if (num < 10) return 1;
+
+        String string = String.valueOf(num);
+        int count = string.length();
+        int a = 1, b = 1;
+        for (int i = 2; i <= count; i++) {
+            char pre = string.charAt(i - 2);
+            char cur = string.charAt(i - 1);
+
+            if (pre == '0' || pre > '2' ||(pre == '2' && cur > '5')){
+                a = b;
+            }else {
+                int tmp = b;
+                b += a;
+                a = tmp;
+            }
+        }
+        return b;
+    }
+
 }
