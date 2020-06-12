@@ -53,6 +53,10 @@ public class _15_三数之和 {
      *      当和 < -num时, begain ++
      *      当和 > -num时, end --
      *
+     *  在确定此题目的解题思路后
+     *  本题的难点，在于 如何去除 重复解
+     *
+     *  我没写好，copy的评论区的代码.
      *
      * */
     public static List<List<Integer>> threeSum(int[] nums) {
