@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/双指针/_18_四数之和.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/双指针/_15_三数之和.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/双指针/_15_三数之和.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mdsyncs/团灭两数之和问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../mdsyncs/团灭两数之和问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
