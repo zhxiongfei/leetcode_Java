@@ -30,6 +30,8 @@ package 剑指offer;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.Stack;
+
 class Node {
     public int val;
     public Node left;
@@ -78,6 +80,7 @@ public class _面试题36_二叉搜索树与双向链表 {
         return head;
     }
 
+    // 递归
     void dfs(Node cur) {
         if (cur == null) return;
         dfs(cur.left);
@@ -93,5 +96,29 @@ public class _面试题36_二叉搜索树与双向链表 {
         pre = cur;
 
         dfs(cur.right);
+    }
+
+    // 迭代
+    void inorderTraversal(Node cur){
+        Stack<Node> stack = new Stack<>();
+
+        while (!stack.isEmpty() || cur != null){
+            while (cur != null){
+                stack.push(cur);
+                cur = cur.left;
+            }
+
+            cur = stack.pop();
+
+            if (pre != null){
+                pre.right = cur;
+            }else {
+                head = cur;
+            }
+            cur.left = pre;
+            pre = cur;
+
+            cur = cur.right;
+        }
     }
 }
