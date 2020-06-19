@@ -1,4 +1,4 @@
-package 未分组;
+package 滑动窗口;
 
 /*
 给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
@@ -42,8 +42,6 @@ package 未分组;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 public class _239_滑动窗口最大值 {
 

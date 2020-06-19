@@ -1,4 +1,4 @@
-package 未分组;
+package 字符串;
 
 /*
 给定两个字符串, A 和 B。

@@ -1,4 +1,4 @@
-package 双指针;
+package 滑动窗口;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -43,7 +43,6 @@ public class _3_无重复字符的最长子串 {
                 set.remove(s.charAt(i++));
             }
         }
-
         return ans;
     }
 

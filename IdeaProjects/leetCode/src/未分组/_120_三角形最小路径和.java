@@ -74,11 +74,13 @@ public class _120_三角形最小路径和 {
 
     public static int minimumTotal(List<List<Integer>> triangle) {
 
+        if (triangle == null || triangle.size() == 0) return 0;
+        if (triangle.size() == 1) return triangle.get(0).get(0);
+
         // 定义状态 dp[i] 代表当前行，第 i 列 的最小路径和
-        int[] dp = new int[triangle.size()];
+        int[] dp = new int[triangle.size() + 1];
 
         // 初始值
-        dp[0] = 0;
         dp[1] = triangle.get(0).get(0);
 
         // 状态转移方程

@@ -23,6 +23,11 @@ import java.util.Stack;
 
 public class _125_验证回文串 {
 
+    /**
+     *
+     * 双指针
+     *
+     * */
     public boolean isPalindrome(String s) {
         if (s.length() <= 1) return true;
 
@@ -40,7 +45,26 @@ public class _125_验证回文串 {
             i ++;
             j --;
         }
-
         return true;
+    }
+
+    // 递归
+    public static boolean isPalindromeHelper(String s, int left , int right){
+        if (left >= right) return true;
+
+        if (!Character.isLetterOrDigit(s.charAt(left))){
+            return isPalindromeHelper(s, ++left, right);
+        }
+        if (!Character.isLetterOrDigit(s.charAt(right))){
+            return isPalindromeHelper(s, left, --right);
+        }
+
+        if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) return false;
+
+        return isPalindromeHelper(s, ++left, --right);
+    }
+
+    public static boolean isPalindrome1(String s) {
+        return isPalindromeHelper(s, 0, s.length() - 1);
     }
 }
