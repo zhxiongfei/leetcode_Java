@@ -60,5 +60,35 @@ public class _面试题58_II_左旋转字符串 {
         return sb.toString();
     }
 
+    // 方法二
+    // 先整体反转
+    // 再分别反转 [0, n-1], [n, s.length]
+    public static String reverseLeftWords3(String s, int n){
+        n %= s.length();
+        char[] chars = s.toCharArray();
+        chars = reverse(chars, 0, chars.length - 1);
+        chars = reverse(chars, 0, chars.length - n - 1);
+        chars = reverse(chars, chars.length - n, chars.length - 1);
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(chars, 0, chars.length);
+
+        return sb.toString();
+    }
+
+    public static char[] reverse(char[] chars, int left ,int right){
+        while (left < right){
+            char tmp = chars[left];
+            chars[left] = chars[right];
+            chars[right] = tmp;
+            left ++;
+            right --;
+        }
+        return chars;
+    }
+
+    public static void main(String[] args) {
+        reverseLeftWords3("abcdefg",2);
+    }
 }
 
