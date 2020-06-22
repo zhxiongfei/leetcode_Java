@@ -1,4 +1,4 @@
-package 数组;
+package 位运算;
 
 public class _88_合并两个有序数组 {
 
