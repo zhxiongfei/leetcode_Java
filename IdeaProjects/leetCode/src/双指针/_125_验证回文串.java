@@ -59,9 +59,7 @@ public class _125_验证回文串 {
             return isPalindromeHelper(s, left, --right);
         }
 
-        if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) return false;
-
-        return isPalindromeHelper(s, ++left, --right);
+        return Character.toLowerCase(s.charAt(left)) == Character.toLowerCase(s.charAt(right)) && isPalindromeHelper(s, ++left, --right);
     }
 
     public static boolean isPalindrome1(String s) {
