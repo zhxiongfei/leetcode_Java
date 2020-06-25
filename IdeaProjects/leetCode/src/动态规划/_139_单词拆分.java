@@ -28,25 +28,28 @@ package 动态规划;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-import com.sun.source.doctree.SeeTree;
-
-import java.util.HashSet;
 import java.util.List;
 
 public class _139_单词拆分 {
 
     // 动态规划
     // s = "leetcode", wordDict = ["leet", "code"]
+    // "leetcode", wordDict = ["leet", "code"]
     public boolean wordBreak(String s, List<String> wordDict) {
 
-//        HashSet wordSet = new HashSet(wordDict);
-        // dp【i】 表示从 字符串i开始的可能的字符串。
+        // dp[i]表示， 以 i 结尾的子串是否被包含在字典中
         boolean[] dp = new boolean[s.length() + 1];
+
+        // 定义初始值
         dp[0] = true;
 
+        // 状态转移方程
         for (int i = 1; i <= s.length(); i++) {
             for (int j = 0; j < i; j++) {
-                if (dp[j] && wordDict.contains(s.substring(j,i))){
+                // 以 j 拆分字符串
+                // dp[j] == true
+                // 且 字符串字典 包含 s.substring(j, i)
+                if (dp[j] && wordDict.contains(s.substring(j, i))){
                     dp[i] = true;
                     break;
                 }
@@ -56,28 +59,4 @@ public class _139_单词拆分 {
         return dp[s.length()];
     }
 
-    public int maxProfit(int[] prices) {
-
-        if (prices.length <= 1) return 0;
-
-        int[] dp = new int[prices.length];
-        dp[0] = 0;
-
-        int max = 0;
-        int min = prices[0];
-
-        for (int i = 1; i < prices.length; i++) {
-
-            if (min > prices[i]){
-                dp[i] = 0;
-                min = prices[i];
-
-                continue;
-            }
-
-            max = Math.max(max, prices[i] - min);
-        }
-
-        return max;
-    }
 }

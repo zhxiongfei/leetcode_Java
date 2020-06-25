@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="" />
+    <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_50_第一个只出现一次的字符.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_50_第一个只出现一次的字符.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/动态规划/_139_单词拆分.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_139_单词拆分.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/动态规划/_152_乘积最大子数组.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_152_乘积最大子数组.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="两两交换链表中的节点" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="探索系列.探索初级算法.两两交换链表中的节点" />
+    <configuration name="Pow_x_n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="探索系列.探索递归.Pow_x_n" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="探索系列.探索初级算法.*" />
+          <option name="PATTERN" value="探索系列.探索递归.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pow_x_n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="探索系列.探索递归.Pow_x_n" />
+    <configuration name="两两交换链表中的节点" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="探索系列.探索初级算法.两两交换链表中的节点" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="探索系列.探索递归.*" />
+          <option name="PATTERN" value="探索系列.探索初级算法.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,7 +228,6 @@
       <list>
         <item itemvalue="Application._剑指_Offer_50_第一个只出现一次的字符" />
         <item itemvalue="Application.Pow_x_n" />
-        <item itemvalue="Application.两两交换链表中的节点" />
         <item itemvalue="Application._278_第一个错误的版本" />
         <item itemvalue="Application.只出现一次的数字" />
       </list>
@@ -500,7 +504,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/动态规划/_152_乘积最大子数组.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
