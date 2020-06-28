@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_66_构建乘积数组.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二分查找/_153_寻找旋转排序数组中的最小值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_11_旋转数组的最小数字.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
