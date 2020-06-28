@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_31_栈的压入_弹出序列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/栈/_946_验证栈序列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/剑指offer/_剑指_Offer_66_构建乘积数组.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_剑指_Offer_56_I_数组中数字出现的次数.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_剑指_Offer_56_I_数组中数字出现的次数.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,12 +383,12 @@
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1591267135651" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590216162243" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="386" y="185" width="670" height="158" key="search.everywhere.popup" timestamp="1593174222513">
+    <state x="386" y="185" width="670" height="158" key="search.everywhere.popup" timestamp="1593341380825">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="1666" y="-6" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-151.1280.697@1280.-151.1280.697" timestamp="1590758412306" />
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590502029327" />
-    <state x="386" y="185" width="670" height="158" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1593174222513" />
+    <state x="386" y="185" width="670" height="158" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1593341380825" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1591958239271" />
     <state x="434" y="194" width="754" height="527" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1592288937006" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590576389538" />
@@ -717,12 +716,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java</url>
-          <line>109</line>
+          <line>110</line>
           <option name="timeStamp" value="592" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/每日一题/_6_4_238_除自身以外数组的乘积.java</url>
-          <line>104</line>
+          <line>105</line>
           <option name="timeStamp" value="594" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -892,7 +891,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/剑指offer/_剑指_Offer_31_栈的压入_弹出序列.java</url>
-          <line>83</line>
+          <line>87</line>
           <log-expression expression="        int idx = 0;&#10;&#10;        for (int i = 0; i &lt; pushed.length; i++) {&#10;            stack.push(pushed[i]);&#10;&#10;            while (!stack.isEmpty() &amp;&amp; stack.peek() == popped[idx]){&#10;                stack.pop();&#10;                idx ++;&#10;            }&#10;        }&#10;        &#10;        while (!stack.isEmpty()){&#10;            if (popped[idx ++] != stack.pop()) return false;&#10;        }&#10;&#10;        return true;" language="JAVA" />
           <option name="timeStamp" value="719" />
         </line-breakpoint>
