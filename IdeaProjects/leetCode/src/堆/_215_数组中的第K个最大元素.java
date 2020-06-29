@@ -2,8 +2,11 @@ package 堆;
 
 import 链表.ListNode;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.Random;
 
 /*
 在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
@@ -27,6 +30,13 @@ import java.util.PriorityQueue;
 public class _215_数组中的第K个最大元素 {
 
     public int findKthLargest(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return 0;
+
+        Arrays.sort(nums);
+        return nums[nums.length - k];
+    }
+
+    public int findKthLargest2(int[] nums, int k) {
         if (nums == null || nums.length == 0) return 0;
         int res = 0;
 
@@ -53,11 +63,73 @@ public class _215_数组中的第K个最大元素 {
         return res;
     }
 
+    /**
+     *
+     * 快排减治思想
+     *
+     * 加随机
+     *
+     * */
+    Random random = new Random();
+    public int findKthLargest3(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return 0;
+
+        return findKthLargestHelper(nums, 0, nums.length - 1, nums.length - k);
+    }
+
+    public int findKthLargestHelper(int[] nums, int begain, int end, int targetIdx){
+
+        int pivotIdx = pivotIndex(nums, begain, end);
+        if (pivotIdx == targetIdx) return nums[pivotIdx];
+        if (pivotIdx > targetIdx){
+            return findKthLargestHelper(nums, begain, pivotIdx - 1, targetIdx);
+        }else {
+            return findKthLargestHelper(nums, pivotIdx + 1, end, targetIdx);
+        }
+    }
+
+    public int pivotIndex(int[] nums, int begain, int end){
+
+        if (end > begain) {
+            int randomIndex = begain + 1 + random.nextInt(end - begain);
+            swap(nums, begain, randomIndex);
+        }
+
+        int tmp = nums[begain];
+        boolean isright = true;
+
+        while (begain < end){
+            if (isright){
+                if (nums[end] > tmp){
+                    end --;
+                }else {
+                    nums[begain ++] = nums[end];
+                    isright = false;
+                }
+            }else {
+                if (nums[begain] < tmp){
+                    begain ++;
+                }else {
+                    nums[end --] = nums[begain];
+                    isright = true;
+                }
+            }
+        }
+        nums[begain] = tmp;
+        return begain;
+    }
+
+    public void swap(int[] nums, int i1, int i2){
+        int tmp = nums[i1];
+        nums[i1] = nums[i2];
+        nums[i2] = tmp;
+    }
+
     public static void main(String[] args) {
         _215_数组中的第K个最大元素 cls = new _215_数组中的第K个最大元素();
 
         int[] nums = {3,2,1,5,6,4};
-        cls.findKthLargest(nums, 2);
+        cls.findKthLargest3(nums, 2);
 
         if (nums != null){
 
