@@ -18,48 +18,154 @@ package 链表;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class _143_重排链表 {
 
     /**
      *
-     * 递归
-     * 做递归题目时，先不用考虑如何编码
-     * 先想清楚，递归函数的作用
+     * 解法一： 存储
+     * 由于链表 不能随机访问
+     * 所以，我们遍历链表， 把链表中的节点都放入 数组 实现随机访问
      *
-     * 此递归函数的作用是，传入 head 节点, 将 head之后的节点交换
+     * 放入数组后，用头尾双指针拼接节点
+     *
+     * */
+    public void reorderList2(ListNode head) {
+        if (head == null || head.next == null) return;
+
+        ArrayList<ListNode> listNodes = new ArrayList<>();
+        while (head != null){
+            listNodes.add(head);
+            head = head.next;
+        }
+
+        int i = 0, j = listNodes.size() - 1;
+        while (i < j){
+            listNodes.get(i).next = listNodes.get(j);
+            i ++;
+
+            // 奇数个节点，会提前相遇
+            if (i == j) break;
+
+            listNodes.get(j).next = listNodes.get(i);
+            j --;
+        }
+
+        listNodes.get(i).next = null;
+    }
+
+    /**
+     *
+     * 双端队列
+     * 其实跟 数组差不多
+     * 操作更方便一些
+     *
+     * */
+    public void reorderList3(ListNode head) {
+        Deque<ListNode> queue = new LinkedList<>();
+        ListNode cur = head;
+        while (cur != null) {
+            queue.addLast(cur);
+            cur = cur.next;
+        }
+        while (!queue.isEmpty()) {
+            if (cur == null) {
+                cur = queue.pollFirst();
+            } else {
+                cur.next = queue.pollFirst();
+                cur = cur.next;
+            }
+            cur.next = queue.pollLast();
+            cur = cur.next;
+        }
+        if (cur != null) {
+            cur.next = null;
+        }
+    }
+
+    /**
+     *
+     * 解法二: 递归
+     *
      *
      * */
     public void reorderList(ListNode head) {
+        if (head == null || head.next == null) return;
+
+        int len = 0;
+        ListNode node = head;
+        while (node != null){
+            len ++;
+            node = node.next;
+        }
+
+        reorderListHelper(head, len);
+    }
+
+    /**
+     *
+     * 递归函数的作用是， 传入 head 取出尾元素
+     *
+     * */
+    public ListNode reorderListHelper(ListNode head, int len){
+        if (len == 1){
+            ListNode outTail = head.next;
+            head.next = null;
+            return outTail;
+        }
+
+        if (len == 2){
+            ListNode outTail = head.next.next;
+            head.next.next = null;
+            return outTail;
+        }
+
+        //得到对应的尾节点，并且将头结点和尾节点之间的链表通过递归处理
+        ListNode tail = reorderListHelper(head.next, len - 2);
+        ListNode subHead = head.next;//中间链表的头结点
+        head.next = tail;
+        ListNode outTail = tail.next;  //上一层 head 对应的 tail
+        tail.next = subHead;
+        return outTail;
+    }
+
+    /**
+     *
+     * 解法三 : 快慢指针找中间，反转后半段，再拼接
+     *
+     * 先快慢指针找到链表中间节点
+     * 再反转后半部分链表
+     *
+     * 再拼接前半部分 和 反转后的后半部分
+     *
+     * */
+    public void reorderList1(ListNode head) {
         if (head == null || head.next == null) return;
 
         // 找到中间节点
         ListNode middle = middle(head);
 
         // 反转中间节点
-        ListNode reverseMid = reverse(middle);
+        ListNode lastnode = reverseRecursive(middle);
 
         // 拼接 head 和 反转后的中间节点
-        ListNode newHead = new ListNode(-1);
-        ListNode node = newHead;
-        boolean flag = true;
-        while (head != null && reverseMid != null){
-            if (flag){
-                // 拼接 head
-                node.next = head;
-                head = head.next;
-            }else {
-                // 拼接 reverseMid
-                node.next = reverseMid;
-                reverseMid = reverseMid.next;
-            }
+        ListNode prevnode = head;
+        while (prevnode != null && lastnode != null) {
 
-            node = node.next;
-            flag = !flag;
+            ListNode prev = prevnode.next;
+            ListNode last = lastnode.next;
+
+            prevnode.next = lastnode;
+            lastnode.next = prev;
+
+            prevnode = prev;
+            lastnode = last;
         }
 
-        head = newHead.next;
+        if (prevnode != null) prevnode.next = lastnode;
     }
 
     /**
@@ -84,6 +190,23 @@ public class _143_重排链表 {
     /**
      *
      * 反转链表
+     * 递归
+     *
+     * */
+    public ListNode reverseRecursive(ListNode head){
+        if (head == null || head.next == null) return head;
+
+        ListNode node = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return node;
+    }
+
+    /**
+     *
+     * 反转链表
+     * 迭代
      *
      * */
     public ListNode reverse(ListNode head){
@@ -109,7 +232,6 @@ public class _143_重排链表 {
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
 
-
-        cls.reorderList(head);
+        cls.reorderList3(head);
     }
 }
