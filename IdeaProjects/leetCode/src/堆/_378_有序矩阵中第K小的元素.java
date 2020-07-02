@@ -36,7 +36,7 @@ public class _378_有序矩阵中第K小的元素 {
     * 使用大顶堆(较大元素放在堆顶)
     * 依次把 矩阵中元素加入 最大堆， 当堆的size > k 时, 移除栈顶元素
     * 最终栈顶元素即为最终结果
-    * 时间复杂度 : O(N^2 * LogN)
+    * 时间复杂度 : O(N^2 * LogK)
     * */
     public int kthSmallest1(int[][] matrix, int k) {
 

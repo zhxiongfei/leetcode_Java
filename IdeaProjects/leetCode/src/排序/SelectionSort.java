@@ -28,11 +28,30 @@ public class SelectionSort extends Sort{
         }
     }
 
-    public static void main(String[] args) {
-        SelectionSort cls = new SelectionSort();
-        Integer[] nums = {4,2,3,1,5,8,7,6};
+    // 交换元素
+    public static void swap(int[] nums, int i1, int i2){
+        int tmp = nums[i1];
+        nums[i1] = nums[i2];
+        nums[i2] = tmp;
+    }
 
-        cls.sort(nums);
+    // 选择排序
+    public static void selectionSort(int[] nums){
+        for (int i = nums.length - 1; i > 0; i--){
+            int maxIdx = 0;
+            for (int j = 1; j <= i; j++) {
+                if (nums[j] > nums[maxIdx]){
+                    maxIdx = j;
+                }
+            }
+            swap(nums,maxIdx, i);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {4,2,3,1,5,8,7,6};
+
+        selectionSort(nums);
 
         if (nums == null){
 
