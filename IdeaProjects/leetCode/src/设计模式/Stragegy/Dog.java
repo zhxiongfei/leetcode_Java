@@ -1,6 +1,4 @@
-package 设计模式;
-
-import java.util.PriorityQueue;
+package 设计模式.Stragegy;
 
 public class Dog implements Comparable<Dog>{
 

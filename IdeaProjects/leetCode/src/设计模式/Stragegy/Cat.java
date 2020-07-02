@@ -1,4 +1,4 @@
-package 设计模式;
+package 设计模式.Stragegy;
 
 public class Cat implements Comparable<Cat>{
 

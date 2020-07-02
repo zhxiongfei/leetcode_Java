@@ -1,4 +1,4 @@
-package 设计模式;
+package 设计模式.Stragegy;
 
 public class SelectionSort<T> {
 
@@ -61,8 +61,10 @@ public class SelectionSort<T> {
         Cat[] cats = {new Cat(39,1),new Cat(20,4), new Cat(10,2)};
         sort.selectionSort(cats, new Comparator() {
             @Override
-            public int compare(Cat o1, Cat o2) {
-                return o1.age - o2.age;
+            public int compare(Object o1, Object o2) {
+                Cat c1 = (Cat)o1;
+                Cat c2 = (Cat)o2;
+                return c1.age - c2.age;
             }
         });
 
