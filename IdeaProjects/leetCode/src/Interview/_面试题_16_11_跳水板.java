@@ -28,7 +28,18 @@ import java.util.List;
 
 public class _面试题_16_11_跳水板 {
 
-    public int[] divingBoard(int shorter, int longer, int k) {
+    /**
+
+     看到这道题，最先想到的是 等差数列
+     从 shorter * k开始 到 longer * k结束，每次 递增 (longer - shorter) 的 等差数列
+     把 每一位都添加到数组中， 再返回数组即可
+
+     特殊情况:
+     1, k == 0, return 空数组
+     2, shoter == longer 时，只会有一种可能。 shoter * k
+
+     */
+    public int[] divingBoard1(int shorter, int longer, int k) {
         if (k == 0) return new int[0];
         if (shorter == longer) {
             int[] rtn = new int[1];
@@ -36,15 +47,15 @@ public class _面试题_16_11_跳水板 {
             return rtn;
         }
 
-        // 分别计算 0块longer 直到 k 块longer 的值
-        // 将计算结果加入数组
-        // 最后返回即可
-        int[] rtn = new int[k + 1];
-        for (int i = 0; i <= k; i++) {
-            // i块longer  k-i块shoter
-            rtn[i] = longer * i + shorter * (k - i);
+        int begain = shorter * k;
+        int diff = longer - shorter;
+
+        int [] res = new int[k + 1];
+        int i = 0;
+        while (i <= k){
+            res[i] = begain + diff * i ++;
         }
 
-        return rtn;
+        return res;
     }
 }
