@@ -31,7 +31,7 @@ public class _55_跳跃游戏 {
      解释: 我们可以先跳 1 步，从位置 0 到达 位置 1, 然后再从位置 1 跳 3 步到达最后一个位置。
      */
 
-    public boolean canJump(int[] nums) {
+    public boolean canJump1(int[] nums) {
         if (nums == null || nums.length <= 1) return true;
 
         // targetIdx 代表目标索引
@@ -58,4 +58,46 @@ public class _55_跳跃游戏 {
         return false;
     }
 
+    /**
+     *
+     * 从前往后
+     * 每一步都取, 能走步数最远的
+     *
+     * */
+    public static boolean canJump(int[] nums) {
+        if (nums == null || nums.length <= 1) return true;
+
+        int diff = 0;
+        for (int i = 0; i < nums.length; i++) {
+            diff = Math.max(diff - 1, nums[i]);
+            if (diff == 0 && i != nums.length - 1) return false;
+        }
+        return true;
+    }
+
+    /**
+     *
+     * 优化
+     * 从前往后
+     * 每一步都取, 能走步数最远的
+     *
+     * 优化 如果 diff >= nums.size() - 1就没必要往后比了
+     *
+     * */
+    public boolean canJump2(int[] nums) {
+        if (nums == null || nums.length <= 1) return true;
+
+        int diff = 0;
+        for (int i = 0; i < nums.length; i++) {
+            diff = Math.max(diff - 1, nums[i]);
+            if (diff == 0 && i != nums.length - 1) return false;
+
+            if (diff >= nums.length - 1 - i) return true;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        int[] nums = {2,3,1,1,4};
+        canJump(nums);
+    }
 }
