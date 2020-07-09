@@ -223,31 +223,29 @@ int reuseCnt = 0;
 
 
 
-#### 官方文档对复用方法的解释 : 
+### 官方文档对复用方法的解释 : 
 
-> # Instance MethoddequeueReusableCellWithIdentifier:
+> ###### Instance MethoddequeueReusableCellWithIdentifier:
 >
 > Returns a reusable table-view cell object located by its identifier.
 >
-> ------
->
-> ## Declaration
+> ###### Declaration
 >
 > ```
-> - (__kindof UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+>- (__kindof UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 > ```
->
-> ## Parameters
+> 
+> ###### Parameters
 >
 > - `identifier`
 >
 >   A string identifying the cell object to be reused. This parameter must not be `nil`.
 >
-> ## Return Value
+> ###### Return Value
 >
 > A [`UITableViewCell`](apple-reference-documentation://hcl8do-H6H) object with the associated `identifier` or `nil` if no such object exists in the reusable-cell queue.
 >
-> ## Discussion
+> ###### Discussion
 >
 > For performance reasons, a table view’s data source should generally reuse [`UITableViewCell`](apple-reference-documentation://hcl8do-H6H) objects when it assigns cells to rows in its [`tableView:cellForRowAtIndexPath:`](apple-reference-documentation://hcipQqZAji) method. A table view maintains a queue or list of [`UITableViewCell`](apple-reference-documentation://hcl8do-H6H) objects that the data source has marked for reuse. Call this method from your data source object when asked to provide a new cell for the table view. This method dequeues an existing cell if one is available or creates a new one using the class or nib file you previously registered. If no cell is available for reuse and you did not register a class or nib file, this method returns `nil`. 
 >
@@ -257,7 +255,7 @@ int reuseCnt = 0;
 
 
 
-#### 尝试找答案
+### 尝试找答案
 
 - 如何找呢？ 我们知道 ObjC并没有开源，不能通过读源码来找答案。
 - 尝试在网上查找答案，没有找到满意的，但是发现了一个库 **Chameleon**
@@ -267,7 +265,7 @@ int reuseCnt = 0;
 
 
 
-#### Chameleon源码解读
+### Chameleon源码解读
 
 代码较多，这里只贴跟**复用相关** 的主要代码
 
