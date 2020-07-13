@@ -63,6 +63,7 @@ public class _1470_重新排列数组 {
      *
      * */
     public int[] shuffle1(int[] nums, int n) {
+        int[] res = new int[nums.length];
         int i = 0, j = n;
 
         int idx = 0;
