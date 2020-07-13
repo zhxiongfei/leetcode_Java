@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/DecoratorPatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/RedShapeDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/ShadowShapeDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/装饰器模式/ShapeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS/_剑指_Offer_13_机器人的运动范围.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/数组/_350_两个数组的交集II.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/数组/_350_两个数组的交集II.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
