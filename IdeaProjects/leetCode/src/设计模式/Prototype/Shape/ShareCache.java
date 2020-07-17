@@ -1,4 +1,4 @@
-package 设计模式.Prototype;
+package 设计模式.Prototype.Shape;
 
 import java.util.Hashtable;
 

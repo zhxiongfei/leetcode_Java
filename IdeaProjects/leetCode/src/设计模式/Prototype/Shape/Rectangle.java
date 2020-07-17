@@ -1,4 +1,4 @@
-package 设计模式.Prototype;
+package 设计模式.Prototype.Shape;
 
 public class Rectangle extends Shape {
     public Rectangle() {
