@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -34,41 +35,81 @@ import java.util.stream.Stream;
 
 public class _268_缺失数字 {
 
+    /**
+     *
+     * 排序
+     * 时间复杂度 : O(n * log n)
+     *
+     * */
+    public static int missingNumber1(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (i != nums[i]) return i;
+        }
+        return nums.length;
+    }
+
+    /**
+     *
+     * 数学
+     *
+     * */
+    public static int missingNumber2(int[] nums) {
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+        return ((nums.length * (1 + nums.length)) >> 1) - sum;
+    }
+
+    /**
+     *
+     * 位运算
+     *
+     * */
+    public static int missingNumber3(int[] nums) {
+        int res = nums.length;
+        for (int i = 0; i < nums.length; ++i){
+            res ^= nums[i];
+            res ^= i;
+        }
+        return res;
+    }
+
     public static void swap(int[] nums, int i, int j){
         int tmp = nums[i];
         nums[i] = nums[j];
         nums[j] = tmp;
     }
 
+    /**
+     *
+     * 挪动元素
+     * 跟 287 寻找数组中重复元素解法一样
+     *
+     * 时间复杂度 : O(n)
+     *
+     * */
     // [9,6,4,2,3,5,7,0,1]
     public static int missingNumber(int[] nums) {
 
-        List<Integer> list = new ArrayList<>();
-        Iterator<Integer> iterator = list.iterator();
-        if (iterator.hasNext()){
-
-
-
-            iterator.remove();
-        }
         for (int i = 0; i < nums.length; i++) {
+            if (nums[i] >= nums.length - 1) continue;
             while (nums[i] != i){
-                if (nums[i] != nums[nums[i]]) {
-                    swap(nums, i, nums[i]);
-                }
+                if (nums[i] >= nums.length - 1) break;
+                swap(nums, nums[i], i);
             }
         }
 
-        for (int i = 0; i < nums.length; i ++){
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] != i) return i;
         }
-
-        return -1;
+        return nums.length;
     }
 
     public static void main(String[] args) {
 
-        int[] nums = {3,0,2,1,5,6};
+        int[] nums = {9,6,4,2,3,5,7,0,1};
         int res = missingNumber(nums);
         System.out.println(res);
     }
