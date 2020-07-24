@@ -34,12 +34,43 @@ package 二叉树;
 
 public class _437_路径总和III {
 
-    int res = 0;
-    public int pathSum(TreeNode root, int sum) {
+    int ans = 0;
+    void dfs(TreeNode root, int sum){
+        if (root == null) return;
 
+        sum -= root.val;
+        if (sum == 0) ans ++;
 
+        dfs(root.left, sum);
+        dfs(root.right, sum);
+    }
 
-        return res;
+    int pathSum(TreeNode root, int sum){
+        if (root == null) return ans;
+
+        dfs(root, sum);
+        pathSum(root.left, sum);
+        pathSum(root.right, sum);
+        return ans;
+    }
+
+    public static void main(String[] args) {
+
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(-3);
+
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(2);
+        root.left.right.right = new TreeNode(1);
+
+        root.right.right = new TreeNode(11);
+
+        root.left.left.left = new TreeNode(3);
+        root.left.left.right = new TreeNode(-2);
+
+        _437_路径总和III cls = new _437_路径总和III();
+        int res = cls.pathSum(root, 8);
     }
 
 }

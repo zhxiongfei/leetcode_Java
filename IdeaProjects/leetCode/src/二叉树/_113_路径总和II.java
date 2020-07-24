@@ -28,10 +28,36 @@ package 二叉树;
  */
 
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class _113_路径总和II {
-    public void dfs(TreeNode node, int sum) {
 
+    // 结果数组
+    LinkedList<List<Integer>> res = new LinkedList<>();
 
+    // 路径
+    LinkedList<Integer> path = new LinkedList<>();
 
+    public void dfs(TreeNode node, int sum){
+        if (node == null) return;
+
+        path.add(node.val);
+        sum -= node.val;
+
+        if (sum == 0 && node.left == null && node.right == null)
+            res.add(new LinkedList<>(path));
+
+        dfs(node.left, sum);
+        dfs(node.right, sum);
+
+        // 回溯
+        path.removeLast();
+    }
+
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+
+        dfs(root, sum);
+        return res;
     }
 }
