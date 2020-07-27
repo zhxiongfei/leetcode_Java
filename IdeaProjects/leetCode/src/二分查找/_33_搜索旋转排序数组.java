@@ -80,8 +80,8 @@ public class _33_搜索旋转排序数组 {
     public static void main(String[] args) {
         _33_搜索旋转排序数组 cls = new _33_搜索旋转排序数组();
 
-        int[] nums = {4};
-        int target = 1;
+        int[] nums = {1,1,1,1,1,2,1,1,1};;
+        int target = 2;
         System.out.println(cls.search(nums, target));
     }
 
