@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/设计模式/单例模式/Mgr07.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/探索系列/探索初级算法/反转字符串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/探索系列/探索初级算法/反转字符串.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,13 +328,13 @@
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1593847567673" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590216162243" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup" timestamp="1595906788664">
+    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup" timestamp="1595916869244">
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
     <state x="1666" y="-6" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-151.1280.697@1280.-151.1280.697" timestamp="1590758412306" />
     <state x="1666" y="57" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1590502029327" />
     <state x="386" y="185" width="670" height="158" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1594466647913" />
-    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1595906788664" />
+    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1595916869244" />
     <state x="434" y="194" width="754" height="527" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1595828425475" />
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590576389538" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1591089152082" />
