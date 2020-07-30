@@ -35,6 +35,7 @@ public class 从前序与中序遍历序列构造二叉树 {
         TreeNode root = new TreeNode(preorder[rootIdx]);
         int idx = map.get(root.val);
 
+        System.out.println(rootIdx);
         rootIdx ++;
 
         // 左子树
@@ -45,14 +46,18 @@ public class 从前序与中序遍历序列构造二叉树 {
     }
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-
         this.preorder = preorder;
-
         for (int i = 0; i < inorder.length; i++) {
             map.put(inorder[i], i);
         }
-
         return buildTreeHelper(0, preorder.length - 1);
     }
 
+    public static void main(String[] args) {
+        从前序与中序遍历序列构造二叉树 cls = new 从前序与中序遍历序列构造二叉树();
+
+        int[] preorder = {3,9,20,15,7};
+        int[] inorder = {9,3,15,20,7};
+        cls.buildTree(preorder,inorder);
+    }
 }

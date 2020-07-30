@@ -26,10 +26,7 @@ package 二叉树;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class _101_对称二叉树 {
 
@@ -50,7 +47,6 @@ public class _101_对称二叉树 {
 
     // 迭代
     public boolean isSymmetric(TreeNode root) {
-
         Queue q = new LinkedList();
         q.add(root);
         q.add(root);
@@ -68,7 +64,22 @@ public class _101_对称二叉树 {
             q.offer(n1.right);
             q.offer(n2.left);
         }
-
         return true;
+    }
+
+    public static void main(String[] args) {
+        _101_对称二叉树 cls = new _101_对称二叉树();
+
+        TreeNode node = new TreeNode(1);
+        node.left = new TreeNode(2);
+        node.left.left = new TreeNode(3);
+        node.left.right = new TreeNode(4);
+
+        node.right = new TreeNode(2);
+        node.right.left = new TreeNode(4);
+        node.right.right = new TreeNode(3);
+
+        boolean res = cls.isSymmetric(node);
+        System.out.println(res);
     }
 }
