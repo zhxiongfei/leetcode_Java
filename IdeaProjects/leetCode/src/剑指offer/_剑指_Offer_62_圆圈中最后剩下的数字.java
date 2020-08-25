@@ -134,7 +134,7 @@ public class _剑指_Offer_62_圆圈中最后剩下的数字 {
 
         int res = 0;
         // 最后一轮剩下2个人，所以从2开始反推
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             res = (res + m) % i;
         }
         return res;
