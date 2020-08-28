@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/回溯算法/_17_电话号码的字母组合.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/字符串/_657_机器人能否返回原点.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +197,10 @@
       <workItem from="1597802172365" duration="5636000" />
       <workItem from="1598234431125" duration="2629000" />
       <workItem from="1598320572939" duration="1040000" />
-      <workItem from="1598406883186" duration="621000" />
+      <workItem from="1598406883186" duration="812000" />
+      <workItem from="1598494347891" duration="546000" />
+      <workItem from="1598502936110" duration="2000" />
+      <workItem from="1598579741569" duration="916000" />
     </task>
     <servers />
   </component>
@@ -359,7 +362,6 @@
       <screen x="-404" y="-1057" width="1920" height="1057" />
     </state>
     <state x="355" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@0.23.1280.777" timestamp="1590156316680" />
-    <state x="1635" y="119" key="com.intellij.ide.util.TipDialog/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589708040916" />
     <state x="355" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1590196673948" />
     <state x="128" y="-744" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590728331584" />
     <state x="399" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1590546580358" />
@@ -380,7 +382,6 @@
     <state x="389" y="-843" width="1093" height="722" key="find.popup" timestamp="1597303395728">
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
-    <state x="1611" y="53" width="683" height="476" key="find.popup/0.23.1280.777/1280.-88.1280.697@1280.-88.1280.697" timestamp="1589600825068" />
     <state x="389" y="-843" width="1093" height="722" key="find.popup/0.23.1440.820/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1597303395728" />
     <state x="392" y="55" key="refactoring.ChangeSignatureDialog" timestamp="1589950600106">
       <screen x="0" y="23" width="1440" height="820" />
@@ -394,7 +395,7 @@
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1593847567673" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590216162243" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1589857640790" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1597807824176">
+    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1598494354744">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="1666" y="-6" width="670" height="447" key="search.everywhere.popup/0.23.1280.777/1280.-151.1280.697@1280.-151.1280.697" timestamp="1590758412306" />
@@ -405,7 +406,7 @@
     <state x="175" y="-837" width="894" height="677" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@-404.-1057.1920.1057" timestamp="1590576389538" />
     <state x="434" y="194" width="670" height="525" key="search.everywhere.popup/0.23.1440.820/-404.-1057.1920.1057@0.23.1440.820" timestamp="1591089152082" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1597638719009" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1597807824176" />
+    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1598494354744" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
