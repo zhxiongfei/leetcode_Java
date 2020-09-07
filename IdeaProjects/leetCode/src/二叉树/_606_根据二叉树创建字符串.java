@@ -38,43 +38,65 @@ package 二叉树;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class _606_根据二叉树创建字符串 {
 
-    public String tree2str(TreeNode t) {
-
+    /**
+     *
+     * 递归
+     *
+     * */
+    public static String tree2str(TreeNode t) {
         if (t == null) return "";
+        if (t.left == null && t.right == null) return t.val + "";
+        if (t.right == null) return t.val + "(" + tree2str(t.left) + ")";
+        return t.val + "(" + tree2str(t.left) + ")" + "(" + tree2str(t.right) + ")";
+    }
+
+
+    /**
+     *
+     * 迭代
+     *
+     * */
+    public static String tree2str1(TreeNode t) {
+        if (t == null) return "";
+
         StringBuilder sb = new StringBuilder();
+        Stack<TreeNode>stack = new Stack<>();
+        Set<TreeNode>set = new HashSet<>();
+        stack.push(t);
+        while (!stack.isEmpty()){
+            TreeNode node = stack.peek();
 
-        Stack<TreeNode> s = new Stack();
-        int count = 1;
-        while (!s.isEmpty()){
-
-            TreeNode n = s.pop();
-            sb.append(n.val);
-            if (n.left == null && n.right == null){
-                while (count > 0) {
-                    sb.append(")");
-                    count --;
-                }
+            if (set.contains(node)){
+                sb.append(")");
+                stack.pop();
             }else {
-                count ++;
-            }
+                set.add(node);
+                sb.append("(" + node.val);
 
-            if (n.left != null) {
-                sb.append("(");
-                s.push(n.left);
-            }
-            if (n.right != null){
-                sb.append("(");
-                s.push(n.right);
-            }
+                if (node.left == null && node.right != null) sb.append("()");
 
+                if (node.right != null){
+                    stack.push(node.right);
+                }
+                if (node.left != null){
+                    stack.push(node.left);
+                }
+            }
         }
+        return sb.toString().substring(1,sb.length() - 1);
+    }
 
-        return sb.toString();
+    public static void main(String[] args) {
+        TreeNode node = new TreeNode(1);
+        node.left = new TreeNode(2);
+        node.right = new TreeNode(3);
+        node.left.right = new TreeNode(4);
+
+        String s = tree2str1(node);
+        System.out.println(s);
     }
 }
