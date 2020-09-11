@@ -100,6 +100,7 @@ public class _28_实现strStr {
     }
 
     public static void main(String[] args){
-        System.out.println(strStr("mississippi","issip"));
+
+        System.out.println(strStr("hello","ll"));
     }
 }

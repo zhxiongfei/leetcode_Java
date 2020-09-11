@@ -1,5 +1,10 @@
 package 数组;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。
 
@@ -53,25 +58,24 @@ public class  _80_删除排序数组中的重复项II {
         if (nums == null || nums.length == 0) return 0;
         int cnt = 1, num = nums[0], slow = 0;
         for (int i = 1; i < nums.length; i++) {
-            if (num == nums[i]){
-                cnt ++;
-                if (cnt <= 2){
+            if (num == nums[i]) {
+                cnt++;
+                if (cnt <= 2) {
                     nums[++slow] = num;
                 }
-            }else {
+            } else {
                 num = nums[i];
                 nums[++slow] = num;
                 cnt = 1;
             }
         }
-
         return slow + 1;
     }
 
     public static void main(String[] args) {
+        int[] nums = {1,2,3};
+        int num = nums[3];
 
-        int[] nums = {0,0,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,5,5};
-        removeDuplicates(nums);
     }
 
 }
