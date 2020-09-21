@@ -61,7 +61,7 @@ public class _538_把二叉搜索树转换为累加树 {
         node.right = new TreeNode(13);
 
         _538_把二叉搜索树转换为累加树 cls = new _538_把二叉搜索树转换为累加树();
-        TreeNode resNode = cls.convertBST(node);
+        TreeNode resNode = cls.convertBST1(node);
         System.out.println(resNode);
     }
 }
