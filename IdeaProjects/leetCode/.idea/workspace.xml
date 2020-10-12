@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/哈希表/_49_字母异位词分组.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉搜索树/_538_把二叉搜索树转换为累加树.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉搜索树/_538_把二叉搜索树转换为累加树.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +213,10 @@
       <workItem from="1599791654693" duration="590000" />
       <workItem from="1600308735626" duration="3843000" />
       <workItem from="1600653514885" duration="2818000" />
+      <workItem from="1602309124223" duration="35000" />
+      <workItem from="1602309172764" duration="180000" />
+      <workItem from="1602309446506" duration="307000" />
+      <workItem from="1602467793559" duration="1316000" />
     </task>
     <servers />
   </component>
@@ -258,7 +260,6 @@
     <state x="459" y="324" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595661605877">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state x="408" y="308" width="467" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.777@0.23.1280.777" timestamp="1592230806775" />
     <state x="459" y="324" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1595661605877" />
     <state x="568" y="-781" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595848354136">
       <screen x="-141" y="-1057" width="2048" height="1057" />
@@ -344,10 +345,6 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="509" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1595818142072" />
-    <state x="362" y="-772" width="915" height="794" key="dock-window-1" timestamp="1593497875918">
-      <screen x="-141" y="-1057" width="2048" height="1057" />
-    </state>
-    <state x="362" y="-772" width="915" height="794" key="dock-window-1/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1593497875918" />
     <state x="440" y="217" key="extract.method.dialog" timestamp="1597802612794">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -362,14 +359,14 @@
     </state>
     <state x="164" y="-292" width="670" height="640" key="run.anything.popup/0.23.1280.777@0.23.1280.777" timestamp="1595167094302" />
     <state x="184" y="-309" width="670" height="675" key="run.anything.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1593847567673" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1600655330761">
+    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1602467915878">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="386" y="185" width="670" height="158" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1596034316930" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1597302913818" />
     <state x="434" y="194" width="754" height="527" key="search.everywhere.popup/0.23.1440.820/-141.-1057.2048.1057@0.23.1440.820" timestamp="1595918147219" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1597638719009" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1600655330761" />
+    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1602467915878" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
