@@ -21,49 +21,70 @@ package 回溯算法;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class _46_全排列 {
 
-    /**
-     *
-     * 回溯算法
-     *
-     *
-     * */
-    List<List<Integer>> res = new LinkedList<>();
+    // 主函数，输入一组不重复的数字，返回它们的全排列
+    List<List<Integer>> permute(int[] nums){
+        List<List<Integer>>res = new ArrayList<>();
+        int n = nums.length;
+        if (n == 0) return res;
 
-    /* 主函数，输入一组不重复的数字，返回它们的全排列 */
-    List<List<Integer>> permute(int[] nums) {
-        // 记录「路径」
-        Stack<Integer> stack = new Stack<>();
-        backtrack(nums, stack);
+        // 路径栈
+        Deque<Integer> path = new ArrayDeque<Integer>();
+
+        // 是否使用过的数组
+        boolean[] used = new boolean[nums.length];
+
+        // 回溯
+        dfs(nums, n, 0, path, used, res);
+
         return res;
     }
 
-    // 路径：记录在 track 中
-    // 选择列表：nums 中不存在于 track 的那些元素
-    // 结束条件：nums 中的元素全都在 track 中出现
-    void backtrack(int[] nums, Stack<Integer> stack) {
-        // 触发结束条件
-        if (stack.size() == nums.length) {
-            res.add(new LinkedList(stack));
+    /**
+     * 回溯
+     * @param nums    输入全排列的数组
+     * @param length  需要全排列的数组的长度
+     * @param depth   遍历的深度
+     * @param path    记录遍历的路径
+     * @param used    是否访问过
+     * @param res     存储结果的数组
+     */
+    public void dfs(int[] nums, int length, int depth, Deque<Integer>path, boolean[] used, List<List<Integer>>res){
+        if (depth == length){
+            // 如果 depth == length 说明已经遍历到最后一层。 将path添加到结果中
+            res.add(new ArrayList<>(path));
             return;
         }
 
+        // 回溯选择
         for (int i = 0; i < nums.length; i++) {
-            // 排除不合法的选择
-            if (stack.contains(nums[i]))
-                continue;
-            // 做选择
-            stack.add(nums[i]);
-            // 进入下一层决策树
-            backtrack(nums, stack);
-            // 取消选择
-            stack.pop();
+            // 如果选择过，则进度下层循环
+            if (used[i] == true) continue;
+
+            // 访问路径添加当前数组
+            path.addLast(nums[i]);
+            // 设置为访问过
+            used[i] = true;
+            // 进入下层选择
+
+            System.out.println("递归之前" + path);
+
+            dfs(nums, length, depth + 1, path, used, res);
+
+            System.out.println("递归之后" + path);
+
+            // 状态充值
+            used[i] = false;
+            path.removeLast();
         }
+    }
+
+    public static void main(String[] args) {
+        _46_全排列 cls = new _46_全排列();
+        int[] nums = {1,2,3};
+        cls.permute(nums);
     }
 }
