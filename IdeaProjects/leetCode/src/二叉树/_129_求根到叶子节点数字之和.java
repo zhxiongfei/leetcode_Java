@@ -45,14 +45,14 @@ import java.util.List;
 public class _129_求根到叶子节点数字之和 {
 
     int sum = 0;
-    public void dfs(TreeNode root, int num){
+    public void dfs(TreeNode root, int tmp){
         if (root == null) return;
 
-        int tmp = num * 10 + root.val;
+        tmp = tmp * 10 + root.val;
         if (root.left == null && root.right == null){
             sum += tmp;
-            tmp /= 10;
         }
+
         dfs(root.left, tmp);
         dfs(root.right, tmp);
     }
