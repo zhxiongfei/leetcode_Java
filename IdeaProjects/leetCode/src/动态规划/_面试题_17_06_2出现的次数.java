@@ -17,6 +17,8 @@ package 动态规划;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.*;
+
 public class _面试题_17_06_2出现的次数 {
 
     /**
@@ -91,6 +93,35 @@ public class _面试题_17_06_2出现的次数 {
             dp[i][1] = 10 * dp[i-1][1] + (int)Math.pow(10, i-1); //计算1-i位均为9的值包含2的个数
         }
         return dp[digit][0];
+    }
+
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        int n = nums.length;
+        List<List<Integer>> res = new ArrayList<>();
+        if (n == 0) return res;
+        Deque<Integer> path = new ArrayDeque<Integer>();
+        boolean[] used = new boolean[nums.length];
+        dfs(res,path,nums,used,0,n);
+        return res;
+    }
+
+    public void dfs(List<List<Integer>> res,Deque<Integer> path, int[] nums,boolean[] used, int depth, int n){
+        if (depth == n){
+            res.add(new ArrayList<>(path));
+            return;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+
+            if (used[i]) continue;
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+            used[i] = true;
+            path.addLast(nums[i]);
+            dfs(res,path,nums,used,depth+1,n);
+            path.removeLast();
+            used[i] = false;
+        }
     }
 
     public static void main(String[] args) {

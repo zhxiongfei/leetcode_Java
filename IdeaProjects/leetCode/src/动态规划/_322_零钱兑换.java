@@ -20,6 +20,8 @@ package 动态规划;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+import java.util.Arrays;
+
 public class _322_零钱兑换 {
 
     // 暴力递归
@@ -82,33 +84,30 @@ public class _322_零钱兑换 {
         return dp[amount];
     }
 
-    static int coinChange(int[] coins, int amount){
+    /**
+     * 动态规划
+     * */
+    public int coinChange(int[] coins, int amount) {
         if (amount < 1) return 0;
+
+        // 定义状态 凑到 amount 硬币需要的最少硬币个数
         int[] dp = new int[amount + 1];
+        Arrays.fill(dp,amount + 1);
+        dp[0] = 0;
+        // 定义状态转移方程
+        for (int i = 1; i <= amount; i++) {
 
-        for (int i = 1; i <= amount; i++){
-
-            int min = Integer.MAX_VALUE;
-            for (int coin :coins) {
-                if (i < coin) continue;
-                int v = dp[i - coin];
-                if (v < 0 || v >= min) continue;
-                min = v;
-            }
-
-            if (min == Integer.MAX_VALUE){
-                dp[i] = -1;
-            }else {
-                dp[i] = min + 1;
+            for (int j = 0; j < coins.length; j++) {
+                if (i >= coins[j]) dp[i] = Math.min(dp[i - coins[j]] + 1,dp[i]);
             }
         }
 
-        return dp[amount];
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 
     public static void main(String[] args){
 
-        int[] coins = {1,5,20,25};
-        System.out.println(coinChange(coins,97));
+        int[] coins = {2};
+        System.out.println(coinChange2(coins,3));
     }
 }
