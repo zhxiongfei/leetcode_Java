@@ -97,7 +97,7 @@ public class _31_下一个排列 {
 
         int j = i + 1;
         while (j < nums.length){
-            if (nums[i] > nums[j]){
+            if (nums[i] >= nums[j]){
                 break;
             }
             j ++;
