@@ -63,18 +63,13 @@ public class _面试题42_连续子数组的最大和 {
     *
     * */
     public int maxSubArray1(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-
-        int prev = nums[0];
-        int max = prev;
-
+        int cur = nums[0], max = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            prev = Math.max(nums[i], nums[i] + prev);
-            max = Math.max(max, prev);
+            cur = Math.max(cur + nums[i], nums[i]);
+            max = Math.max(max, cur);
         }
         return max;
     }
-
 
     /**
     *

@@ -82,4 +82,39 @@ public class _面试题09_用两个栈实现队列 {
         return numbers[begin];
     }
 
+    public int translateNum1(int num) {
+        char[] chars = String.valueOf(num).toCharArray();
+        int[] dp = new int[chars.length + 1];
+        dp[0] = dp[1] = 1;
+        for (int i = 2; i < chars.length; i++) {
+            char pre = chars[i - 1];
+            char cur = chars[i];
+
+            if (pre > '2' || pre == '0' || (pre == '2' && cur > '5')){
+                dp[i] = dp[i - 1];
+            }else {
+                dp[i] = dp[i - 1] + dp[i - 2];
+            }
+        }
+        return dp[chars.length];
+    }
+
+    public int translateNum(int num) {
+        char[] chars = String.valueOf(num).toCharArray();
+        int a = 1, b = 1;
+        for (int i = 2; i < chars.length; i++) {
+            char pre = chars[i - 1];
+            char cur = chars[i];
+
+            if (pre > '2' || pre == '0' || (pre == '2' && cur > '5')){
+                b = a;
+            }else {
+                int tmp = b;
+                b += a;
+                a = tmp;
+            }
+        }
+        return b;
+    }
+
 }
