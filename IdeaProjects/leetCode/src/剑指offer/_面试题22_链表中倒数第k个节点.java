@@ -18,21 +18,41 @@ package 剑指offer;
 
 public class _面试题22_链表中倒数第k个节点 {
 
-    /*
-    *
-    * 快慢指针法
-    * 快指针走 k 步时，慢指针开始走
-    * 当快指针指向null时， 慢指针刚好为 倒数第k个节点
-    *
-    * */
-    public ListNode getKthFromEnd(ListNode head, int k) {
-        ListNode slow = head;
-        ListNode fast = head;
+    /**
+     * 两边遍历
+     * 第一遍 : 记录下总节点数，计算出倒数第 k 个是正数第 target 个
+     * 第二遍 : 取出正数第 target 个返回
+     * */
+    public ListNode getKthFromEnd1(ListNode head, int k) {
+        int size = 0;
+        ListNode node = head;
+        while (node != null){
+            size ++;
+            node = node.next;
+        }
+        int target = size - k;
 
-        int i = 0;
+        int idx = 0;
+        node = head;
+        while (idx < target){
+            node = node.next;
+            idx ++;
+        }
+        return node;
+    }
+
+    /**
+     * 快慢指针
+     * 快指针走 k 步后，慢指针开始走
+     * 当快指针走向末尾时，慢指针则指向倒数第 k 个
+     * */
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode slow = head, fast = head;
+        int step = 0;
         while (fast != null){
+            if (step >= k) slow = slow.next;
             fast = fast.next;
-            if (i >= k) slow = slow.next;
+            step ++;
         }
         return slow;
     }

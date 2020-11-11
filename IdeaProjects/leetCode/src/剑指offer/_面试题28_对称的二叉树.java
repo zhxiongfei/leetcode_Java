@@ -43,15 +43,15 @@ package 剑指offer;
 
 public class _面试题28_对称的二叉树 {
 
-    public boolean isMirror(TreeNode node1, TreeNode node2){
-        if (node1 == null && node2 == null) return true;
-        if (node1 == null || node2 == null) return false;
-
-        return isMirror(node1.left, node2.right) && isMirror(node1.right, node2.left) && node1.val == node2.val;
+    private boolean isMirror(TreeNode n1, TreeNode n2){
+        if (n1 == null && n2 == null) return true;
+        if (n1 == null || n2 == null) return false;
+        return n1.val == n2.val && isMirror(n1.left, n2.right) && isMirror(n1.right, n2.left);
     }
 
     public boolean isSymmetric(TreeNode root) {
-        return isMirror(root,root);
+        if (root == null) return true;
+        return isMirror(root.left, root.right);
     }
 
 }

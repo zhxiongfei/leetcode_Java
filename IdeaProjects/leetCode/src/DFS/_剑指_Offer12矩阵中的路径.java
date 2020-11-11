@@ -99,4 +99,36 @@ public class _剑指_Offer12矩阵中的路径 {
         System.out.println(exist);
     }
 
+    /**
+     * 2020.11.11 复习时重写
+     * */
+    public boolean exist1(char[][] board, String word) {
+        int[][] directions = {{0,-1},{0,1},{-1,0},{1,0}};
+        boolean[][] used = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                if (dfs1(board,used, directions, i, j, word, 0)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean dfs1(char[][] board,boolean[][] used, int[][]directions, int x, int y, String word, int idx){
+        if (x < 0 || y < 0 || x >= board.length || y >= board[0].length) return false;
+        if (used[x][y]) return false;
+        if (board[x][y] != word.charAt(idx)) return false;
+        if (idx == word.length()-1) return true;
+
+        used[x][y] = true;
+        for (int[] direction : directions) {
+            boolean res = dfs1(board,used,directions,x + direction[0], y + direction[1], word, idx + 1);
+            if (res) return true;
+        }
+        used[x][y] = false;
+        return false;
+    }
+
+
 }

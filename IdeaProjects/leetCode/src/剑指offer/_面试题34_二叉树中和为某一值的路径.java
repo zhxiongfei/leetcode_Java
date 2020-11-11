@@ -32,38 +32,34 @@ package 剑指offer;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class _面试题34_二叉树中和为某一值的路径 {
 
-    // 结果数组
-    LinkedList<List<Integer>> res = new LinkedList<>();
-
-    // 路径
-    LinkedList<Integer> path = new LinkedList<>();
-
-    public void dfs(TreeNode node, int sum){
-        if (node == null) return;
-
-        path.add(node.val);
-        sum -= node.val;
-
-        if (sum == 0 && node.left == null && node.right == null)
-            res.add(new LinkedList<>(path));
-
-        dfs(node.left, sum);
-        dfs(node.right, sum);
-
-        // 回溯
-        path.removeLast();
+    /**
+     * 回溯
+     * */
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        Deque<Integer> path = new ArrayDeque<Integer>();
+        dfs(res,root,path,sum);
+        return res;
     }
 
-    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+    public void dfs(List<List<Integer>> res,TreeNode node,Deque<Integer> path,int sum){
+        if (node == null) return;
+        if (sum == node.val && node.left == null && node.right == null){
+            List<Integer> tmp = new ArrayList<>(path);
+            tmp.add(node.val);
+            res.add(tmp);
+            return;
+        }
 
-        dfs(root, sum);
-        return res;
+        path.addLast(node.val);
+        dfs(res,node.left,path, sum - node.val);
+        dfs(res,node.right,path, sum - node.val);
+        path.removeLast();
     }
 
 

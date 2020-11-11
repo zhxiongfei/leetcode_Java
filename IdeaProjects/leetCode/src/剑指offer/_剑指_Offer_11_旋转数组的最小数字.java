@@ -17,6 +17,8 @@ package 剑指offer;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.function.BinaryOperator;
+
 public class _剑指_Offer_11_旋转数组的最小数字 {
 
     public int minArray(int[] numbers) {
@@ -24,14 +26,14 @@ public class _剑指_Offer_11_旋转数组的最小数字 {
 
         int begain = 0, end = numbers.length - 1;
         while (begain < end){
-            int mid = begain + (end - begain) >> 1;
+            int mid = begain + ((end - begain) >> 1);
 
             if (numbers[mid] < numbers[end]){
                 // 在 [mid + 1, end] 范围内
-                begain = mid + 1;
+                end = mid;
             }else if (numbers[mid] > numbers[end]){
                 // 在 [begain, mid] 范围内
-                end = mid;
+                begain = mid + 1;
             }else {
                 end --;
             }
@@ -39,5 +41,4 @@ public class _剑指_Offer_11_旋转数组的最小数字 {
 
         return numbers[begain];
     }
-
 }

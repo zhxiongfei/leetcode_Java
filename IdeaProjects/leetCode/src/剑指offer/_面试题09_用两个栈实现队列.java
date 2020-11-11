@@ -67,4 +67,19 @@ public class _面试题09_用两个栈实现队列 {
         return outstack.isEmpty() ? -1 : outstack.pop();
     }
 
+    // [3,4,5,1,2]
+    public int minArray(int[] numbers) {
+        int begin = 0, end = numbers.length - 1;
+        while (begin < end){
+            int mid = begin + ((end - begin) >> 1);
+            if (numbers[mid] > numbers[begin]){
+                begin = mid + 1;
+            }else {
+                end = mid - 1;
+            }
+        }
+
+        return numbers[begin];
+    }
+
 }
