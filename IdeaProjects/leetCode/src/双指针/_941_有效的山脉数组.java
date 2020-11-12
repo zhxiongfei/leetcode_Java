@@ -1,4 +1,4 @@
-package 数组;
+package 双指针;
 
 /**
 给定一个整数数组 A，如果它是有效的山脉数组就返回 true，否则返回 false。
