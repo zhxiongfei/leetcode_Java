@@ -26,6 +26,8 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 * */
 package 链表;
 
+import javax.management.ListenerNotFoundException;
+
 public class _876_链表的中间结点 {
 
     // 快慢指针

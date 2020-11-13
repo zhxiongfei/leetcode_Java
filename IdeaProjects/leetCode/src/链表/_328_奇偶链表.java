@@ -44,25 +44,22 @@ public class _328_奇偶链表 {
         ListNode evenHead = new ListNode(-1);
         ListNode evenNode = evenHead;
 
-        int num = 0;
+        boolean flag = true;
         while (head != null){
-            int isodd = num & 1;
-            num ++;
-            if (isodd == 0){
-                // 偶数
-                oddNode.next = head;
-                oddNode = oddNode.next;
-            }else {
-                // 奇数
+            if (flag){
                 evenNode.next = head;
                 evenNode = evenNode.next;
+            }else {
+                oddNode.next = head;
+                oddNode = oddNode.next;
             }
+            flag = !flag;
             head = head.next;
         }
         oddNode.next = evenHead.next;
         evenNode.next = null;
 
-        return oddHead.next;
+        return oddHead;
     }
 
     public static ListNode oddEvenList(ListNode head){
