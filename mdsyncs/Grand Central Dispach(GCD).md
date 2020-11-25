@@ -437,7 +437,7 @@ dispatch_once函数是保证在应用程序执行中只执行一次指定处理�
 
 
 
-#### dispatch_once
+#### dispatch_IO
 
 用于读取大文件，将文件分成合适的大小并使用 Global Dispatch Queue并列读取，会比一般的读取速度快不少。
 
