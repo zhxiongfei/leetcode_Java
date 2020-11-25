@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/_863_二叉树中所有距离为K的结点.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/数组/_59_螺旋矩阵_II.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_863_二叉树中所有距离为K的结点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_863_二叉树中所有距离为K的结点.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +252,7 @@
       <workItem from="1606097670128" duration="2579000" />
       <workItem from="1606269031854" duration="1998000" />
       <workItem from="1606296845996" duration="4129000" />
+      <workItem from="1606309545853" duration="996000" />
     </task>
     <servers />
   </component>
@@ -287,44 +287,52 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="606" y="201" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1599446459946" />
-    <state width="1230" height="199" key="GridCell.Tab.0.bottom" timestamp="1606301369455">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.0.bottom" timestamp="1606310547714">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.0.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
     <state width="1348" height="268" key="GridCell.Tab.0.bottom/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303797" />
     <state width="1230" height="199" key="GridCell.Tab.0.bottom/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369455" />
-    <state width="1230" height="199" key="GridCell.Tab.0.center" timestamp="1606301369453">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.0.center" timestamp="1606310547713">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.0.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
     <state width="1348" height="268" key="GridCell.Tab.0.center/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303795" />
     <state width="1230" height="199" key="GridCell.Tab.0.center/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369453" />
-    <state width="1230" height="199" key="GridCell.Tab.0.left" timestamp="1606301369452">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.0.left" timestamp="1606310547713">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.0.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
     <state width="1348" height="268" key="GridCell.Tab.0.left/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303795" />
     <state width="1230" height="199" key="GridCell.Tab.0.left/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369452" />
-    <state width="1230" height="199" key="GridCell.Tab.0.right" timestamp="1606301369454">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.0.right" timestamp="1606310547714">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.0.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
     <state width="1348" height="268" key="GridCell.Tab.0.right/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303796" />
     <state width="1230" height="199" key="GridCell.Tab.0.right/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369454" />
-    <state width="1230" height="199" key="GridCell.Tab.1.bottom" timestamp="1606301369758">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.1.bottom" timestamp="1606310547716">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.1.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
     <state width="1348" height="268" key="GridCell.Tab.1.bottom/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303798" />
     <state width="1230" height="199" key="GridCell.Tab.1.bottom/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369758" />
-    <state width="1230" height="199" key="GridCell.Tab.1.center" timestamp="1606301369758">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.1.center" timestamp="1606310547715">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.1.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
     <state width="1348" height="268" key="GridCell.Tab.1.center/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303798" />
     <state width="1230" height="199" key="GridCell.Tab.1.center/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369758" />
-    <state width="1230" height="199" key="GridCell.Tab.1.left" timestamp="1606301369757">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.1.left" timestamp="1606310547715">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.1.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
     <state width="1348" height="268" key="GridCell.Tab.1.left/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303797" />
     <state width="1230" height="199" key="GridCell.Tab.1.left/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369757" />
-    <state width="1230" height="199" key="GridCell.Tab.1.right" timestamp="1606301369758">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1074" height="221" key="GridCell.Tab.1.right" timestamp="1606310547716">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state width="1074" height="221" key="GridCell.Tab.1.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
     <state width="1348" height="268" key="GridCell.Tab.1.right/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606129303798" />
     <state width="1230" height="199" key="GridCell.Tab.1.right/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606301369758" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1599646923355">
@@ -355,9 +363,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="-333" width="754" height="723" key="run.anything.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1604645999960" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1606299768921">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup" timestamp="1606309629966">
+      <screen x="1280" y="-151" width="1920" height="1057" />
     </state>
+    <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606309629966" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1605089355663" />
     <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606299768921" />
   </component>
@@ -990,16 +999,6 @@
           <line>91</line>
           <option name="timeStamp" value="1040" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/二叉树/_863_二叉树中所有距离为K的结点.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1050" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/二叉树/_863_二叉树中所有距离为K的结点.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="1052" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-method">
           <url>file://$PROJECT_DIR$/src/排序/MergeSort.java</url>
           <line>14</line>
@@ -1032,53 +1031,53 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>每日一题.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$__10_05_.ic" NAME="_面试题_10_05_稀疏数组搜索 Coverage Results" MODIFIED="1591629782378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Interview.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉树.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>哈希表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>链表.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.fx.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$Pow_x_n.ic" NAME="Pow_x_n Coverage Results" MODIFIED="1592979699612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>探索系列.探索递归.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>哈希表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_143_.ic" NAME="_143_重排链表 Coverage Results" MODIFIED="1593437961845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>链表.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉树.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>堆.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$Pow_x_n.ic" NAME="Pow_x_n Coverage Results" MODIFIED="1592979699612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>探索系列.探索递归.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_1370_.ic" NAME="_1370_上升下降字符串 Coverage Results" MODIFIED="1606270290639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>字符串.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>每日一题.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>堆.*</FILTER>
     </SUITE>
   </component>
 </project>

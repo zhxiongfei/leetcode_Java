@@ -35,6 +35,9 @@ import java.util.*;
 
 public class _863_二叉树中所有距离为K的结点 {
 
+    /**
+     * DFS
+     * */
     Map<TreeNode,TreeNode>parentDic = new HashMap<>();
     public void buildMap(TreeNode node, TreeNode parent){
         if (node == null) return;
@@ -48,14 +51,24 @@ public class _863_二叉树中所有距离为K的结点 {
         if (root == null || target == null) return res;
         buildMap(root, null);
 
-        Queue<TreeNode>queue = new LinkedList<>();
-        queue.add(target);
-        while (!queue.isEmpty()){
-            TreeNode node = queue.poll();
-             parentDic.get(node);
-        }
+        boolean[] visited = new boolean[501];
+        // 递归获取距离指定节点指定距离的所有结点值
+        search(target, K, res, visited);
 
         return res;
+    }
+
+    private void search(TreeNode target, int K , List<Integer>res, boolean[]visited){
+        if (target == null || K < 0 || visited[target.val]) return;
+        if (K == 0){
+            res.add(target.val);
+            visited[target.val] = true;
+            return;
+        }
+        visited[target.val] = true;
+        search(target.left, K - 1, res, visited);
+        search(target.right, K - 1, res, visited);
+        search(parentDic.get(target), K - 1, res, visited);
     }
 
     public static void main(String[] args) {
