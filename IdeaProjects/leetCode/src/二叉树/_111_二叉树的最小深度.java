@@ -29,6 +29,9 @@ import java.util.Queue;
 public class _111_二叉树的最小深度 {
 
     // 递归
+    /**
+     * DFS
+     * */
     public int minDepth1(TreeNode root) {
         if (root == null) return 0;
 
@@ -40,6 +43,9 @@ public class _111_二叉树的最小深度 {
 
     // 非递归
     // 跟求最大深底不同的是， 当队列中取出的左右节点都为空时，直接return height+1
+    /**
+     * BFS
+     * */
     public int minDepth(TreeNode root) {
         if (root == null) return 0;
 

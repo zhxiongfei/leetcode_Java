@@ -7,7 +7,9 @@ import java.util.Stack;
 
 public class _104_二叉树的最大深度 {
 
-    // 利用队列
+    /**
+     * BFS
+     * */
     public int maxDepth1(TreeNode root) {
 
         if (root == null) return 0;
@@ -32,7 +34,9 @@ public class _104_二叉树的最大深度 {
         return height;
     }
 
-    // 递归
+    /**
+     * DFS
+     * */
     public int maxDepth(TreeNode root) {
 
         if (root == null) return 0;
