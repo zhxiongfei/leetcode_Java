@@ -28,34 +28,33 @@ public class _34_在排序数组中查找元素的第一个和最后一个位置
         if (nums == null || nums.length == 0) return new int[]{-1,-1};
 
         // 二分法找 值为target 的最右边索引
-        int right = 0;
-        int begain = 0, end = nums.length - 1;
-        while (begain <= end){
-            int mid = (begain + end) >> 1;
+        int begin = 0, end = nums.length - 1;
+        while (begin <= end){
+            int mid = (begin + end) >> 1;
             if (nums[mid] <= target){
                 // 往右边找
-                begain = mid + 1;
+                begin = mid + 1;
             }else {
                 // 往左边找
                 end = mid - 1;
             }
         }
-        right = begain;
         // 如果没找到
         if (end < 0 || nums[end] != target) return new int[]{-1,-1};
+        int right = begin;
 
-        // 二分法找 值为targe 的最左边索引
+        // 二分法找 值为target 的最左边索引
         int left = 0;
-        begain = 0;
+        begin = 0;
         end = nums.length - 1;
-        while (begain <= end){
-            int mid = (begain + end) >> 1;
+        while (begin <= end){
+            int mid = (begin + end) >> 1;
             if (nums[mid] >= target){
                 // 往左边找
                 end = mid - 1;
             }else {
                 // 往右边找
-                begain = mid + 1;
+                begin = mid + 1;
             }
         }
         left = end;
