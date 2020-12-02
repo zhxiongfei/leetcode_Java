@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/排序/_1122_数组的相对排序.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_111_二叉树的最小深度.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_111_二叉树的最小深度.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_113_路径总和II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_113_路径总和II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/二叉树/_145_二叉树的后序遍历.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/_145_二叉树的后序遍历.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +258,9 @@
       <workItem from="1606309545853" duration="996000" />
       <workItem from="1606355671843" duration="764000" />
       <workItem from="1606386292456" duration="1766000" />
+      <workItem from="1606787798498" duration="447000" />
+      <workItem from="1606819616517" duration="408000" />
+      <workItem from="1606875112513" duration="2331000" />
     </task>
     <servers />
   </component>
@@ -374,11 +379,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="-333" width="754" height="723" key="run.anything.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1604645999960" />
-    <state x="434" y="206" width="755" height="565" key="search.everywhere.popup" timestamp="1606387899590">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup" timestamp="1606875758415">
+      <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
     <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606309629966" />
-    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1605089355663" />
+    <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606875758415" />
     <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606387899590" />
   </component>
   <component name="XDebuggerManager">
@@ -901,11 +906,6 @@
           <option name="timeStamp" value="830" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/二叉树/_116_填充每个节点的下一个右侧节点指针.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="833" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/二叉树/_437_路径总和III.java</url>
           <line>54</line>
           <option name="timeStamp" value="841" />
@@ -1014,6 +1014,11 @@
           <url>file://$PROJECT_DIR$/src/排序/_1122_数组的相对排序.java</url>
           <line>54</line>
           <option name="timeStamp" value="1042" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/二分查找/_34_在排序数组中查找元素的第一个和最后一个位置.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1043" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-method">
           <url>file://$PROJECT_DIR$/src/排序/MergeSort.java</url>

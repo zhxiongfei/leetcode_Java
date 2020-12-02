@@ -28,8 +28,7 @@ package 二叉树;
  */
 
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class _113_路径总和II {
 
@@ -59,5 +58,32 @@ public class _113_路径总和II {
 
         dfs(root, sum);
         return res;
+    }
+
+    /**
+     * 回溯 标准模板
+     * */
+    public List<List<Integer>> pathSum1(TreeNode root, int sum){
+        List<List<Integer>> res = new ArrayList<>();
+        Deque<Integer> path = new ArrayDeque<Integer>();
+
+        dfs1(res, path, root, sum);
+
+        return res;
+    }
+
+    private void dfs1(List<List<Integer>> res, Deque<Integer> path, TreeNode root, int sum){
+        if (root == null) return;
+        if (root.left == null && root.right == null && sum == root.val){
+            List<Integer> list = new ArrayList<>(path);
+            list.add(root.val);
+            res.add(list);
+            return;
+        }
+
+        path.add(root.val);
+        dfs1(res, path, root.left, sum - root.val);
+        dfs1(res, path, root.right, sum - root.val);
+        path.removeLast();
     }
 }

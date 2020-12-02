@@ -36,11 +36,11 @@ public class _145_二叉树的后序遍历 {
     // 递归
     ArrayList<Integer> list = new ArrayList<>();
 
-    public List<Integer> postorderTraversalRecuisive(TreeNode root) {
+    public List<Integer> postOrderTraversalRecursive(TreeNode root) {
 
         if (root == null) return list;
-        postorderTraversalRecuisive(root.left);
-        postorderTraversalRecuisive(root.right);
+        postOrderTraversalRecursive(root.left);
+        postOrderTraversalRecursive(root.right);
 
         list.add(root.val);
 
