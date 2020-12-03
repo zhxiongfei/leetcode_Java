@@ -29,8 +29,11 @@ public class _199_二叉树的右视图 {
 
     /**
      *
-     * DFS
-     * 广度优先搜索
+     * BFS 最直观的做法
+     * 广度优先搜索 -> 记录每层最后一个元素
+     *
+     * 时间复杂度 : O(N)
+     * 空间复杂度 : O(N)
      *
      * */
     public List<Integer> rightSideView(TreeNode root) {
@@ -56,22 +59,32 @@ public class _199_二叉树的右视图 {
 
     /**
      *
-     * BFS
+     * DFS
      * 深度优先搜索
+     * 如果保证 根节点 -> 右子节点 -> 左子节点的顺序访问
+     * 那么每一层第一次访问的节点， 就是最右边的节点.
+     *
+     * 时间复杂度 : O(N)
+     * 空间复杂度 : O(N)
+     *
+     * https://leetcode-cn.com/problems/binary-tree-right-side-view/solution/er-cha-shu-de-you-shi-tu-by-leetcode-solution/
      *
      * */
-    List<Integer> list = new ArrayList<>();
+    List<Integer> res = new ArrayList<>();
     public void dfs(TreeNode root, int depth){
         if (root == null) return;
 
-        if (depth == list.size()) list.add(root.val);
+        // 如果当前节点所在深度还没有出现在res里
+        // 说明在该深度下当前节点是第一个被访问的节点
+        // 将其加入 res 中
+        if (depth == res.size()) res.add(root.val);
         depth ++;
-        dfs(root.left, depth);
         dfs(root.right, depth);
+        dfs(root.left, depth);
     }
 
     public List<Integer> rightSideView1(TreeNode root) {
         dfs(root, 0);
-        return list;
+        return res;
     }
 }
