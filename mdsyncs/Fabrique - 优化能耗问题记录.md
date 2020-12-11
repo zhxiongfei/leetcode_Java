@@ -2,14 +2,7 @@
 
 
 
-### 1,从服务端获取数据,尽量减少需要在客户端进行的处理.
-
-- 物流列表,一个节点可能对应好几个地点 (比如运输中: 北京 - 天津 - 河北 等等), 原本服务端返回的N条数据中都有 节点信息, 客户端需要 使用 **双指针算法**,把返回的数据进行 **O(N)** 次的计算,再进行渲染
-  - 经跟服务端沟通, 服务端进行返回数据优化,返回的数据可以直接用,减少了客户端的能耗 和 速度 
-
-
-
-### 2,更优的数据结构和算法
+### 1, 更优的数据结构和算法
 
 - 列表去重复, 做feed流,又一个无法避免的问题, 就是列表去重
   - 比如用户在拉去第二页数据时,这时又有一条新信息插入, 这时用户拿到的第二页数据的第一条,就与第一页数据的最后一条重复了.
@@ -43,6 +36,39 @@
   - 总结 : 
     - Feed流重复问题最好由服务端解决, 因为我们服务端没有方案,只好客户端去处理.
     - 处理时, 要在所用的数据结构和算法, 以及用户体验之间找到一个平衡点.
+
+### 2, 从服务端获取数据,尽量减少需要在客户端进行的处理.
+
+- 物流列表,一个节点可能对应好几个地点 (比如运输中: 北京 - 天津 - 河北 等等), 原本服务端返回的N条数据中都有 **节点信息**, 客户端需要 使用 **双指针算法**,把返回的数据的**节点信息**进行 **O(N)** 次的计算**清空**,再进行渲染
+
+  
+
+  伪代码 
+
+```objc
+        NSArray *array = 服务端返回的数组;
+        int i = 0, j = 1;
+        while (j < array.count) {
+            物流Model *m1 = array[i];
+            物流Model *m2 = array[j];
+            if (![m1.status isEqualToString:m2.status]) {
+                i = j ++;
+                continue;
+            }
+            m2.status = @"";
+            j ++;
+        }
+        detailModel.details = array;
+```
+
+风险:
+
+- 虽然复杂度为 O(N) 但是在物流节点非常多(极限情况),  也是很耗时, 消耗客户端性能.
+- 且iOS端, 安卓端, h5端 都需要写一遍此逻辑, 工作内耗严重
+
+解决:
+
+- 经跟服务端沟通, 服务端来把重复的节点信息清空, 省去了各端上重复的工作, 提高端上性能.
 
 
 
@@ -151,4 +177,121 @@
 - 开发的详细过程,以及碰到的难点信息,写在这里以下两篇文中
   -  **[Fabrique优化 RunLoop监控卡顿]()**
   - **[Fabrique优化-获取主线程调用栈]()**
+
+
+
+### 6, 基于 response chain 的交互方式
+
+一般在做对象之间的交互模式, 有几种方法 delegate, KVO, block, protocol, notification 等等, 在做 Fabrique 过程中, 我们了解到一种全新的交互方式 : 基于 **response chain** 的交互.
+
+其代码非常简单, 为 **UIResponder** 写一个分类, 使得**事件 和 参数**可以通过**响应者链条**一直传递.
+
+代码如下 :
+
+UIResponder+Router.h
+
+```objc
+@interface UIResponder (Router)
+
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+
+@end
+```
+
+UIResponder+Router.m
+
+```objc
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
+{
+    [[self nextResponder] routerEventWithName:eventName userInfo:userInfo];
+}
+```
+
+触发事件时 : 
+
+```objc
+[self routerEventWithName:@"touchAction" userInfo:@{@"row":rowStr,@"section":sectionStr}];
+```
+
+处理事件时 :
+
+```objc
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo{
+    if ([eventName isEqualToString:@"touchAction"]) {
+       // 对事件作处理
+    }else{
+       // 将事件向下传递
+       [self.nextResponder routerEventWithName:eventName userInfo:userInfo];
+    }
+}
+```
+
+
+
+#### 使用 Strategy策略模式进行优化
+
+- 在上述事件处理中, 如果 eventName 有多个,  就无法避免使用很多 if-else 语句来判断对应事件做出处理. 
+- 所以可以使用,策略模式来解决这个问题.
+  - 使用字典保存 {eventName : invocation} 
+  - 在 routerWithEventWithName: userInfo: 中,直接取到 invocation
+  - 设置好参数后, 直接调用 invoke 方法
+- 可避免大量 if-else语句.
+
+```objc
+- (NSDictionary *)eventStrategy{
+    if (!_eventStrategy) {
+        _eventStrategy = @{@"designerDetail":[self getInvocationFromSel:@selector(gotoDeaignerDetail:)],
+                           @"campaign":[self getInvocationFromSel:@selector(gotoCampaign:)],
+                           @"goodsDetail":[self getInvocationFromSel:@selector(gotoGoodsDetail:)]
+        };
+    }
+    return _eventStrategy;
+}
+
+- (NSInvocation *)getInvocationFromSel:(SEL)selector{
+    // 1. 根据方法创建签名对象sig
+    NSMethodSignature *sig = [[self class] instanceMethodSignatureForSelector:selector];
+    // 2. 根据签名对象创建调用对象invocation
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
+    invocation.target = self;
+    invocation.selector = selector;
+    return invocation;
+}
+
+//子页面要进行的页面跳转 集中在这里处理
+-(void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo{
+    NSInvocation *invocation = self.eventStrategy[eventName];
+    [invocation setArgument:&userInfo atIndex:2];
+    [invocation invoke];
+}
+```
+
+
+
+#### 使用 Decorator 装饰器模式
+
+在事件层向上传递的时候, 每一层都可以在 userInfo 这个字典中, 添加数据. 到了最终处理事件的时候, 就能收集到格层综合得到的数据.完成最终的事件处理.
+
+
+
+#### 单独处理事件对象,减轻 controller 负担
+
+```objc
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
+{
+    [self.eventProxy handleEvent:eventName userInfo:userInfo];
+}
+```
+
+
+
+#### 优缺点分析 : 
+
+- 缺点
+  - 只能对存在于 Responder Chain 上的 UIResponder 对象起作用
+- 优点
+  - 在复杂的 UI层级的页面上, 避免无谓的 deleggate 声明
+  - 众多自定义事件的处理逻辑的到归拢, 方便下断点调试所有的事件处理
+  - 在使用 **策略模式**后, 事件响应逻辑得到很好的管理, 响应逻辑不会分散
+  - 持用 **装饰器模式** 后, 能够有序的收集,归拢数据.
 
