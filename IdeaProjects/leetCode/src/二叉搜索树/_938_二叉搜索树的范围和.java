@@ -27,42 +27,48 @@ import java.util.Stack;
  */
 public class _938_二叉搜索树的范围和 {
 
-    // 中序遍历， 递加在 [L , R] 范围内的元素即可。
-
-    // 递归
+    /**
+     * 中序遍历， 递加在 [L , R] 范围内的元素即可。
+     * 递归
+     */
     int sum = 0;
-    public int rangeSumBST(TreeNode root, int L, int R){
+    public int rangeSumBST2(TreeNode root, int L, int R){
         if (root == null) return 0;
-        rangeSumBST(root.left, L ,R);
-        if (root.val >= L && root.val <= R){
-            sum += root.val;
-        }
-        rangeSumBST(root.right,L,R);
+        rangeSumBST2(root.left, L ,R);
+        if (root.val >= L && root.val <= R) sum += root.val;
+        // 加一个剪枝处理
+        // 当 root.val > high 时, 就没必要往下遍历了
+        if (root.val > R) return sum;
+
+        rangeSumBST2(root.right,L,R);
         return sum;
     }
 
-    // 迭代
+    public int rangeSumBST(TreeNode root, int L, int R){
+        if(root == null) return 0;
+        if(root.val < L) return rangeSumBST(root.right, L, R);
+        if(root.val > R) return rangeSumBST(root.left, L, R);
+        return root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R);
+    }
+
+    /**
+     * 中序遍历， 递加在 [L , R] 范围内的元素即可。
+     * 迭代
+     */
     public int rangeSumBST1(TreeNode root, int L, int R){
         if (root == null) return 0;
-
         // 保存最终结果
         int sum = 0;
-
         Stack<TreeNode> stack = new Stack<>();
         while (!stack.isEmpty() || root != null){
             while (root != null){
                 stack.push(root);
                 root = root.left;
             }
-
             root = stack.pop();
-            if (root.val >= L && root.val <= R){
-                sum += root.val;
-            }
-
+            if (root.val >= L && root.val <= R) sum += root.val;
             root = root.right;
         }
-
         return sum;
     }
 

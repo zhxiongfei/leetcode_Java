@@ -13,9 +13,6 @@ public class _538_把二叉搜索树转换为累加树 {
      * 二叉搜索树的特点是, 右子树所有元素的值 > root.val > 左子树所有元素的值
      *
      * 所以, 递归函数先将 root的右子树转为累加树
-     *
-     *
-     *
      * */
     int add = 0;
     public TreeNode convertBST(TreeNode root) {
@@ -30,9 +27,7 @@ public class _538_把二叉搜索树转换为累加树 {
     }
 
     /**
-     *
-     * 中序遍历
-     *
+     * 反向中序遍历
      * */
     public TreeNode convertBST1(TreeNode root) {
         if(root == null) return null;
