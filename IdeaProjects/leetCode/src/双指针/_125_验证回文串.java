@@ -19,9 +19,36 @@ package 双指针;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.HashMap;
 import java.util.Stack;
 
 public class _125_验证回文串 {
+
+    public static void main(String[] args) {
+        _125_验证回文串 cls = new _125_验证回文串();
+
+        boolean res = cls.wordPattern("abba", "dog cat cat fish");
+        System.out.println(res);
+    }
+
+    public boolean wordPattern(String pattern, String s) {
+        String[] strings = s.split(" ");
+        HashMap<String, Character> map = new HashMap<>();
+        if (strings.length != pattern.length()) return false;
+
+        for (int i = 0; i < strings.length; i++) {
+            String str = strings[i];
+            char pat = pattern.charAt(i);
+            if (map.containsKey(str)){
+                char c = map.get(str);
+                if (c != pat) return false;
+            }else {
+                if (map.values().contains(pat)) return false;
+                map.put(str, pat);
+            }
+        }
+        return true;
+    }
 
     /**
      *
