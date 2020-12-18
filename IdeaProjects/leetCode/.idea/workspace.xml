@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/哈希表/_290_单词规律.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/贪心/_738_单调递增的数字.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/META-INF/leetCode.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_538_把二叉搜索树转换为累加树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_538_把二叉搜索树转换为累加树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_938_二叉搜索树的范围和.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_938_二叉搜索树的范围和.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/双指针/_125_验证回文串.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/双指针/_125_验证回文串.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/动态规划/_121_买卖股票的最佳时机.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_121_买卖股票的最佳时机.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/双指针/_125_验证回文串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/双指针/_125_验证回文串.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/剑指offer/_面试题59_II_队列的最大值.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/_面试题59_II_队列的最大值.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +269,7 @@
       <workItem from="1608081558214" duration="3128000" />
       <workItem from="1608119557423" duration="1342000" />
       <workItem from="1608168435124" duration="1542000" />
+      <workItem from="1608255527623" duration="2016000" />
     </task>
     <servers />
   </component>
@@ -1046,6 +1040,11 @@
           <url>file://$PROJECT_DIR$/src/二叉树/_257_二叉树的所有路径.java</url>
           <line>74</line>
           <option name="timeStamp" value="1053" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/剑指offer/_面试题32_III_从上到下打印二叉树III.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1054" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-method">
           <url>file://$PROJECT_DIR$/src/排序/MergeSort.java</url>

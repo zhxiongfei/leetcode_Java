@@ -29,13 +29,14 @@ package 剑指offer;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class _面试题59_II_队列的最大值 {
 
     Queue<Integer> queue;
-    Queue<Integer> maxQueue;
+    Deque<Integer> maxQueue;
 
     public _面试题59_II_队列的最大值() {
 
@@ -44,27 +45,23 @@ public class _面试题59_II_队列的最大值 {
     }
 
     public int max_value() {
-        if (maxQueue.isEmpty()) return -1;
+        if (queue.isEmpty()) return -1;
         return maxQueue.peek();
     }
 
     public void push_back(int value) {
         queue.add(value);
-        if (maxQueue.isEmpty()){
-            maxQueue.add(value);
-        }else {
-            while (value > maxQueue.peek()){
-                maxQueue.remove();
-                maxQueue.add(value);
-                maxQueue.add(value);
-            }
-            maxQueue.add((value));
+
+        while (!maxQueue.isEmpty() && maxQueue.peekLast() < value){
+            maxQueue.pollLast();
         }
+        maxQueue.offer(value);
     }
 
     public int pop_front() {
         if (queue.isEmpty()) return -1;
-        maxQueue.remove();
-        return queue.remove();
+        int value = queue.poll();
+        if (maxQueue.peek() == value) maxQueue.pop();
+        return value;
     }
 }
