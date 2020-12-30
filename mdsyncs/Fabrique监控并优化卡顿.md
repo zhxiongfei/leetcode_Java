@@ -1,6 +1,6 @@
 ## Fabrique监控并优化卡顿
 
-(此文章摘自老谭博客, [传送门](http://www.tanhao.me/code/151113.html))
+(此文章转自老谭博客, [传送门](http://www.tanhao.me/code/151113.html))
 
 ### 一 : RunLoop 监控分析
 
