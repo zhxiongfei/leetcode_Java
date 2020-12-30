@@ -42,6 +42,7 @@ public class _98_验证二叉搜索树 {
             }
 
             node = stack.pop();
+            System.out.println(node.val);
             if (node.val <= prev) return false;
             prev = node.val;
             node = node.right;

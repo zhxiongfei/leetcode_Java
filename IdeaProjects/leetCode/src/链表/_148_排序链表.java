@@ -43,6 +43,9 @@ public class _148_排序链表 {
         return newHead.next;
     }
 
+    /**
+     * 归并排序
+     * */
     public static ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head;
 
