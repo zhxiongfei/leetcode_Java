@@ -82,4 +82,23 @@ public class _面试题54_二叉搜索树的第k大节点 {
         return list.get(list.size() - k);
     }
 
+    /**
+     * 提前剪枝
+     * */
+    int res, k;
+    private void dfs1(TreeNode root){
+        if (root == null) return;
+        dfs1(root.right);
+
+        if (-- k == 0) {
+            res = root.val;
+            return;
+        }
+        dfs1(root.left);
+    }
+    public int kthLargest1(TreeNode root, int k) {
+        this.k = k;
+        dfs1(root);
+        return res;
+    }
 }

@@ -23,6 +23,7 @@ import java.util.*;
 
 public class 电话号码的字母组合 {
 
+    static int cnt;
     public List<String> letterCombinations(String digits) {
         List<String> res = new ArrayList<>();
         if (digits == null || digits.length() == 0) return res;
@@ -59,6 +60,7 @@ public class 电话号码的字母组合 {
                 used[i] = true;
                 path.append(c1);
 
+                cnt ++;
                 dfs(res, path, used, map, digits, i + 1,depth + 1);
 
                 used[i] = false;
@@ -69,6 +71,8 @@ public class 电话号码的字母组合 {
 
     public static void main(String[] args) {
         电话号码的字母组合 cls = new 电话号码的字母组合();
-        cls.letterCombinations("23");
+        cls.letterCombinations("234");
+
+        System.out.println(cnt);
     }
 }

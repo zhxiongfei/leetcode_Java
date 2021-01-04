@@ -30,16 +30,12 @@ public class _46_全排列 {
         List<List<Integer>>res = new ArrayList<>();
         int n = nums.length;
         if (n == 0) return res;
-
         // 路径栈
         Deque<Integer> path = new ArrayDeque<Integer>();
-
         // 是否使用过的数组
         boolean[] used = new boolean[nums.length];
-
         // 回溯
         dfs(nums, n, 0, path, used, res);
-
         return res;
     }
 
@@ -58,7 +54,6 @@ public class _46_全排列 {
             res.add(new ArrayList<>(path));
             return;
         }
-
         // 回溯选择
         for (int i = 0; i < nums.length; i++) {
             // 如果选择过，则进度下层循环
@@ -69,13 +64,7 @@ public class _46_全排列 {
             // 设置为访问过
             used[i] = true;
             // 进入下层选择
-
-            System.out.println("递归之前" + path);
-
             dfs(nums, length, depth + 1, path, used, res);
-
-            System.out.println("递归之后" + path);
-
             // 状态充值
             used[i] = false;
             path.removeLast();
