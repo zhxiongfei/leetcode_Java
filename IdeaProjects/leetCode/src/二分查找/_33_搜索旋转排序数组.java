@@ -77,6 +77,29 @@ public class _33_搜索旋转排序数组 {
         return binarySearch(nums, 0, minIdx - 1, target);
     }
 
+    /**
+     * 迭代
+     * */
+    public int search1(int[] nums, int target) {
+        int pivot = findMinIdx(nums);
+        int begin = 0, end = nums.length - 1;
+        if(target > nums[nums.length - 1]){
+            end = pivot - 1;
+        }else{
+            begin = pivot;
+        }
+        while (begin < end){
+            int mid = begin + ((end - begin) >> 1);
+            if (nums[mid] == target) return mid;
+            if (nums[mid] > target){
+                end = mid - 1;
+            }else{
+                begin = mid + 1;
+            }
+        }
+        return (nums[begin] == target ? begin : -1);
+    }
+
     public static void main(String[] args) {
         _33_搜索旋转排序数组 cls = new _33_搜索旋转排序数组();
 

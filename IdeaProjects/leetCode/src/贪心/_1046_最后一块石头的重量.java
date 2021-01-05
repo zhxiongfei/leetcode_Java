@@ -23,19 +23,25 @@ package 贪心;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class _1046_最后一块石头的重量 {
 
-    // 最后剩下的肯定只有1个。
-    // 升序排序数组。 最后一个 等于 最后一个 - 倒数第二个。
-    // 并且把倒数第二个值为0。
-
-    // 重新排序数组。
-    // 循环
-
-    // 直至数组只剩一个不为0元素
-    static int lastStoneWeight(int[] stones) {
+    /**
+     * 最后剩下的肯定只有1个。
+     * 升序排序数组。 最后一个 等于 最后一个 - 倒数第二个。
+     * 并且把倒数第二个值为0。
+     *
+     * 重新排序数组。
+     * 循环
+     * 直至数组只剩一个不为0元素
+     *
+     * 时间复杂度 : O(N ^ 2 * logN)
+     * 空间复杂度 : O(1)
+     * */
+    static int lastStoneWeight1(int[] stones) {
 
         if (stones == null || stones.length == 0) return 0;
         if (stones.length == 1) return stones[0];
@@ -48,6 +54,32 @@ public class _1046_最后一块石头的重量 {
         }
 
         return stones[stones.length - 1];
+    }
+
+    /**
+     * 最大堆
+     * 时间复杂度 : O(N * logN)
+     * 空间复杂度 : O(N)
+     * */
+    public static int lastStoneWeight(int[] stones) {
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        for (int i = 0; i < stones.length; i++) {
+            queue.add(stones[i]);
+        }
+
+        while (queue.size() > 1){
+            int n1 = queue.poll();
+            int n2 = queue.poll();
+            int diff = Math.abs(n1 - n2);
+            queue.add(diff);
+        }
+
+        return queue.peek();
     }
 
     public static void main(String[] args){

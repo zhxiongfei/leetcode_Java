@@ -2,6 +2,7 @@ package 堆;
 
 import 链表.ListNode;
 
+import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -125,14 +126,4 @@ public class _215_数组中的第K个最大元素 {
         nums[i2] = tmp;
     }
 
-    public static void main(String[] args) {
-        _215_数组中的第K个最大元素 cls = new _215_数组中的第K个最大元素();
-
-        int[] nums = {3,2,1,5,6,4};
-        cls.findKthLargest3(nums, 2);
-
-        if (nums != null){
-
-        }
-    }
 }

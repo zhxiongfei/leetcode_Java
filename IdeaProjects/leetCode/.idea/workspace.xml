@@ -20,14 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/贪心/_605_种花问题.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/LetterCombinations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/贪心/_435_无重叠区间.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题59_II_队列的最大值.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题59_II_队列的最大值.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_121_买卖股票的最佳时机.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_5_最长回文子串.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_5_最长回文子串.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/双指针/_125_验证回文串.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/双指针/_125_验证回文串.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二分查找/_162_寻找峰值.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/二分查找/_162_寻找峰值.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_5_最长回文子串.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二分查找/_33_搜索旋转排序数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二分查找/_33_搜索旋转排序数组.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_98_验证二叉搜索树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_98_验证二叉搜索树.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题54_二叉搜索树的第k大节点.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题54_二叉搜索树的第k大节点.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_0_1背包_恰好装满.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_0_1背包_恰好装满.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_3_无重复字符的最长子串.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/回溯算法/_46_全排列.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/回溯算法/_46_全排列.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetCode/贪心/_1046_最后一块石头的重量.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/贪心/_1046_最后一块石头的重量.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/剑指offer/_面试题54_二叉搜索树的第k大节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/_面试题54_二叉搜索树的第k大节点.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/回溯算法/_46_全排列.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/回溯算法/_46_全排列.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/回溯算法/电话号码的字母组合.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/回溯算法/电话号码的字母组合.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +96,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -103,13 +110,13 @@
       <recent name="$PROJECT_DIR$/src/设计模式/Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._605_种花问题">
-    <configuration name="_1122_数组的相对排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="排序._1122_数组的相对排序" />
+  <component name="RunManager" selected="Application.LetterCombinations">
+    <configuration name="验证回文字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="探索系列.探索初级算法.验证回文字符串" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="排序.*" />
+          <option name="PATTERN" value="探索系列.探索初级算法.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_125_验证回文串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="双指针._125_验证回文串" />
+    <configuration name="电话号码的字母组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="回溯算法.电话号码的字母组合" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="双指针.*" />
+          <option name="PATTERN" value="回溯算法.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_204_计数质数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="数学._204_计数质数" />
+    <configuration name="LetterCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.LetterCombinations" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="数学.*" />
+          <option name="PATTERN" value="Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_257_二叉树的所有路径" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="二叉树._257_二叉树的所有路径" />
+    <configuration name="_215_数组中的第K个最大元素" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="堆._215_数组中的第K个最大元素" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="二叉树.*" />
+          <option name="PATTERN" value="堆.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_605_种花问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="贪心._605_种花问题" />
+    <configuration name="_435_无重叠区间" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="贪心._435_无重叠区间" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
@@ -171,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._605_种花问题" />
-        <item itemvalue="Application._125_验证回文串" />
-        <item itemvalue="Application._257_二叉树的所有路径" />
-        <item itemvalue="Application._204_计数质数" />
-        <item itemvalue="Application._1122_数组的相对排序" />
+        <item itemvalue="Application.LetterCombinations" />
+        <item itemvalue="Application.电话号码的字母组合" />
+        <item itemvalue="Application._435_无重叠区间" />
+        <item itemvalue="Application._215_数组中的第K个最大元素" />
+        <item itemvalue="Application.验证回文字符串" />
       </list>
     </recent_temporary>
   </component>
@@ -276,17 +283,17 @@
       <workItem from="1608119557423" duration="1342000" />
       <workItem from="1608168435124" duration="1542000" />
       <workItem from="1608255527623" duration="2016000" />
-      <workItem from="1608428582848" duration="245000" />
-      <workItem from="1609164019714" duration="188000" />
-      <workItem from="1609166299373" duration="63000" />
-      <workItem from="1609225613633" duration="254000" />
-      <workItem from="1609226792180" duration="742000" />
-      <workItem from="1609507468597" duration="773000" />
-      <workItem from="1609594429208" duration="1174000" />
-      <workItem from="1609596279157" duration="673000" />
-      <workItem from="1609598136265" duration="1775000" />
-      <workItem from="1609599949974" duration="577000" />
-      <workItem from="1609644493222" duration="82000" />
+      <workItem from="1608288717611" duration="240000" />
+      <workItem from="1608513507274" duration="1339000" />
+      <workItem from="1608599980868" duration="4991000" />
+      <workItem from="1608688093837" duration="86000" />
+      <workItem from="1608688248611" duration="1035000" />
+      <workItem from="1608775606370" duration="2203000" />
+      <workItem from="1608860340043" duration="1208000" />
+      <workItem from="1609121792103" duration="2756000" />
+      <workItem from="1609206759718" duration="12832000" />
+      <workItem from="1609380392781" duration="3803000" />
+      <workItem from="1609404577168" duration="3498000" />
     </task>
     <servers />
   </component>
@@ -317,82 +324,83 @@
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
     <state width="409" height="466" key="DebuggerActiveHint/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606975361810" />
-    <state width="1074" height="209" key="GridCell.Tab.0.bottom" timestamp="1609509194154">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.0.bottom" timestamp="1609410649046">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
-    <state width="1074" height="209" key="GridCell.Tab.0.bottom/0.23.1280.720@0.23.1280.720" timestamp="1609509194154" />
     <state width="1550" height="288" key="GridCell.Tab.0.bottom/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405752" />
     <state width="1308" height="65" key="GridCell.Tab.0.bottom/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390479" />
     <state width="1342" height="252" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1608109575405" />
-    <state width="1342" height="104" key="GridCell.Tab.0.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608084053305" />
-    <state width="1074" height="209" key="GridCell.Tab.0.center" timestamp="1609509194153">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.0.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410649046" />
+    <state width="1337" height="428" key="GridCell.Tab.0.bottom/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835071" />
+    <state width="1462" height="304" key="GridCell.Tab.0.center" timestamp="1609410649045">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
-    <state width="1074" height="209" key="GridCell.Tab.0.center/0.23.1280.720@0.23.1280.720" timestamp="1609509194153" />
     <state width="1550" height="288" key="GridCell.Tab.0.center/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405751" />
     <state width="1308" height="65" key="GridCell.Tab.0.center/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390479" />
     <state width="1342" height="252" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1608109575404" />
-    <state width="1342" height="104" key="GridCell.Tab.0.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608084053304" />
-    <state width="1074" height="209" key="GridCell.Tab.0.left" timestamp="1609509194153">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.0.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410649045" />
+    <state width="1337" height="428" key="GridCell.Tab.0.center/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835070" />
+    <state width="1462" height="304" key="GridCell.Tab.0.left" timestamp="1609410649044">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
-    <state width="1074" height="209" key="GridCell.Tab.0.left/0.23.1280.720@0.23.1280.720" timestamp="1609509194153" />
     <state width="1550" height="288" key="GridCell.Tab.0.left/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405750" />
     <state width="1308" height="65" key="GridCell.Tab.0.left/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390478" />
     <state width="1342" height="252" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1608109575404" />
-    <state width="1342" height="104" key="GridCell.Tab.0.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608084053303" />
-    <state width="1074" height="209" key="GridCell.Tab.0.right" timestamp="1609509194154">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.0.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410649044" />
+    <state width="1337" height="428" key="GridCell.Tab.0.left/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835070" />
+    <state width="1462" height="304" key="GridCell.Tab.0.right" timestamp="1609410649045">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
-    <state width="1074" height="209" key="GridCell.Tab.0.right/0.23.1280.720@0.23.1280.720" timestamp="1609509194154" />
     <state width="1550" height="288" key="GridCell.Tab.0.right/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405751" />
     <state width="1308" height="65" key="GridCell.Tab.0.right/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390479" />
     <state width="1342" height="252" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1608109575405" />
-    <state width="1342" height="104" key="GridCell.Tab.0.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608084053304" />
-    <state width="1074" height="267" key="GridCell.Tab.1.bottom" timestamp="1609509194147">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.0.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410649045" />
+    <state width="1337" height="428" key="GridCell.Tab.0.right/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835071" />
+    <state width="1462" height="304" key="GridCell.Tab.1.bottom" timestamp="1609410646662">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
-    <state width="1074" height="267" key="GridCell.Tab.1.bottom/0.23.1280.720@0.23.1280.720" timestamp="1609509194147" />
     <state width="1550" height="288" key="GridCell.Tab.1.bottom/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405752" />
     <state width="1308" height="65" key="GridCell.Tab.1.bottom/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390481" />
     <state width="1342" height="252" key="GridCell.Tab.1.bottom/0.25.1280.775@0.25.1280.775" timestamp="1608109575406" />
-    <state width="1342" height="252" key="GridCell.Tab.1.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608083388605" />
-    <state width="1074" height="267" key="GridCell.Tab.1.center" timestamp="1609509194147">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.1.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410646662" />
+    <state width="1337" height="428" key="GridCell.Tab.1.bottom/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835756" />
+    <state width="1462" height="304" key="GridCell.Tab.1.center" timestamp="1609410646661">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
-    <state width="1074" height="267" key="GridCell.Tab.1.center/0.23.1280.720@0.23.1280.720" timestamp="1609509194147" />
     <state width="1550" height="288" key="GridCell.Tab.1.center/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405752" />
     <state width="1308" height="65" key="GridCell.Tab.1.center/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390480" />
     <state width="1342" height="252" key="GridCell.Tab.1.center/0.25.1280.775@0.25.1280.775" timestamp="1608109575406" />
-    <state width="1342" height="252" key="GridCell.Tab.1.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608083388604" />
-    <state width="1074" height="267" key="GridCell.Tab.1.left" timestamp="1609509194146">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.1.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410646661" />
+    <state width="1337" height="428" key="GridCell.Tab.1.center/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835754" />
+    <state width="1462" height="304" key="GridCell.Tab.1.left" timestamp="1609410646660">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
-    <state width="1074" height="267" key="GridCell.Tab.1.left/0.23.1280.720@0.23.1280.720" timestamp="1609509194146" />
     <state width="1550" height="288" key="GridCell.Tab.1.left/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405752" />
     <state width="1308" height="65" key="GridCell.Tab.1.left/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390480" />
     <state width="1342" height="252" key="GridCell.Tab.1.left/0.25.1280.775@0.25.1280.775" timestamp="1608109575405" />
-    <state width="1342" height="252" key="GridCell.Tab.1.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608083388603" />
-    <state width="1074" height="267" key="GridCell.Tab.1.right" timestamp="1609509194147">
-      <screen x="0" y="23" width="1280" height="720" />
+    <state width="1462" height="304" key="GridCell.Tab.1.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410646660" />
+    <state width="1337" height="428" key="GridCell.Tab.1.left/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835754" />
+    <state width="1462" height="304" key="GridCell.Tab.1.right" timestamp="1609410646662">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
-    <state width="1074" height="267" key="GridCell.Tab.1.right/0.23.1280.720@0.23.1280.720" timestamp="1609509194147" />
     <state width="1550" height="288" key="GridCell.Tab.1.right/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976405752" />
     <state width="1308" height="65" key="GridCell.Tab.1.right/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606388390481" />
     <state width="1342" height="252" key="GridCell.Tab.1.right/0.25.1280.775@0.25.1280.775" timestamp="1608109575406" />
-    <state width="1342" height="252" key="GridCell.Tab.1.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608083388604" />
-    <state x="256" y="93" key="SettingsEditor" timestamp="1606387896637">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1462" height="304" key="GridCell.Tab.1.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609410646662" />
+    <state width="1337" height="428" key="GridCell.Tab.1.right/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609381835755" />
+    <state x="223" y="-971" key="SettingsEditor" timestamp="1609213399064">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
     <state x="256" y="93" key="SettingsEditor/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606387896637" />
+    <state x="223" y="-971" key="SettingsEditor/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609213399064" />
     <state x="371" y="-913" width="1034" height="820" key="dock-window-1" timestamp="1605234901939">
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
@@ -417,16 +425,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="-333" width="754" height="723" key="run.anything.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1604645999960" />
-    <state x="386" y="166" width="672" height="176" key="search.everywhere.popup" timestamp="1609644524883">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup" timestamp="1609411417508">
+      <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
-    <state x="386" y="166" width="672" height="176" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1609644524883" />
     <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606309629966" />
-    <state x="386" y="166" width="672" height="176" key="search.everywhere.popup/0.23.1280.720@0.23.1280.720" timestamp="1609644502145" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976114376" />
     <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606387899590" />
-    <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1608169040208" />
-    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1607652596373" />
+    <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609411417508" />
+    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1609404591946" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -528,7 +534,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/二叉搜索树/_98_验证二叉搜索树.java</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="271" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -580,11 +586,6 @@
           <url>file://$PROJECT_DIR$/src/排序/HeapSort.java</url>
           <line>87</line>
           <option name="timeStamp" value="333" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/堆/_215_数组中的第K个最大元素.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="338" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Interview/_面试题_17_14_最小K个数.java</url>
@@ -1044,13 +1045,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/二分查找/_34_在排序数组中查找元素的第一个和最后一个位置.java</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="1043" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/二叉树/_257_二叉树的所有路径.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="1053" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/剑指offer/_面试题32_III_从上到下打印二叉树III.java</url>
           <line>44</line>
           <option name="timeStamp" value="1054" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/LetterCombinations.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1072" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/LetterCombinations.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1073" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Interview/LetterCombinations.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1074" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-method">
           <url>file://$PROJECT_DIR$/src/排序/MergeSort.java</url>
@@ -1084,53 +1105,53 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>每日一题.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$__10_05_.ic" NAME="_面试题_10_05_稀疏数组搜索 Coverage Results" MODIFIED="1591629782378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Interview.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉树.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.fx.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>哈希表.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>链表.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_143_.ic" NAME="_143_重排链表 Coverage Results" MODIFIED="1593437961845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>链表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fx.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$Pow_x_n.ic" NAME="Pow_x_n Coverage Results" MODIFIED="1592979699612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>探索系列.探索递归.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>哈希表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_143_.ic" NAME="_143_重排链表 Coverage Results" MODIFIED="1593437961845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>链表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉树.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>堆.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_1370_.ic" NAME="_1370_上升下降字符串 Coverage Results" MODIFIED="1606270290639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>字符串.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>每日一题.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>堆.*</FILTER>
     </SUITE>
   </component>
 </project>

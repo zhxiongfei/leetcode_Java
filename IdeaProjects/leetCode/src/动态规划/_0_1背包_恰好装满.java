@@ -9,6 +9,8 @@ package 动态规划;
 编号为k的物品，价值是values[k], 重量是weights[k], k 范围 [0,n)
  */
 
+import java.util.HashSet;
+
 public class _0_1背包_恰好装满 {
 
     static int solution(int[] values, int[] weights, int maxWeight){
