@@ -38,7 +38,7 @@ public class _162_寻找峰值 {
      查找时，左指针 l，右指针 r，以其保持左右顺序为循环条件
      根据左右指针计算中间位置 m，并比较 m 与 m+1 的值，
      如果 m 较大，则左侧存在峰值，r = m
-     如果 m + 1 较大，则右侧存在峰值，l = m + 1
+     如果 m + 1 较大，则右侧值，l = m + 1
      */
     private int findPeakElement(int[]nums, int l, int r){
         if (l == r) return l;
