@@ -29,6 +29,44 @@ import java.util.Arrays;
 
 public class _164_最大间距 {
 
+    private void swap(int[] nums, int i, int j){
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+
+    public void bubbleSort(int[] nums){
+        for (int i = nums.length - 1; i >= 0; i --){
+            int sortedIdx = 0;
+            for (int j = 0; j < i; j ++){
+                if (nums[j + 1] < nums[j]){
+                    swap(nums, j, j+1);
+                    sortedIdx = j + 1;
+                }
+            }
+            i = sortedIdx;
+        }
+    }
+
+    public void selectionSort(int[] nums){
+        for (int end = nums.length - 1; end > 0; end --){
+            int max = 0;
+            for (int begin = 1; begin <= end; begin ++){
+                if (nums[max] < nums[begin]){
+                    max = begin;
+                }
+            }
+            swap(nums, max, end);
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1,5,4,2,3};
+        _164_最大间距 cls = new _164_最大间距();
+        cls.selectionSort(nums);
+        System.out.println(nums);
+    }
+
     /**
      * 基于系统的快排
      * 时间复杂度 : O(N * logN)

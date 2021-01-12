@@ -27,6 +27,7 @@ public class _剑指_Offer_11_旋转数组的最小数字 {
         int begain = 0, end = numbers.length - 1;
         while (begain < end){
             int mid = begain + ((end - begain) >> 1);
+            System.out.println(mid);
 
             if (numbers[mid] < numbers[end]){
                 // 在 [mid + 1, end] 范围内

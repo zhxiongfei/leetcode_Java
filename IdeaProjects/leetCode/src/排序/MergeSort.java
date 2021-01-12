@@ -28,8 +28,7 @@ public class MergeSort extends Sort{
         sort(begain, mid);
         sort(mid, end);
 
-        merge(begain, mid, end);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+        merge(begain, mid, end);                                                                                                                                                                                                                                                                                                                                                                                                                                            }
 
     private void merge(int begain, int mid, int end){
 

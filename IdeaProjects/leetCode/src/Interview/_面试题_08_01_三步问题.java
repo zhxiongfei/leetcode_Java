@@ -1,3 +1,4 @@
+
 package Interview;
 
 /*
@@ -73,7 +74,6 @@ public class _面试题_08_01_三步问题 {
             b = c;
             c = result;
         }
-
         return result;
     }
 }
