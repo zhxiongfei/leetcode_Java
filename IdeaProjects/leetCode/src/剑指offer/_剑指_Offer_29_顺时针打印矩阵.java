@@ -28,7 +28,7 @@ import java.util.List;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
-public class _剑指_Offer_29_顺时针打印矩阵 {
+class _剑指_Offer_29_顺时针打印矩阵 {
 
     public int[] spiralOrder(int[][] matrix) {
         if (matrix.length == 0) return new int[0];
