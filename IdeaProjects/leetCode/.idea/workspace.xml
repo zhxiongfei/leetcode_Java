@@ -20,21 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interview/LetterCombinations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/贪心/_435_无重叠区间.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/_228_汇总区间.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二分查找/_33_搜索旋转排序数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二分查找/_33_搜索旋转排序数组.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_98_验证二叉搜索树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/二叉搜索树/_98_验证二叉搜索树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题54_二叉搜索树的第k大节点.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/剑指offer/_面试题54_二叉搜索树的第k大节点.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_0_1背包_恰好装满.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/动态规划/_0_1背包_恰好装满.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/动态规划/_3_无重复字符的最长子串.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/回溯算法/_46_全排列.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/回溯算法/_46_全排列.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/堆/_215_数组中的第K个最大元素.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/贪心/_1046_最后一块石头的重量.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/贪心/_1046_最后一块石头的重量.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/剑指offer/_面试题54_二叉搜索树的第k大节点.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/_面试题54_二叉搜索树的第k大节点.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/回溯算法/_46_全排列.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/回溯算法/_46_全排列.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/回溯算法/电话号码的字母组合.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/回溯算法/电话号码的字母组合.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/剑指offer/_面试题21_调整数组顺序使奇数位于偶数前面.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/_面试题21_调整数组顺序使奇数位于偶数前面.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="电话号码的字母组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="回溯算法.电话号码的字母组合" />
+    <configuration name="LetterCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.LetterCombinations" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="回溯算法.*" />
+          <option name="PATTERN" value="Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LetterCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.LetterCombinations" />
+    <configuration name="电话号码的字母组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="回溯算法.电话号码的字母组合" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.*" />
+          <option name="PATTERN" value="回溯算法.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,7 +167,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LetterCombinations" />
-        <item itemvalue="Application.电话号码的字母组合" />
         <item itemvalue="Application._435_无重叠区间" />
         <item itemvalue="Application._215_数组中的第K个最大元素" />
         <item itemvalue="Application.验证回文字符串" />
@@ -294,6 +281,9 @@
       <workItem from="1609206759718" duration="12832000" />
       <workItem from="1609380392781" duration="3803000" />
       <workItem from="1609404577168" duration="3498000" />
+      <workItem from="1610241230876" duration="338000" />
+      <workItem from="1610271257301" duration="1573000" />
+      <workItem from="1610457691581" duration="1263000" />
     </task>
     <servers />
   </component>
@@ -425,10 +415,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="-333" width="754" height="723" key="run.anything.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1604645999960" />
-    <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup" timestamp="1609411417508">
-      <screen x="-141" y="-1055" width="2048" height="1055" />
+    <state x="386" y="172" width="672" height="158" key="search.everywhere.popup" timestamp="1610457738166">
+      <screen x="0" y="23" width="1280" height="720" />
     </state>
     <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606309629966" />
+    <state x="386" y="172" width="672" height="158" key="search.everywhere.popup/0.23.1280.720@0.23.1280.720" timestamp="1610457738166" />
     <state x="476" y="-837" width="1073" height="680" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606976114376" />
     <state x="434" y="206" width="755" height="565" key="search.everywhere.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1606387899590" />
     <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609411417508" />
@@ -534,7 +525,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/二叉搜索树/_98_验证二叉搜索树.java</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="271" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1105,53 +1096,53 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>每日一题.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$__10_05_.ic" NAME="_面试题_10_05_稀疏数组搜索 Coverage Results" MODIFIED="1591629782378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Interview.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>二叉树.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>双指针.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_230_K.ic" NAME="_230_二叉搜索树中第K小的元素 Coverage Results" MODIFIED="1589177970764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>二叉搜索树.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.fx.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>哈希表.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>堆.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_86_.ic" NAME="_86_分隔链表 Coverage Results" MODIFIED="1577077455660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>链表.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$Main.ic" NAME="Main Coverage Results" MODIFIED="1575357007799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.fx.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$Pow_x_n.ic" NAME="Pow_x_n Coverage Results" MODIFIED="1592979699612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>探索系列.探索递归.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_538_.ic" NAME="_538_把二叉搜索树转换为累加树 Coverage Results" MODIFIED="1595495231953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉搜索树.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_146_LRU.ic" NAME="_146_LRU缓存机制 Coverage Results" MODIFIED="1590382739639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>哈希表.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$_647_.ic" NAME="_647_回文子串 Coverage Results" MODIFIED="1597805858561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>动态规划.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_143_.ic" NAME="_143_重排链表 Coverage Results" MODIFIED="1593437961845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>链表.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_863_K.ic" NAME="_863_二叉树中所有距离为K的结点 Coverage Results" MODIFIED="1606300728587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>二叉树.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_373_K.ic" NAME="_373_查找和最小的K对数字 Coverage Results" MODIFIED="1576217228674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>堆.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/leetCode$_63_II.ic" NAME="_63_不同路径II Coverage Results" MODIFIED="1578891435294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>动态规划.*</FILTER>
+    <SUITE FILE_PATH="coverage/leetCode$Pow_x_n.ic" NAME="Pow_x_n Coverage Results" MODIFIED="1592979699612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>探索系列.探索递归.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/leetCode$_1370_.ic" NAME="_1370_上升下降字符串 Coverage Results" MODIFIED="1606270290639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>字符串.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_28_strStr.ic" NAME="_28_实现strStr Coverage Results" MODIFIED="1577786094845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>双指针.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_6_4_238_.ic" NAME="_6_4_238_除自身以外数组的乘积 Coverage Results" MODIFIED="1591278325215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>每日一题.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/leetCode$_313_.ic" NAME="_313_超级丑数 Coverage Results" MODIFIED="1590760841151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>堆.*</FILTER>
     </SUITE>
   </component>
 </project>

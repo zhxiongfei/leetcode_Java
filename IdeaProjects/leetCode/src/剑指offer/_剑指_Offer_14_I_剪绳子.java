@@ -25,13 +25,11 @@ package 剑指offer;
 public class _剑指_Offer_14_I_剪绳子 {
 
     /**
-     *
+     * 贪心
      * 很显然
      * 3是拆分的最小数字，因为 3 只能拆分成 1 2。 乘积 比 其自身还小
      * 而 4 可以拆分 2 2乘积 == 4
      * 5 可以拆分成 2 3 乘积为6 > 5
-     *
-     *
      * */
     public static int cuttingRope(int n) {
         if (n <= 3) return n - 1;
