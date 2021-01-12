@@ -20,6 +20,29 @@ package 动态规划;
 
 public class _5_最长回文子串 {
 
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        if (n == 0) return true;
+        if (n >= Math.ceil(flowerbed.length >> 1)) return false;
+
+        int i = 0;
+        while (i < flowerbed.length){
+            int num = flowerbed[i];
+            if (num == 1) {
+                i += 2;
+                continue;
+            }
+
+            if (i+1 >= flowerbed.length || flowerbed[i+1] == 0) {
+                i += 2;
+                n --;
+            }
+
+            if (n == 0) return true;
+        }
+
+        return false;
+    }
+
     public String longestPalindrome(String s) {
         if (s == null || s.length() <= 1) return s;
 
@@ -60,7 +83,6 @@ public class _5_最长回文子串 {
                 }
             }
         }
-
         return s.substring(maxleft, maxright + 1);
     }
 }
