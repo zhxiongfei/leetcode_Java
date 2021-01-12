@@ -31,7 +31,7 @@ public class _剑指_Offer_14_I_剪绳子 {
      * 而 4 可以拆分 2 2乘积 == 4
      * 5 可以拆分成 2 3 乘积为6 > 5
      * */
-    public static int cuttingRope(int n) {
+    public static int cuttingRope1(int n) {
         if (n <= 3) return n - 1;
 
         int res = 1;
@@ -39,11 +39,25 @@ public class _剑指_Offer_14_I_剪绳子 {
             res *= 3;
             n -= 3;
         }
-
         return res * n;
     }
 
+    public static int cuttingRope(int n) {
+        if (n <= 3) return n - 1;
+
+        int[] dp = new int[n + 1];
+        dp[2] = 1;
+        dp[3] = 2;
+
+        for (int i = 4; i <= n; i++) {
+            for (int j = 1; j < i; j++) {
+                dp[i]= Math.max(dp[i], Math.max(j * (i - j), j * dp[i - j]));
+            }
+        }
+        return dp[n];
+    }
+
     public static void main(String[] args) {
-        cuttingRope(10);
+        cuttingRope(20);
     }
 }
