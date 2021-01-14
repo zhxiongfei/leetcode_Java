@@ -21,6 +21,7 @@ package 剑指offer;
  */
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Stack;
 
 public class _面试题06_从尾到头打印链表 {
@@ -57,7 +58,7 @@ public class _面试题06_从尾到头打印链表 {
         return res;
     }
 
-    public ListNode reverse(ListNode head){
+    public ListNode reverse1(ListNode head){
         ListNode newHead = null;
         while (head != null){
             ListNode tmp = head.next;
@@ -65,6 +66,18 @@ public class _面试题06_从尾到头打印链表 {
             newHead = head;
             head = tmp;
         }
+        return newHead;
+    }
+
+    /**
+     * 递归
+     */
+    private ListNode reverse(ListNode head){
+        if (head == null || head.next == null) return head;
+
+        ListNode newHead = reverse(head.next);
+        head.next.next = head;
+        head.next = null;
         return newHead;
     }
 }

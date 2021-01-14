@@ -17,11 +17,11 @@ public class 反转链表 {
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) return head;
 
-        ListNode node = reverseList(head.next);
-        node.next.next = head;
+        ListNode newHead = reverseList(head.next);
+        head.next.next = head;
         head.next = null;
 
-        return node;
+        return newHead;
     }
 
 }
