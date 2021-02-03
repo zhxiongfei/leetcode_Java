@@ -28,20 +28,30 @@ package 剑指offer;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class _剑指Offer59_I滑动窗口的最大值 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length < k) return null;
         int[] res = new int[nums.length - k + 1];
 
-        // left, right 分别为滑动窗口的左右边界 [left, right]
-        int left = 0, right = 0;
-        while (right < nums.length){
+        Deque<Integer>deque = new LinkedList<>();
+        for (int i = 0; i < nums.length; i ++){
+            int num = nums[i];
+            while (!deque.isEmpty() && num > nums[deque.peekLast()]){
+                deque.pollLast();
+            }
+            deque.addLast(i);
 
+            int begin = i - k + 1;
+            if (deque.getFirst() < begin){
+                deque.pollFirst();
+            }
 
-
+            if (begin >= 0) res[begin] = nums[deque.peekFirst()];
         }
-
 
         return res;
     }

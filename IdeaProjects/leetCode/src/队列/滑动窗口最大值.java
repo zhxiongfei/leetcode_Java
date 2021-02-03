@@ -24,8 +24,6 @@ public class 滑动窗口最大值 {
         if (nums == null || nums.length == 0 || k < 1) return null;
         if (k == 1) return nums;
 
-        LinkedList list = new LinkedList();
-
         // 存放滑动窗口最大值数组
         int[] maxes = new int[nums.length - k + 1];
 
