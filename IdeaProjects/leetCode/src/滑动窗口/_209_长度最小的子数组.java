@@ -20,12 +20,32 @@ package 滑动窗口;
 
 public class _209_长度最小的子数组 {
 
+    // [2,3,1,2,4,3]
+    // 7
+    public static int minSubArrayLen(int s, int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        int res = Integer.MAX_VALUE,sum = nums[0], left = 0, right = 1, length = nums.length;
+        while (right < length || left < length){
+            if (sum < s){
+                if (right == nums.length) {
+                    sum -= nums[left ++];
+                }else{
+                    sum += nums[right ++];
+                }
+            }else {
+                res = Math.min(res, right - left);
+                sum -= nums[left ++];
+            }
+        }
+        return res == Integer.MAX_VALUE ? 0 : res;
+    }
+
     /**
      *
      * 滑动窗口
      *
      * */
-    public static int minSubArrayLen(int s, int[] nums) {
+    public static int minSubArrayLen1(int s, int[] nums) {
         if (nums == null || nums.length == 0) return 0;
 
         // sum 存放窗口中 数值总和
