@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/滑动窗口/_567_字符串的排列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/滑动窗口/_76_最小覆盖子串.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/滑动窗口/_面试题_17_18_最短超串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/_665_非递减数列.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/滑动窗口/_1052_爱生气的书店老板.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/滑动窗口/_1438_绝对差不超过限制的最长连续子数组.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetCode/滑动窗口/_209_长度最小的子数组.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/滑动窗口/_209_长度最小的子数组.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/滑动窗口/_209_长度最小的子数组.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/滑动窗口/_209_长度最小的子数组.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +99,22 @@
       <recent name="$PROJECT_DIR$/src/设计模式/Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._567_字符串的排列">
-    <configuration name="_1004_最大连续1的个数III" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="滑动窗口._1004_最大连续1的个数III" />
+  <component name="RunManager" selected="Application._1438_绝对差不超过限制的最长连续子数组">
+    <configuration name="_1052_爱生气的书店老板" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="滑动窗口._1052_爱生气的书店老板" />
+      <module name="leetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="滑动窗口.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1438_绝对差不超过限制的最长连续子数组" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="滑动窗口._1438_绝对差不超过限制的最长连续子数组" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
@@ -141,25 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_76_最小覆盖子串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="滑动窗口._76_最小覆盖子串" />
+    <configuration name="_665_非递减数列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数组._665_非递减数列" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="滑动窗口.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_面试题_17_18_最短超串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="滑动窗口._面试题_17_18_最短超串" />
-      <module name="leetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="滑动窗口.*" />
+          <option name="PATTERN" value="数组.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._1438_绝对差不超过限制的最长连续子数组" />
+        <item itemvalue="Application._1052_爱生气的书店老板" />
+        <item itemvalue="Application._665_非递减数列" />
         <item itemvalue="Application._567_字符串的排列" />
         <item itemvalue="Application._209_长度最小的子数组" />
-        <item itemvalue="Application._76_最小覆盖子串" />
-        <item itemvalue="Application._面试题_17_18_最短超串" />
-        <item itemvalue="Application._1004_最大连续1的个数III" />
       </list>
     </recent_temporary>
   </component>
@@ -317,6 +315,7 @@
       <workItem from="1612404100912" duration="4935000" />
       <workItem from="1612421677607" duration="826000" />
       <workItem from="1612489642446" duration="20165000" />
+      <workItem from="1612662871431" duration="11591000" />
     </task>
     <servers />
   </component>
@@ -347,7 +346,7 @@
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
     <state width="409" height="466" key="DebuggerActiveHint/0.23.1440.877/-141.-1057.2048.1057@-141.-1057.2048.1057" timestamp="1606975361810" />
-    <state width="1351" height="230" key="GridCell.Tab.0.bottom" timestamp="1612516844378">
+    <state width="1351" height="204" key="GridCell.Tab.0.bottom" timestamp="1612677938078">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
@@ -357,8 +356,8 @@
     <state width="1606" height="2" key="GridCell.Tab.0.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478550" />
     <state width="1353" height="285" key="GridCell.Tab.0.bottom/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875346" />
     <state width="1353" height="209" key="GridCell.Tab.0.bottom/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326198" />
-    <state width="1351" height="230" key="GridCell.Tab.0.bottom/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844378" />
-    <state width="1351" height="230" key="GridCell.Tab.0.center" timestamp="1612516844377">
+    <state width="1351" height="204" key="GridCell.Tab.0.bottom/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938078" />
+    <state width="1351" height="204" key="GridCell.Tab.0.center" timestamp="1612677938077">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
@@ -368,8 +367,8 @@
     <state width="1606" height="2" key="GridCell.Tab.0.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478549" />
     <state width="1353" height="285" key="GridCell.Tab.0.center/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875345" />
     <state width="1353" height="209" key="GridCell.Tab.0.center/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326197" />
-    <state width="1351" height="230" key="GridCell.Tab.0.center/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844377" />
-    <state width="1351" height="230" key="GridCell.Tab.0.left" timestamp="1612516844376">
+    <state width="1351" height="204" key="GridCell.Tab.0.center/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938077" />
+    <state width="1351" height="204" key="GridCell.Tab.0.left" timestamp="1612677938077">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547713" />
@@ -379,8 +378,8 @@
     <state width="1606" height="2" key="GridCell.Tab.0.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478549" />
     <state width="1353" height="285" key="GridCell.Tab.0.left/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875344" />
     <state width="1353" height="209" key="GridCell.Tab.0.left/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326196" />
-    <state width="1351" height="230" key="GridCell.Tab.0.left/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844376" />
-    <state width="1351" height="230" key="GridCell.Tab.0.right" timestamp="1612516844377">
+    <state width="1351" height="204" key="GridCell.Tab.0.left/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938077" />
+    <state width="1351" height="204" key="GridCell.Tab.0.right" timestamp="1612677938078">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.0.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547714" />
@@ -390,8 +389,8 @@
     <state width="1606" height="2" key="GridCell.Tab.0.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478550" />
     <state width="1353" height="285" key="GridCell.Tab.0.right/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875345" />
     <state width="1353" height="209" key="GridCell.Tab.0.right/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326197" />
-    <state width="1351" height="230" key="GridCell.Tab.0.right/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844377" />
-    <state width="1351" height="162" key="GridCell.Tab.1.bottom" timestamp="1612516844373">
+    <state width="1351" height="204" key="GridCell.Tab.0.right/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938078" />
+    <state width="1351" height="204" key="GridCell.Tab.1.bottom" timestamp="1612677938080">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.bottom/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
@@ -401,8 +400,8 @@
     <state width="1606" height="2" key="GridCell.Tab.1.bottom/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478552" />
     <state width="1353" height="344" key="GridCell.Tab.1.bottom/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875552" />
     <state width="1353" height="209" key="GridCell.Tab.1.bottom/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326445" />
-    <state width="1351" height="162" key="GridCell.Tab.1.bottom/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844373" />
-    <state width="1351" height="162" key="GridCell.Tab.1.center" timestamp="1612516844372">
+    <state width="1351" height="204" key="GridCell.Tab.1.bottom/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938080" />
+    <state width="1351" height="204" key="GridCell.Tab.1.center" timestamp="1612677938079">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.center/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
@@ -412,8 +411,8 @@
     <state width="1606" height="2" key="GridCell.Tab.1.center/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478551" />
     <state width="1353" height="344" key="GridCell.Tab.1.center/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875549" />
     <state width="1353" height="209" key="GridCell.Tab.1.center/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326444" />
-    <state width="1351" height="162" key="GridCell.Tab.1.center/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844372" />
-    <state width="1351" height="162" key="GridCell.Tab.1.left" timestamp="1612516844372">
+    <state width="1351" height="204" key="GridCell.Tab.1.center/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938079" />
+    <state width="1351" height="204" key="GridCell.Tab.1.left" timestamp="1612677938079">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.left/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547715" />
@@ -423,8 +422,8 @@
     <state width="1606" height="2" key="GridCell.Tab.1.left/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478550" />
     <state width="1353" height="344" key="GridCell.Tab.1.left/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875546" />
     <state width="1353" height="209" key="GridCell.Tab.1.left/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326442" />
-    <state width="1351" height="162" key="GridCell.Tab.1.left/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844372" />
-    <state width="1351" height="162" key="GridCell.Tab.1.right" timestamp="1612516844373">
+    <state width="1351" height="204" key="GridCell.Tab.1.left/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938079" />
+    <state width="1351" height="204" key="GridCell.Tab.1.right" timestamp="1612677938079">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="1074" height="221" key="GridCell.Tab.1.right/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606310547716" />
@@ -434,7 +433,7 @@
     <state width="1606" height="2" key="GridCell.Tab.1.right/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609763478551" />
     <state width="1353" height="344" key="GridCell.Tab.1.right/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611114875551" />
     <state width="1353" height="209" key="GridCell.Tab.1.right/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200326444" />
-    <state width="1351" height="162" key="GridCell.Tab.1.right/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612516844373" />
+    <state width="1351" height="204" key="GridCell.Tab.1.right/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612677938079" />
     <state x="223" y="-971" key="SettingsEditor" timestamp="1609213399064">
       <screen x="-141" y="-1055" width="2048" height="1055" />
     </state>
@@ -456,10 +455,6 @@
       <screen x="-141" y="-1057" width="2048" height="1057" />
     </state>
     <state x="144" y="-866" width="1034" height="820" key="dock-window-3/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1605261569509" />
-    <state x="440" y="217" key="extract.method.dialog" timestamp="1603937275684">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="440" y="217" key="extract.method.dialog/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1603937275684" />
     <state x="418" y="188" width="597" height="548" key="find.popup" timestamp="1612513217523">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -472,7 +467,7 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="185" y="-333" width="754" height="723" key="run.anything.popup/0.23.1440.877/-141.-1057.2048.1057@0.23.1440.877" timestamp="1604645999960" />
-    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup" timestamp="1612511196788">
+    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup" timestamp="1612670204556">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="1859" y="70" width="1007" height="681" key="search.everywhere.popup/0.23.1280.720/1280.-151.1920.1057@1280.-151.1920.1057" timestamp="1606309629966" />
@@ -481,7 +476,7 @@
     <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609411417508" />
     <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611108763667" />
     <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200841146" />
-    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612511196788" />
+    <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612670204556" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,11 +1126,6 @@
           <url>file://$PROJECT_DIR$/src/滑动窗口/_1208_尽可能使字符串相等.java</url>
           <line>81</line>
           <option name="timeStamp" value="1131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/滑动窗口/_209_长度最小的子数组.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="1259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-method">
           <url>file://$PROJECT_DIR$/src/排序/MergeSort.java</url>
