@@ -23,6 +23,9 @@ package 动态规划;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class _198_打家劫舍 {
 
     // 递归 leetcode 超出时间限制
@@ -88,5 +91,33 @@ public class _198_打家劫舍 {
             cur = Math.max(prev,tmp);
         }
         return cur;
+    }
+
+    /**
+     * 进阶
+     * 保留要偷的下标
+     * */
+    public int rob4(int[] nums) {
+        int length = nums.length;
+        if (length == 0) return 0;
+        if (length == 1) return nums[0];
+
+        int[] dp = new int[length];
+        // robs[i] 为 1表示偷, 0表示不偷
+        int[] robs = new int[length];
+
+        dp[0] = nums[0];
+        dp[1] = Math.max(nums[0], nums[1]);
+
+        for (int i = 2; i < length; i ++){
+            dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
+            if (dp[i - 2] + nums[i] >= dp[i - 1]){
+                robs[i - 2] = 1;
+                robs[i] = 1;
+            }else {
+                robs[i - 1] = 1;
+            }
+        }
+        return dp[length - 1];
     }
 }
