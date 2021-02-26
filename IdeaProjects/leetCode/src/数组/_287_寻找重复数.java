@@ -25,6 +25,7 @@ package 数组;
 
 import java.time.format.SignStyle;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class _287_寻找重复数 {

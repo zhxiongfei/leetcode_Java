@@ -54,7 +54,6 @@ public class _543_二叉树的直径 {
         return height;
     }
 
-    int max;
     public int diameterOfBinaryTree(TreeNode root) {
 
         if (root == null) return 0;

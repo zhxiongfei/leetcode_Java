@@ -49,7 +49,7 @@ public class _114_二叉树展开为链表 {
         flatten(root.right);
 
         // 保存原来的右子树
-        TreeNode tmp = root.right;
+        TreeNode tmp = root;
         // 左子树插入到右子树位置
         root.right = root.left;
         // 清空左子树
