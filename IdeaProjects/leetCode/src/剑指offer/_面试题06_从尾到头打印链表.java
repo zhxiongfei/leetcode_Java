@@ -58,6 +58,9 @@ public class _面试题06_从尾到头打印链表 {
         return res;
     }
 
+    /**
+     * 头插法
+     * */
     public ListNode reverse1(ListNode head){
         ListNode newHead = null;
         while (head != null){
