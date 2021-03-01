@@ -33,32 +33,6 @@ public class _49_字母异位词分组 {
         List<List<String>> res = new ArrayList<>();
         if (strs == null || strs.length == 0) return res;
 
-        HashMap<String,List<Integer>> map = new HashMap<>();
-        for (int i = 0; i < strs.length; i++) {
-            String str = strs[i];
-            char[] chars = str.toCharArray();
-            Arrays.sort(chars);
-            String key = String.valueOf(chars);
-            List<Integer>idxs = map.getOrDefault(key, new ArrayList<>());
-            idxs.add(i);
-            map.put(key, idxs);
-        }
-
-        for (String key : map.keySet()) {
-            List<Integer>idxs = map.get(key);
-            List<String>tmp = new ArrayList<>();
-            for (Integer idx : idxs) {
-                tmp.add(strs[idx]);
-            }
-            res.add(tmp);
-        }
-        return res;
-    }
-
-    public static List<List<String>> groupAnagrams1(String[] strs) {
-        List<List<String>> res = new ArrayList<>();
-        if (strs == null || strs.length == 0) return res;
-
         HashMap<String,List<String>> map = new HashMap<>();
         for (int i = 0; i < strs.length; i++) {
             String str = strs[i];
@@ -66,16 +40,14 @@ public class _49_字母异位词分组 {
             Arrays.sort(chars);
             String key = String.valueOf(chars);
             List<String>strings = map.getOrDefault(key, new ArrayList<>());
-            strings.add(strs[i]);
+            strings.add(str);
             map.put(key, strings);
         }
-
         return new ArrayList<>(map.values());
     }
 
 
     public static void main(String[] args) {
-
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
         groupAnagrams(strs);
     }
