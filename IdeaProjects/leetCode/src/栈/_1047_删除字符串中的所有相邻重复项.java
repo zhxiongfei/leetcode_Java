@@ -32,25 +32,17 @@ import java.util.Stack;
 public class _1047_删除字符串中的所有相邻重复项 {
 
     public String removeDuplicates(String S) {
-
-        Stack<Character> stack = new Stack<>();
+        StringBuilder stack = new StringBuilder();
         char[] chars = S.toCharArray();
-
-        for (int i = 0; i < chars.length; i++) {
-            char c = chars[i];
-            if (!stack.isEmpty() && c == stack.peek()){
-                stack.pop();
-                continue;
+        for (char c : chars){
+            int len = stack.length();
+            if (len == 0 || stack.charAt(len - 1) != c){
+                stack.append(c);
+            }else {
+                stack.deleteCharAt(len - 1);
             }
-
-            stack.push(c);
         }
-
-        StringBuilder sb = new StringBuilder();
-        while (!stack.isEmpty())
-            sb.append(stack.pop());
-
-        return sb.reverse().toString();
+        return stack.toString();
     }
 
 }
