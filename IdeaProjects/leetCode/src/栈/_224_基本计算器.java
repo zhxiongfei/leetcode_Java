@@ -27,76 +27,42 @@ package 栈;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
-// 未解决
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class _224_基本计算器 {
 
     public static int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
-        s = s.replace(" ","");
 
-        // 数字栈
-        Stack<Integer> stack1 = new Stack<>();
-
-        // 运算符栈
-        Stack<Character> stack2 = new Stack<>();
-
-        int num = 0;
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (Character.isDigit(c)){
-                // 是数字
-                num = num * 10 + (c - '0');
-            }else {
-                if (num != 0){
-                    stack1.push(num);
-                    num = 0;
+        Deque<Integer> ops = new LinkedList<>();
+        ops.push(1);
+        int sign = 1, res = 0, length = s.length(), i = 0;
+        while (i < length){
+            if (s.charAt(i) == ' '){
+                i ++;
+            }else if (s.charAt(i) == '+'){
+                sign = ops.peek();
+                i++;
+            }else if (s.charAt(i) == '-'){
+                sign = -ops.peek();
+                i++;
+            }else if (s.charAt(i) == '(') {
+                ops.push(sign);
+                i++;
+            }else if (s.charAt(i) == ')') {
+                ops.pop();
+                i++;
+            }else{
+                long num = 0;
+                while (i < length && Character.isDigit(s.charAt(i))){
+                    num = num * 10 + s.charAt(i) - '0';
+                    i++;
                 }
-                if (c == '('){
-                    // 左括号
-                    stack2.push(c);
-                }else if (c == ')'){
-                    // 右括号
-                    while (stack2.peek() != '('){
-                        int n1 = stack1.pop();
-                        int n2 = stack1.pop();
-                        if (stack2.pop() == '+'){
-                            stack1.push(n2 + n1);
-                        }else {
-                            stack1.push(n2 - n1);
-                        }
-                    }
-                    // 把左括号弹出来
-                    stack2.pop();
-                }else {
-                    // + -
-                    while (!stack2.isEmpty()) {
-                        if (stack2.peek() == '(') break;
-
-                        int n1 = stack1.pop();
-                        int n2 = stack1.pop();
-
-                        char op = stack2.pop();
-                        if (op == '+') stack1.push(n2 + n1);
-                        if (op == '-') stack1.push(n2 - n1);
-                    }
-                    // 当前运算符入栈
-                    stack2.push(c);
-                }
+                res += sign * num;
             }
         }
-        stack1.push(num);
-
-        while (!stack2.isEmpty()){
-            int n1 = stack1.pop();
-            int n2 = stack1.pop();
-            if (stack2.pop() == '+')
-                stack1.push(n2 + n1);
-            else
-                stack1.push(n2 - n1);
-        }
-        return stack1.peek();
+        return res;
     }
 
     public static void main(String[] args) {
