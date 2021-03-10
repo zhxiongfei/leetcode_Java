@@ -83,7 +83,6 @@ public class _131_分割回文串 {
         }
 
         for (int i = start; i < s.length(); i++) {
-            isPalindrome(s.substring(start, i + 1));
             if (!isPalindrome(s, start, i)) continue;
 
             String str = s.substring(start, i + 1);
