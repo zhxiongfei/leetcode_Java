@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/数组/_54_螺旋矩阵.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/栈/_341_扁平化嵌套列表迭代器.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,6 +334,9 @@
       <workItem from="1615341912127" duration="2200000" />
       <workItem from="1615538484998" duration="406000" />
       <workItem from="1615773299353" duration="815000" />
+      <workItem from="1616119055014" duration="1672000" />
+      <workItem from="1616378453419" duration="1538000" />
+      <workItem from="1616471080599" duration="2235000" />
     </task>
     <servers />
   </component>
@@ -439,14 +442,14 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="418" y="188" width="597" height="548" key="find.popup/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1612513217523" />
-    <state x="434" y="207" width="670" height="158" key="search.everywhere.popup" timestamp="1615773885045">
+    <state x="434" y="207" width="670" height="158" key="search.everywhere.popup" timestamp="1616378479108">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="386" y="173" width="672" height="158" key="search.everywhere.popup/0.23.1280.720@0.23.1280.720" timestamp="1612958845874" />
     <state x="476" y="-836" width="1074" height="191" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@-141.-1055.2048.1055" timestamp="1609411417508" />
     <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-141.-1055.2048.1055@0.25.1440.875" timestamp="1611108763667" />
     <state x="434" y="207" width="755" height="158" key="search.everywhere.popup/0.25.1440.875/-2048.-408.2048.1055@0.25.1440.875" timestamp="1611200841146" />
-    <state x="434" y="207" width="670" height="158" key="search.everywhere.popup/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1615773885045" />
+    <state x="434" y="207" width="670" height="158" key="search.everywhere.popup/0.25.1440.875/-690.-1055.2048.1055@0.25.1440.875" timestamp="1616378479108" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
