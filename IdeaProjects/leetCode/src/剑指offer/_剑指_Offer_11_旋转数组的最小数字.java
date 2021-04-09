@@ -24,22 +24,22 @@ public class _剑指_Offer_11_旋转数组的最小数字 {
     public int minArray(int[] numbers) {
         if (numbers.length == 1) return numbers[0];
 
-        int begain = 0, end = numbers.length - 1;
-        while (begain < end){
-            int mid = begain + ((end - begain) >> 1);
+        int begin = 0, end = numbers.length - 1;
+        while (begin < end) {
+            int mid = begin + ((end - begin) >> 1);
             System.out.println(mid);
 
-            if (numbers[mid] < numbers[end]){
+            if (numbers[mid] < numbers[end]) {
                 // 在 [mid + 1, end] 范围内
                 end = mid;
-            }else if (numbers[mid] > numbers[end]){
+            } else if (numbers[mid] > numbers[end]) {
                 // 在 [begain, mid] 范围内
-                begain = mid + 1;
-            }else {
-                end --;
+                begin = mid + 1;
+            } else {
+                end--;
             }
         }
 
-        return numbers[begain];
+        return numbers[begin];
     }
 }

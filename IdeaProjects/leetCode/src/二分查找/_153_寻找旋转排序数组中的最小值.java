@@ -55,11 +55,9 @@ public class _153_寻找旋转排序数组中的最小值 {
             if (nums[end] > nums[mid]){
                 // 在 [begain, mid] 范围内
                 end = mid;
-            }else if (nums[end] < nums[mid]){
+            }else{
                 // 在 [mid + 1, end] 范围内
                 begain = mid + 1;
-            }else {
-                end --;
             }
         }
         return nums[begain];

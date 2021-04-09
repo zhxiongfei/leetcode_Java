@@ -65,7 +65,7 @@ public class _46_全排列 {
             used[i] = true;
             // 进入下层选择
             dfs(nums, length, depth + 1, path, used, res);
-            // 状态充值
+            // 状态重置
             used[i] = false;
             path.removeLast();
         }
