@@ -74,6 +74,8 @@ public class _84_柱状图中最大的矩形 {
      * */
     public int largestRectangleArea(int[] heights) {
         // 为了代码方便简单， 用柱体数组的头和尾增加了两个0
+        // 头尾增加两个0， 是为了保证柱体左右一定有比其小柱体, 方便统一处理
+        // 两个0也不会对结果产生影响
         int[] tmp = new int[heights.length + 2];
         System.arraycopy(heights,0, tmp, 1, heights.length);
 
@@ -81,15 +83,20 @@ public class _84_柱状图中最大的矩形 {
         int res = 0;
 
         for (int i = 0; i < tmp.length; i++) {
-            // 对栈中柱体来说，栈中的下一个柱体就是其「左边第一个小于自身的柱体」；
-            // 若当前柱体 i 的高度小于栈顶柱体的高度，说明 i 是栈顶柱体的「右边第一个小于栈顶柱体的柱体」。
-            // 因此以栈顶柱体为高的矩形的左右宽度边界就确定了，可以计算面积
+            while (!stack.isEmpty() && tmp[stack.peek()] > tmp[i]){
+                // 当tmp[i] < tmp[stack.peek()]时
+                // 就找到了 栈顶 柱体的右边界 (右边比自己小的第一个元素)
+                // 左边界为 栈 的下一个元素 (左边比自己小的第一个元素)
+                // 就可以计算出 area
 
-            int height = tmp[i];
-            while (!stack.isEmpty() && tmp[stack.peek()] > height){
-                int h = tmp[stack.pop()];
-                System.out.println(((i - stack.peek() - 1) * h));
-                res = Math.max(res, (i - stack.peek() - 1) * h);
+                // 柱体高度
+                int height = tmp[stack.pop()];
+                // 柱体左边界
+                int l = stack.peek();
+                // 柱体右边界
+                int r = i;
+                int area = height * (r - l - 1);
+                res = Math.max(res, area);
             }
             stack.push(i);
         }
@@ -99,6 +106,6 @@ public class _84_柱状图中最大的矩形 {
     public static void main(String[] args) {
         _84_柱状图中最大的矩形 cls = new _84_柱状图中最大的矩形();
         int[]heights = {2,1,5,6,2,3};
-        cls.largestRectangleArea(heights);
+        System.out.println(cls.largestRectangleArea(heights));
     }
 }

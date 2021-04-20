@@ -5,6 +5,9 @@ package 动态规划;
  找出只包含 1 的最大矩形，并返回其面积。
 */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
 [
  ["1","0","1","0","0"],
@@ -18,31 +21,39 @@ public class _85_最大矩形 {
 
     public int maximalRectangle(char[][] matrix) {
         int rows = matrix.length, cols = matrix[0].length, res = 0;
+        // 遍历每一层,记录每一层的最大矩形
+        // 每一层的就变为，84题的柱状图的最大矩形
 
-        // 1, 定义dp数组
-        int[][]dp = new int[rows][cols];
-        dp[0][0] = matrix[0][0] - '0';
-
-        // 2, dp[i][j] 表示 以 i,j 结尾的最大矩阵
-        for (int i = 1; i < cols; i++) {
-            dp[0][i] = (matrix[0][i]-'0') == 1 ? dp[0][i-1] + 1 : 0;
-            res = Math.max(res, dp[0][i]);
-        }
-        for (int i = 1; i < rows; i++) {
-            dp[i][0] = (matrix[i][0]-'0') == 1 ? dp[i-1][0] + 1 : 0;
-            res = Math.max(res, dp[0][i]);
-        }
-
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                if (matrix[i][j] - '0' == 0) continue;
-
-                dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]) + 1;
-                if (dp[i-1][j] > 0 && dp[i][j-1] > 0 && dp[i-1][j-1] > 0){
-                    dp[i][j] = dp[i-1][j-1];
+        int[] heights = new int[matrix[0].length];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (matrix[i][j] == '1'){
+                    heights[j] += 1;
+                }else {
+                    heights[j] = 0;
                 }
-                res = Math.max(res, dp[0][i]);
             }
+            int area = largestRectangleArea(heights);
+            res = Math.max(res, area);
+        }
+        return res;
+    }
+
+    private int largestRectangleArea(int[] heights) {
+        int[] tmp = new int[heights.length + 2];
+        System.arraycopy(heights,0, tmp, 1, heights.length);
+
+        Deque<Integer> stack = new ArrayDeque<Integer>();
+        int res = 0;
+        for (int i = 0; i < tmp.length; i++) {
+            while (!stack.isEmpty() && tmp[stack.peek()] > tmp[i]){
+                int height = tmp[stack.pop()];
+                int l = stack.peek();
+                int r = i;
+                int area = height * (r - l - 1);
+                res = Math.max(res, area);
+            }
+            stack.push(i);
         }
         return res;
     }
@@ -50,11 +61,13 @@ public class _85_最大矩形 {
     public static void main(String[] args) {
         _85_最大矩形 cls = new _85_最大矩形();
 
-//        {'1','0','1','1'}
-//        {'1','0','1','1'}
-//        {'1','0','1','1'}
+        /**
+        {'1','0','1','0','0'}
+        {'1','0','1','1','1'}
+        {'1','0','0','1','0'}
+        */
 
-        char[][]matrix = {{'1','0','1','1'},{'1','0','1','1'},{'1','0','1','1'}};
+        char[][]matrix = {{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','0','0','1','0'}};
         System.out.println(cls.maximalRectangle(matrix));
     }
 }
