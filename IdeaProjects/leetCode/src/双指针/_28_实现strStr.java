@@ -39,16 +39,13 @@ public class _28_实现strStr {
                 j = 0;
                 continue;
             }
-
             if (j == needle.length() - 1) {
                 System.out.println(i+1-needle.length());
                 return i+1-needle.length();
             }
-
             i ++;
             j ++;
         }
-
         return -1;
     }
 
