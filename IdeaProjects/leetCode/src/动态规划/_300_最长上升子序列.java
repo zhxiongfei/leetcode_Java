@@ -17,11 +17,14 @@ package 动态规划;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class _300_最长上升子序列 {
 
     // 动态规划
     // 时间复杂度 O(n^2) 空间复杂度O(n)
-    public int lengthOfLIS(int[] nums) {
+    public int lengthOfLIS1(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         if (nums.length == 1) return 1;
 
@@ -43,5 +46,46 @@ public class _300_最长上升子序列 {
             max = Math.max(dp[i],max);
         }
         return max;
+    }
+
+    /**
+     * 贪心 + 二分查找
+     * O(N * logN)
+     * */
+    public int lengthOfLIS(int[] nums) {
+        int len = nums.length;
+        if (len <= 1) return len;
+
+        int[] tail = new int[len];
+        tail[0] = nums[0];
+        int end = 0;
+
+        for (int i = 1; i < len; i++) {
+            if (nums[i] > tail[end]) {
+                end++;
+                tail[end] = nums[i];
+                continue;
+            }
+
+            int left = 0;
+            int right = end;
+            while (left < right) {
+                int mid = left + ((right - left) >>> 1);
+                if (tail[mid] < nums[i]) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+            tail[left] = nums[i];
+        }
+        end++;
+        return end;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {10,9,2,5,3,7,101,18};
+        _300_最长上升子序列 cls = new _300_最长上升子序列();
+        cls.lengthOfLIS(nums);
     }
 }

@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e9529-8209-41bf-98e5-597f0405fef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/并查集/_547_省份数量.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetCode/BFS/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/BFS/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetCode/BFS/_127_单词接龙.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/BFS/_127_单词接龙.class" afterDir="false" />
@@ -670,7 +669,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/leetCode/集合/_217_存在重复元素.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/集合/_217_存在重复元素.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetCode/集合/_349_两个数组的交集.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/集合/_349_两个数组的交集.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetCode/集合/_409_最长回文串.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetCode/集合/_409_最长回文串.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/堆/_215_数组中的第K个最大元素.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/堆/_215_数组中的第K个最大元素.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/动态规划/_300_最长上升子序列.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/动态规划/_300_最长上升子序列.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -754,7 +753,7 @@
       <recent name="$PROJECT_DIR$/src/设计模式/Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._547_省份数量">
+  <component name="RunManager" selected="Application._300_最长上升子序列">
     <configuration name="_1091_二进制矩阵中的最短路径" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BFS._1091_二进制矩阵中的最短路径" />
       <module name="leetCode" />
@@ -768,12 +767,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_547_省份数量" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="并查集._547_省份数量" />
+    <configuration name="_300_最长上升子序列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="动态规划._300_最长上升子序列" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="并查集.*" />
+          <option name="PATTERN" value="动态规划.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -781,12 +780,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_85_最大矩形" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="动态规划._85_最大矩形" />
+    <configuration name="_547_省份数量" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="并查集._547_省份数量" />
       <module name="leetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="动态规划.*" />
+          <option name="PATTERN" value="并查集.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -822,11 +821,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._300_最长上升子序列" />
         <item itemvalue="Application._547_省份数量" />
         <item itemvalue="Application._1091_二进制矩阵中的最短路径" />
         <item itemvalue="Application._994_腐烂的橘子" />
         <item itemvalue="Application._91_解码方法" />
-        <item itemvalue="Application._85_最大矩形" />
       </list>
     </recent_temporary>
   </component>
